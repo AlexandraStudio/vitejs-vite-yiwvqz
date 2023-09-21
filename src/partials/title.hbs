@@ -1,0 +1,52 @@
+<div class="items-ends flex w-full flex-row justify-start gap-[30px]">
+  <div class="flex flex-1 flex-col items-start justify-start gap-[20px]">
+    <h2
+      class="relative self-stretch text-xxl font-medium leading-[110%] md:text-3xl lg:text-5xl"
+    >
+      {{{title}}}
+    </h2>
+    {{#if subtitle}}
+      <div
+        class="relative self-stretch align-text-top text-sm leading-[140%] text-dark-gray lg:text-lg"
+      >
+        <p>{{subtitle}}</p>
+      </div>
+    {{/if}}
+  </div>
+  {{#if buttons}}
+    <div class="hidden flex-row items-end justify-start gap-[10px] md:flex">
+      <button
+        class="swiper-button-prev button--outlined-gray h-[68px] w-[68px] !p-0"
+      >
+        <img class="h-3.5 w-2" alt="" src="/images/union.svg" />
+      </button>
+      <button
+        class="swiper-button-next button--outlined-gray h-[68px] w-[68px] !p-0"
+      >
+        <img
+          class="h-3.5 w-2 [transform:_rotate(180deg)]"
+          alt=""
+          src="/images/union.svg"
+        />
+      </button>
+    </div>
+  {{/if}}
+  {{#if buttons-white}}
+    <div class="hidden flex-row items-end justify-start gap-[10px] md:flex">
+      <button
+        class="swiper-button-prev button--outlined-gray h-[68px] w-[68px] !p-0"
+      >
+        <img class="h-3.5 w-2" alt="" src="/images/union-white.svg" />
+      </button>
+      <button
+        class="swiper-button-next button--outlined-gray h-[68px] w-[68px] !p-0"
+      >
+        <img
+          class="h-3.5 w-2 [transform:_rotate(180deg)]"
+          alt=""
+          src="/images/union-white.svg"
+        />
+      </button>
+    </div>
+  {{/if}}
+</div>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-3xs text-black"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Портфолио
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="Портфолио"}}
+
+      {{> portfolio-popup}}
+
+      <!-- filters -->
+      <div
+        class="no-scrollbar relative mx-auto mb-[30px] flex w-full max-w-[360px] flex-row items-start justify-start gap-[10px] overflow-x-scroll text-4xs md:max-w-[1024px] md:overflow-x-visible lg:mb-[40px] lg:max-w-[1410px] lg:text-3xs"
+      >
+        <div
+          class="flex flex-row items-start justify-start gap-[10px] whitespace-nowrap text-4xs lg:text-3xs"
+        >
+          <button
+            class="tab-button button--outlined-gray !bg-border-color !p-3.5"
+          >
+            <div class="leading-[120%]">Все работы</div>
+          </button>
+          <button class="tab-button button--outlined-gray !p-3.5">
+            <div class="leading-[120%]">Вентиляция</div>
+          </button>
+          <button class="tab-button button--outlined-gray !p-3.5">
+            <div class="leading-[120%]">Кабельные системы</div>
+          </button>
+          <button class="tab-button button--outlined-gray !p-3.5">
+            <div class="leading-[120%]">Проектирование</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- portfolio -->
+      <div
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:text-xs"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[100px] lg:gap-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> project type="Жилой комплекс" title="Белое озеро" image="/images/portfolio1.png"}}
+          {{> project type="Бизнес центр" title="Бизнес центр А1" image="/images/portfolio2.png" reverse=1 }}
+          {{> project type="Жилой комплекс" title="Отличие" image="/images/portfolio3.png"}}
+          {{> project type="АвтоСалон" title="ТСК «Мотор»" image="/images/portfolio4.png" reverse=1 }}
+          {{> project type="Завод" title="Металло-прокатный завод" image="/images/portfolio5.png" }}
+        </div>
+        <button class="button--outlined-gray w-full">
+          <span>Посмотреть больше</span>
+        </button>
+      </div>
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Доставка и оплата</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Доставка и оплата
+        </a>
+      </section>
+
+      <!-- title -->
+      <section
+        class="relative mx-auto mb-[30px] flex max-w-[360px] text-xxl font-medium leading-[110%] text-black md:max-w-[1024px] md:text-3xl lg:mb-[40px] lg:max-w-[1410px] lg:text-5xl"
+      >
+        <h1 class="w-full">Доставка и оплата</h1>
+      </section>
+
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-row gap-[107px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <div
+          class="flex w-full flex-col gap-[40px] md:w-[676px] lg:w-[930px] lg:gap-[60px]"
+        >
+          <div class="flex text-sm leading-[140%] lg:text-lg">
+            <p>
+              Гарантируем 100% сохранность оборудования. Доставляем собственным
+              транспортом и сотрудничаем только с проверенными транспортными
+              компаниями. Грузы надёжно упаковываются и обрешечиваются.
+            </p>
+          </div>
+          <div
+            class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible"
+          >
+            <!-- prettier-ignore -->
+            <div
+              class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:text-xs"
+            >
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-money.svg"
+              text="<b>Оплата</b> удобным для вас способом"}}
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-takeaway.svg"
+              text="<b>Самовывоз </b> в удобное для вас время"}}
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-delivery.svg"
+              text="<b>Доставка ТК </b> по территории РФ"}}
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex md:w-[241px] lg:w-[330px]">
+          {{> info-contact}}
+        </div>
+      </section>
+
+      <div
+        class="bg-delivery absolute right-0 top-[1772px] z-10 h-[593px] w-[435px] bg-cover mix-blend-multiply md:top-[863px] md:h-[616px] md:w-[453px] lg:top-[928px] lg:h-[870px] lg:w-[640px]"
+      ></div>
+
+      <!-- delivery -->
+      <section
+        class="relative mb-[80px] flex flex-col items-start justify-start gap-[40px] bg-light-bg pb-[675px] pt-[80px] md:mb-[100px] md:h-[790px] md:flex-row md:py-[100px] lg:mb-[120px] lg:h-[870px] lg:py-[120px]"
+      >
+        <div
+          class="mx-auto max-w-[360px] md:max-w-[1024px] md:pr-[355px] lg:max-w-[1410px] lg:pr-[480px]"
+        >
+          <div
+            class="mb-[40px] flex flex-col items-start justify-start gap-[20px] self-stretch lg:mb-[60px]"
+          >
+            <div class="relative self-stretch font-medium leading-[110%]">
+              Особенности нашей доставки:
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch text-xxs lg:text-xs"
+            >
+              <div class="relative self-stretch leading-[140%]">
+                Доставка выполняется в интервале времени 09:00–19:00 часов.
+              </div>
+              <div class="relative self-stretch leading-[140%]">
+                Доставка осуществляется при условии, что габариты груза
+                не превышают: длина — не более 4-х метров, вес — не более
+                1500 кг.
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch text-base lg:text-xl"
+          >
+            <div class="relative self-stretch font-medium leading-[130%]">
+              Условия доставки и получения заказов:
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch text-xs"
+            >
+              <div
+                class="relative flex-1 self-stretch text-xxs leading-[140%] lg:text-xs"
+              >
+                В день доставки просим вас, либо вашего представителя быть
+                на связи по номеру телефона, указанному в квитанции на доставку.
+                В случае вашего отсутствия по указанному адресу товар будет
+                возвращён на склад Продавца, после чего, вам придётся
+                организовать получение товара самостоятельно. Деньги за доставку
+                не возвращаются. Вы можете перенести время доставки и дату
+                доставки, а также внести изменения в заказ по номеру телефона
+                справочной службы
+              </div>
+              <div
+                class="relative flex-1 self-stretch text-xxs leading-[140%] lg:text-xs"
+              >
+                Просим обратить внимание на проверку товара по количеству
+                и качеству. Все вопросы по качеству товара и количеству товара
+                вы можете задать по номеру телефона справочной службы
+                +7 8332 76-05-05.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- payment -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:h-[324px] md:max-w-[1024px] md:justify-between lg:mb-[120px] lg:h-auto lg:max-w-[1410px] lg:justify-start lg:gap-[60px]"
+      >
+        <div class="flex flex-col items-start justify-start self-stretch">
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+          >
+            <div class="relative self-stretch font-medium leading-[110%]">
+              Оплата
+            </div>
+            <div
+              class="flex flex-col items-start justify-start self-stretch text-sm lg:text-lg"
+            >
+              <div class="relative self-stretch leading-[140%]">
+                Вы можете выбрать удобный для вас способ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-start justify-start gap-[40px] text-xs md:flex-row lg:gap-[60px]"
+        >
+          <div
+            class="flex w-[190px] items-end justify-start gap-[20px] leading-[140%] md:flex-col md:items-start lg:w-[270px]"
+          >
+            <img
+              class="relative h-[100px] w-[100px]"
+              alt=""
+              src="/images/56.svg"
+            />
+            <span>Счет для <b>юридического лица</b></span>
+          </div>
+
+          <div
+            class="flex w-[190px] items-end justify-start gap-[20px] leading-[140%] md:flex-col md:items-start lg:w-[270px]"
+          >
+            <img
+              class="= relative h-[100px] w-[100px]"
+              alt=""
+              src="/images/component-43.svg"
+            />
+            <span>Счет для <b>физического лица</b></span>
+          </div>
+        </div>
+      </section>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Каталог</title>
+  </head>
+  <body>
+    <div
+      class="relative w-full overflow-hidden bg-white text-left font-gilroy text-4xs text-black lg:text-3xs"
+    >
+      <!-- prettier-ignore -->
+      {{> catalog-filters}}
+      {{> catalog-menu}}
+
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="no-scrollbar relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] overflow-x-scroll text-dark-gray md:max-w-[1024px] md:overflow-x-visible lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Каталог
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Прямоугольное канальное оборудование
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Обратные клапаны прямоугольные
+        </a>
+      </section>
+
+      {{> main-title title-text="Обратные клапаны прямоугольные"}}
+
+      <section
+        class="relative mx-auto mb-[30px] flex max-w-[360px] flex-row gap-[30px] md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <aside
+          class="hidden flex-col items-start justify-start gap-[30px] lg:flex"
+        >
+          <div
+            class="flex flex-col items-start justify-start overflow-hidden rounded bg-light-bg"
+          >
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Центральные вентиляционные установки</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/128.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Компактные вентиляционные установки</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/128.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Промышленные вентиляторы</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/131.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Прямоугольное канальное оборудование</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/128.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Круглое канальное оборудование</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/128.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Противопожарная вентиляция</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/131.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Системы холодоснабжения</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/131.svg" />
+            </div>
+
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start gap-[20px] bg-light-bg px-[30px] py-5"
+            >
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Автоматика</p>
+              </div>
+              <img class="relative h-3 w-3" alt="" src="/images/131.svg" />
+            </div>
+          </div>
+          <div
+            class="flex w-[330px] flex-col items-center justify-start gap-[30px] overflow-hidden rounded bg-light-bg py-[30px]"
+          >
+            <div
+              class="relative flex w-full flex-1 px-[30px] text-xs font-medium leading-[100%]"
+            >
+              <p>Фильтр по параметрам</p>
+            </div>
+            <div class="relative h-px self-stretch bg-gray"></div>
+            <div
+              class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+            >
+              <button
+                class="filter__button flex flex-row items-center justify-start self-stretch"
+              >
+                <div
+                  class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+                >
+                  <p>Цена</p>
+                </div>
+                <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+              </button>
+              <div class="hidden flex-col gap-[20px] group-[.open]:flex">
+                <div class="flex flex-row items-start justify-start gap-[20px]">
+                  <input
+                    class="flex w-[125px] flex-row items-center justify-start rounded bg-white px-[16px] py-[8px] text-3xs leading-[140%] placeholder-black placeholder-opacity-30"
+                    placeholder="от 0"
+                  />
+                  <input
+                    class="flex w-[125px] flex-row items-center justify-start rounded bg-white px-[16px] py-[8px] text-3xs leading-[140%] placeholder-black placeholder-opacity-30"
+                    placeholder="до 81 800"
+                  />
+                </div>
+                {{> slider}}
+              </div>
+            </div>
+
+            <div class="relative h-px self-stretch bg-gray"></div>
+
+            <div class="flex flex-row items-start justify-start">
+              <div
+                class="relative inline-block w-[232px] shrink-0 font-medium leading-[120%] opacity-[0.3]"
+              >
+                <p>Товары на акции</p>
+              </div>
+
+              {{> switch}}
+            </div>
+
+            <div class="relative h-px self-stretch bg-gray"></div>
+
+            <div
+              class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+            >
+              <button
+                class="filter__button flex flex-row items-center justify-start self-stretch"
+              >
+                <div
+                  class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+                >
+                  <p>Производитель</p>
+                </div>
+                <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+              </button>
+              <div
+                class="hidden flex-col items-start justify-start gap-[10px] self-stretch group-[.open]:flex"
+              >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+                >
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Aeronik</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Electrolux</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Energolux</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Тепломаш</p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="active relative self-stretch font-medium leading-[120%]"
+                >
+                  Посмотреть все
+                </a>
+              </div>
+            </div>
+
+            <div class="relative h-px self-stretch bg-gray"></div>
+
+            <div
+              class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+            >
+              <button
+                class="filter__button flex flex-row items-center justify-start self-stretch"
+              >
+                <div
+                  class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+                >
+                  <p>Применение</p>
+                </div>
+                <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+              </button>
+              <div
+                class="hidden flex-col items-start justify-start gap-[10px] self-stretch group-[.open]:flex"
+              >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+                >
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Для автомоек</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Для вентиляции</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="relative flex-1 font-medium leading-[120%]">
+                      <p>Для офиса</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+                  >
+                    <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+                    <div class="felx relative font-medium leading-[120%]">
+                      <p>Над дверью</p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="active relative self-stretch font-medium leading-[120%]"
+                >
+                  <p>Посмотреть все</p>
+                </a>
+              </div>
+            </div>
+            <div class="relative h-px self-stretch bg-gray"></div>
+            <div
+              class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+            >
+              <button
+                class="filter__button flex flex-row items-center justify-start self-stretch"
+              >
+                <div
+                  class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+                >
+                  <p>Материал</p>
+                </div>
+                <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+              </button>
+            </div>
+            <div class="relative h-px self-stretch bg-gray"></div>
+            <div
+              class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+            >
+              <button
+                class="filter__button flex flex-row items-center justify-start self-stretch"
+              >
+                <div
+                  class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+                >
+                  <p>Толщина</p>
+                </div>
+                <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+              </button>
+            </div>
+            <div class="relative h-px self-stretch bg-gray"></div>
+            <div
+              class="text-border-light-bg flex w-[270px] flex-col items-start justify-start gap-[10px]"
+            >
+              <button
+                class="button--filled-green self-stretch !px-[20px] !py-[16px]"
+              >
+                <span class="!text-3xs !leading-[120%]"> Показать </span>
+              </button>
+              <button
+                class="button--outlined-gray self-stretch !px-[20px] !py-[16px]"
+              >
+                <span class="!text-3xs !leading-[120%]"> Сбросить </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="text-border-light-bg flex flex-col items-start justify-start text-xl"
+          >
+            <div
+              class="flex flex-col items-start justify-start gap-[31px] rounded-b-none rounded-t bg-dark-green px-10 pb-0 pt-10 text-white"
+            >
+              <div class="flex flex-col items-start justify-start gap-[10px]">
+                <div class="relative font-medium leading-[130%]">
+                  <p>Воздуховоды</p>
+                </div>
+                <div
+                  class="relative inline-block w-[250px] text-xs leading-[140%] text-white"
+                >
+                  <p>более 300 наименований в каталоге</p>
+                </div>
+              </div>
+              <img
+                class="relative h-[216px] w-[250px] object-cover"
+                alt=""
+                src="/images/e5b6b7626e8b170623200cbac3d7fa10.png"
+              />
+            </div>
+            <div
+              class="box-border flex w-[330px] flex-row items-center justify-start rounded-b rounded-t-none bg-black px-10 py-5 text-xs text-dark-gray lg:px-[60px]"
+            >
+              <a href="#" class="relative leading-[140%]"
+                ><p>Перейти в раздел</p></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <div class="flex flex-col gap-[30px] lg:gap-[40px]">
+          <!-- filter -->
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] md:gap-[30px] lg:flex-col-reverse lg:gap-[40px]"
+          >
+            <div
+              class="flex w-full flex-col gap-[20px] md:flex-row md:justify-between"
+            >
+              <div
+                class="flex flex-row items-center justify-start gap-[10px] lg:hidden"
+              >
+                <button
+                  class="flex flex-row items-center justify-start gap-[10px] rounded bg-dark-green px-3 py-2.5 max-md:flex-1"
+                  id="open-menu"
+                >
+                  <img class="relative h-6 w-6" alt="" src="/images/menu.svg" />
+
+                  <div class="flex flex-row items-start justify-start">
+                    <div
+                      class="relative whitespace-nowrap leading-[140%] text-white"
+                    >
+                      <p>Меню каталога</p>
+                    </div>
+                  </div>
+                </button>
+                <button
+                  class="border-border-border-color flex flex-row items-center justify-start gap-[10px] rounded border-[1px] border-solid px-3 py-2.5 text-black max-md:flex-1"
+                  id="open-filters"
+                >
+                  <img class="relative h-6 w-6" alt="" src="/images/2.svg" />
+
+                  <div class="flex flex-row items-start justify-start">
+                    <div class="relative leading-[140%]">Фильтры</div>
+                  </div>
+                </button>
+              </div>
+              <button
+                class="dropdown flex flex-row items-center justify-start gap-[10px] text-4xs text-black lg:text-3xs"
+              >
+                <div class="relative leading-[140%]">По алфавиту</div>
+                <img
+                  class="relative h-3 w-3"
+                  alt=""
+                  src="/images/3__black.svg"
+                />
+              </button>
+              <div
+                class="hidden flex-row items-start justify-start gap-[10px] lg:flex"
+              >
+                <div class="relative leading-[140%] text-black">
+                  Выводить по:
+                </div>
+                <a href="#" class="active relative leading-[140%]"> 30 </a>
+                <a href="#" class="relative leading-[140%]">60</a>
+                <a href="#" class="relative leading-[140%]">90</a>
+              </div>
+            </div>
+            <div
+              class="no-scrollbar flex w-full overflow-x-scroll md:overflow-x-visible"
+            >
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] text-xxs lg:text-xs"
+              >
+                <button
+                  class="flex flex-row items-center justify-center gap-[20px] rounded bg-light-gray px-3.5 py-2.5 text-4xs lg:p-3.5 lg:text-3xs"
+                >
+                  <span class="relative font-medium leading-[120%]"
+                    >Aeronik</span
+                  >
+                  <img
+                    class="relative h-[9.5px] w-[9.5px]"
+                    alt=""
+                    src="/images/850fvds01.svg"
+                  />
+                </button>
+                <button
+                  class="flex flex-row items-center justify-center gap-[20px] rounded bg-light-gray px-3.5 py-2.5 text-4xs lg:p-3.5 lg:text-3xs"
+                >
+                  <div class="relative font-medium leading-[120%]">
+                    Для автомоек
+                  </div>
+                  <img
+                    class="relative h-[9.5px] w-[9.5px]"
+                    alt=""
+                    src="/images/850fvds01.svg"
+                  />
+                </button>
+                <button
+                  class="flex flex-row items-center justify-center gap-[20px] rounded bg-light-gray px-3.5 py-2.5 text-4xs lg:p-3.5 lg:text-3xs"
+                >
+                  <div class="relative font-medium leading-[120%]">
+                    Electrolux
+                  </div>
+                  <img
+                    class="relative h-[9.5px] w-[9.5px]"
+                    alt=""
+                    src="/images/850fvds01.svg"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- catalog -->
+          <div
+            class="grid grid-cols-1 gap-[20px] text-xs text-black md:grid-cols-3 lg:gap-[30px]"
+          >
+            <!-- prettier-ignore -->
+            {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Прямые участки воздуховода"}}
+         {{> catalog-item image-source="/images/fe6a0bee987be8f67140010b7b8cc12b.png" title="Переходс прямоугольного сечения на круглое сечение"}}
+         {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Отвод 90 градусов(прямоугольный)" without-price="1"}}
+         {{> catalog-item image-source="/images/e02a989ee5d7172aa2020df2d1ebaecd.png" title="Отвод 45 градусов(прямоугольный)"}} 
+         {{> catalog-item image-source="/images/cfc095d82eadc5582946832b9f4d1087.png" title="Переход с прямоугольного сечения на прямоугольное сечение"}}
+         {{> catalog-item image-source="/images/38cc95545d29d51da8dd998ed0e0687d.png" title="Адаптер прямоугольного сечения"}}
+         {{> catalog-item image-source="/images/3ac52966b5733523523dca5d21c4c682.png" title="Врезка прямоугольного сечения в плоскость"}} 
+         {{> catalog-item image-source="/images/afe8b03e6c7dda500425a3c23ae823fe.png" title="Врезка прямоугольного сечения в круглый воздуховод"}}
+         {{> catalog-item image-source="/images/fa9a260c584eb6bfec91ecf58e1efb58.png" title="Заглушка торцевая"}}
+         {{> catalog-item image-source="/images/de40dcdfa105a80ef9ae097703171846.png" title="Фланец прямоугольного сечения из шины R20, R30"}}
+         {{> catalog-item image-source="/images/01899c2cc2170c673df99b094ea40068.png" title="Тройники (прямоугольные)"}}
+         {{> catalog-item image-source="/images/0e2d14b17172e81d34ec114460bdd595.png" title="Утка (прямоугольная)"}}
+         {{> catalog-item image-source="/images/b194c31c495c92306c8dba4e1a84d025.png" title=" Решётка клапан"}}
+         {{> catalog-item image-source="/images/268893b82306e8290c0095bf14c6905b.png" title="Отвод 30 градусов (прямоугольный)"}}
+         {{> catalog-item image-source="/images/b3b887d69ddf4ff6fe37628f3fa40c92.png" title="Клапан огнезадерживающий с электроприводом"}}
+            <!-- prettier-ignore-end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- pages -->
+      <section
+        class="text-border-light-gray relative mx-auto mb-[80px] flex max-w-[360px] flex-row items-center justify-between text-center text-xxs md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:pl-[360px]"
+      >
+        <div class="flex gap-[10px]">
+          <button class="button--outlined-gray relative h-[50px] w-[50px]">
+            <img
+              class="absolute left-[calc(50%_-_4px)] top-[calc(50%_-_7px)] h-3.5 w-2"
+              alt=""
+              src="/images/union.svg"
+            />
+          </button>
+          <button class="button--outlined-gray relative h-[50px] w-[50px]">
+            <span class="text-black">1</span>
+          </button>
+          <button
+            class="button--outlined-gray relative flex h-[50px] w-[50px] md:hidden"
+          >
+            <span class="active">...</span>
+          </button>
+          <button
+            class="button--outlined-gray relative hidden h-[50px] w-[50px] md:flex"
+          >
+            <span class="active">2</span>
+          </button>
+
+          <button
+            class="button--outlined-gray relative hidden h-[50px] w-[50px] md:flex"
+          >
+            <span class="active">3</span>
+          </button>
+          <button
+            class="button--outlined-gray relative hidden h-[50px] w-[50px] md:flex"
+          >
+            <span class="active">4</span>
+          </button>
+          <button class="button--outlined-gray relative h-[50px] w-[50px]">
+            <span class="active">5</span>
+          </button>
+          <button
+            class="button--outlined-gray relative h-[50px] w-[50px] [transform:_rotate(180deg)]"
+          >
+            <img class="absolute h-3.5 w-2" alt="" src="/images/union.svg" />
+          </button>
+        </div>
+        <div
+          class="hidden flex-row items-start justify-start gap-[10px] lg:flex"
+        >
+          <div class="relative leading-[140%] text-black">Выводить по:</div>
+          <a href="#" class="active relative leading-[140%]"> 30 </a>
+          <a href="#" class="relative leading-[140%]">60</a>
+          <a href="#" class="relative leading-[140%]">90</a>
+        </div>
+      </section>
+
+      <!-- bottom text -->
+      <article
+        class="relative mx-auto mb-[80px] flex h-[905px] max-w-[360px] flex-col justify-between text-xxs leading-[140%] text-black md:mb-[100px] md:h-[355px] md:max-w-[1024px] lg:mb-[120px] lg:h-[338px] lg:max-w-[1410px] lg:text-xs"
+      >
+        <p class="mb-[8px]">
+          Прямоугольные воздуховоды помогут вам на 50% сократить расходы
+          на прокладку вентиляционных каналов. Благодаря прямоугольному сечению,
+          такие воздуховоды позволяют сократить общие габариты вентиляционных
+          каналов, сохраняя при этом достаточную силу воздушного потока,
+          что имеет особое значение при проектировании подвесных или низко
+          расположенных потолков.
+        </p>
+        <p class="mb-[8px]">
+          Воздуховоды прямоугольного сечения из оцинкованной стали пропускают
+          в два раза больше воздуха, чем стандартные круглые воздуховоды,
+          что делает их незаменимыми при строительстве производственных,
+          складских и торговых помещений, а также жилых зданий. При этом
+          прокладка такого воздуховода требует использования гораздо меньшего
+          количества крепежа, а сама система получается более жёсткой
+          и надёжной, чем конструкция круглого сечения.
+        </p>
+        <p class="mb-[8px]">
+          Ещё один плюс прямоугольных воздуховодов — их эстетическая
+          привлекательность. Даже если вентиляция останется на виду, она будет
+          аккуратно выглядеть и органично смотреться в интерьере.
+        </p>
+        <p>
+          Если вы хотите купить прямоугольный воздуховод или комплектующие
+          к нему, воспользуйтесь кнопкой «Заказать» возле нужных позиций
+          каталога или оставьте заявку при помощи формы на сайте.
+        </p>
+      </article>
+
+      <!-- prettier-ignore -->
+      {{> contact-me}} 
+      
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

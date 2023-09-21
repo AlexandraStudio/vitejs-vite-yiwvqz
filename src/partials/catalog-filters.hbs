@@ -1,0 +1,233 @@
+<div
+  class="hidden fixed top-0 overscroll-contain z-50 h-[stretch] w-full overflow-y-auto bg-light-bg md:bg-black md:bg-opacity-50"
+  id="catalog-filters"
+>
+  <div class="max-md:mx-auto flex md:h-full max-md:max-w-[360px]  items-start max-md:py-[30px] justify-start">
+    <div
+      class="flex w-full self-stretch md:w-[330px] flex-col  items-center justify-start gap-[30px] md:overflow-y-scroll bg-light-bg py-[30px]"
+    >
+      <div
+        class="relative w-full text-lg px-[30px] leading-[100%]"
+      >
+        <p>Фильтр по параметрам</p>
+      </div>
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+      <div
+        class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] md:px-[30px]"
+      >
+        <button
+          class="filter__button flex flex-row items-center justify-start self-stretch"
+        >
+          <div
+            class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+          >
+            <p>Цена</p>
+          </div>
+          <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+        </button>
+        <div class="hidden flex-col gap-[20px] group-[.open]:flex">
+          <div class="flex flex-row w-full items-start justify-start gap-[20px]">
+            <input
+              class="flex w-full flex-row items-center justify-start rounded bg-white px-[16px] py-[8px] text-3xs leading-[140%] placeholder-black placeholder-opacity-30"
+              placeholder="от 0"
+            />
+            <input
+              class="flex w-full flex-row items-center justify-start rounded bg-white px-[16px] py-[8px] text-3xs leading-[140%] placeholder-black placeholder-opacity-30"
+              placeholder="до 81 800"
+            />
+          </div>
+          {{> slider}}
+        </div>
+      </div>
+
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+
+      <div class="flex w-full md:px-[30px] flex-row items-start justify-between">
+        <div
+          class="relative inline-block shrink-0 font-medium leading-[120%] opacity-[0.3]"
+        >
+          <p>Товары на акции</p>
+        </div>
+
+        {{> switch}}
+      </div>
+
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+
+      <div
+        class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] md:px-[30px]"
+      >
+        <button
+          class="filter__button flex flex-row items-center justify-start self-stretch"
+        >
+          <div
+            class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+          >
+            <p>Производитель</p>
+          </div>
+          <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+        </button>
+        <div
+          class="hidden flex-col items-start justify-start gap-[10px] self-stretch group-[.open]:flex"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+          >
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Aeronik</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Electrolux</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Energolux</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Тепломаш</p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="active relative self-stretch font-medium leading-[120%]"
+          >
+            Посмотреть все
+          </a>
+        </div>
+      </div>
+
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+
+      <div
+        class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] md:px-[30px]"
+      >
+        <button
+          class="filter__button flex flex-row items-center justify-start self-stretch"
+        >
+          <div
+            class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+          >
+            <p>Применение</p>
+          </div>
+          <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+        </button>
+        <div
+          class="hidden flex-col items-start justify-start gap-[10px] self-stretch group-[.open]:flex"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+          >
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Для автомоек</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Для вентиляции</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="relative flex-1 font-medium leading-[120%]">
+                <p>Для офиса</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-[10px] self-stretch"
+            >
+              <div class="h-[16px] w-[16px]">{{> checkbox }}</div>
+              <div class="felx relative font-medium leading-[120%]">
+                <p>Над дверью</p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="active relative self-stretch font-medium leading-[120%]"
+          >
+            <p>Посмотреть все</p>
+          </a>
+        </div>
+      </div>
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+      <div
+        class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] md:px-[30px]"
+      >
+        <button
+          class="filter__button flex flex-row items-center justify-start self-stretch"
+        >
+          <div
+            class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+          >
+            <p>Материал</p>
+          </div>
+          <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+        </button>
+      </div>
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+      <div
+        class="filter__container group flex w-full flex-col items-start justify-start gap-[20px] md:px-[30px]"
+      >
+        <button
+          class="filter__button flex flex-row items-center justify-start self-stretch"
+        >
+          <div
+            class="relative flex-1 font-medium leading-[120%] opacity-[0.3]"
+          >
+            <p>Толщина</p>
+          </div>
+          <img class="relative h-3 w-3" alt="" src="/images/130.svg" />
+        </button>
+      </div>
+      <div class="relative h-px w-full border-[0.5px] border-solid border-gray"></div>
+      <div
+        class="text-border-light-bg flex w-full md:w-[270px] flex-col items-start justify-start gap-[10px]"
+      >
+        <button
+          class="button--filled-green w-full self-stretch !px-[20px] !py-[16px]"
+        >
+          <span class="!text-3xs !leading-[120%]"> Показать </span>
+        </button>
+        <button
+          class="button--outlined-gray w-full self-stretch !px-[20px] !py-[16px]"
+        >
+          <span class="!text-3xs !leading-[120%]"> Сбросить </span>
+        </button>
+      </div>
+    </div>
+    <button class="absolute top-[20px] max-md:right-[20px] md:top-0 md:left-[330px] bg-black w-[40px] p-[11px] h-[40px]" id="close-filters">
+      <img class="w-full h-full" src="/images/icon-cross.svg" alt="">
+    </button>
+  </div>
+</div>
+

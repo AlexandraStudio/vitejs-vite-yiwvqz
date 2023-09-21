@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Вакансии</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-3xs text-white"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Вакансии
+        </a>
+      </section>
+
+      {{> main-title title-text="Вакансии"}} {{> job-popup}}
+
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col gap-[20px] md:mb-[200px] md:max-w-[1024px] md:flex-row lg:mb-[240px] lg:max-w-[1410px] lg:gap-[30px]"
+      >
+        <!-- jobs -->
+        <div
+          class="flex w-full flex-col items-start justify-start gap-[20px] text-4xs text-dark-gray md:grid md:w-[676px] md:grid-cols-2 lg:w-[930px] lg:gap-[30px] lg:text-3xs"
+        >
+          <div
+            class="flex flex-col items-start justify-start self-stretch overflow-hidden rounded shadow-base"
+          >
+            <div class="relative h-5 self-stretch bg-dark-gray"></div>
+            <div
+              class="flex flex-col items-start justify-center gap-[30px] self-stretch bg-white px-10 py-[30px] lg:px-[60px] lg:py-10"
+            >
+              <div
+                class="flex flex-col items-start justify-center gap-[10px] self-stretch"
+              >
+                <div class="relative self-stretch font-medium leading-[120%]">
+                  <p>Должность</p>
+                </div>
+                <div
+                  class="relative self-stretch text-sm font-semibold leading-[100%] text-black lg:text-lg"
+                >
+                  <h3>Продавец-консультант</h3>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-center gap-[10px] self-stretch"
+              >
+                <div class="relative self-stretch font-medium leading-[120%]">
+                  <p>Зароботная плата</p>
+                </div>
+                <div
+                  class="relative self-stretch text-sm font-semibold leading-[100%] text-black lg:text-lg"
+                >
+                  <p>от 32 000 ₽</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start self-stretch text-xxs lg:text-xs"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  <p>
+                    Гарантируем официальное трудоустройство по ТК РБ (оплата
+                    больничных листов, 25 дней отпуска).
+                  </p>
+                </div>
+              </div>
+              <button
+                class="button--outlined-gray !px-5 !py-3.5 text-black"
+                id="open-popup"
+              >
+                <span
+                  class="relative !text-4xs font-medium !leading-[120%] lg:!text-3xs"
+                >
+                  Подробнее
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start self-stretch overflow-hidden rounded shadow-base"
+          >
+            <div class="relative h-5 self-stretch bg-dark-gray"></div>
+            <div
+              class="flex flex-col items-start justify-center gap-[30px] self-stretch bg-white px-10 py-[30px] lg:px-[60px] lg:py-10"
+            >
+              <div
+                class="flex flex-col items-start justify-center gap-[10px] self-stretch"
+              >
+                <div class="relative self-stretch font-medium leading-[120%]">
+                  <p>Должность</p>
+                </div>
+                <div
+                  class="relative self-stretch text-sm font-semibold leading-[100%] text-black lg:text-lg"
+                >
+                  <h3>Рабочий склада</h3>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-center gap-[10px] self-stretch"
+              >
+                <div class="relative self-stretch font-medium leading-[120%]">
+                  <p>Зароботная плата</p>
+                </div>
+                <div
+                  class="relative self-stretch text-sm font-semibold leading-[100%] text-black lg:text-lg"
+                >
+                  <p>от 25 000 ₽</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start self-stretch text-xxs lg:text-xs"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  <p>
+                    Гарантируем официальное трудоустройство по ТК РБ (оплата
+                    больничных листов, 25 дней отпуска).
+                  </p>
+                </div>
+              </div>
+              <button class="button--outlined-gray !px-5 !py-3.5 text-black">
+                <span
+                  class="relative !text-4xs font-medium !leading-[120%] lg:!text-3xs"
+                >
+                  Подробнее
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex h-[463px] shrink-0 flex-col items-start justify-start self-stretch overflow-hidden rounded shadow-base"
+          >
+            <div class="relative h-5 self-stretch bg-light-gray"></div>
+            <div
+              class="flex flex-1 flex-col items-start justify-start gap-[30px] self-stretch bg-white px-10 py-[30px] lg:px-[60px] lg:py-10"
+            >
+              <div
+                class="flex flex-col items-start justify-center gap-[10px] self-stretch"
+              >
+                <div class="relative self-stretch font-medium leading-[120%]">
+                  <p>Не нашли вакансий, но вы</p>
+                </div>
+                <div
+                  class="relative self-stretch text-sm font-semibold leading-[100%] text-black lg:text-lg"
+                >
+                  <h3>Хороший сециалист?</h3>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start self-stretch text-xxs lg:text-xs"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  <p>
+                    Присылайте нам своё резюме или позвоните по телефону,
+                    мы с радостью рассмотрим вашу кондидатуру
+                  </p>
+                </div>
+              </div>
+              <button class="button--outlined-gray !px-5 !py-3.5 text-black">
+                <span
+                  class="relative !text-4xs font-medium !leading-[120%] lg:!text-3xs"
+                >
+                  Отправить резюме
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- hr -->
+        <div
+          class="flex h-max w-full flex-col items-start justify-center gap-[20px] overflow-hidden rounded bg-light-bg p-[30px] text-sm text-black md:w-[328px] lg:w-[450px] lg:gap-[30px] lg:p-[40px] lg:text-lg"
+        >
+          <div
+            class="flex flex-col items-start justify-center gap-[10px] self-stretch text-base lg:text-xl"
+          >
+            <div class="relative self-stretch font-medium leading-[130%]">
+              <h3>Отдел персонала</h3>
+            </div>
+            <div
+              class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+            >
+              <p>
+                Гарантируем официальное трудоустройство по ТК РБ (оплата
+                больничных листов, 25 дней отпуска).
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+          >
+            <div class="relative self-stretch font-semibold leading-[100%]">
+              <h4>+7 8332 76-05-05</h4>
+            </div>
+            <div
+              class="relative self-stretch text-4xs font-medium leading-[120%] text-dark-gray lg:text-3xs"
+            >
+              <p>Мы работаем в будни с 08:30 до 17:30</p>
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start gap-[10px]">
+            <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+            <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch text-green"
+          >
+            <a
+              class="relative self-stretch font-semibold leading-[100%]"
+              href="#"
+              >info@smk-l.com</a
+            >
+
+            <div
+              class="relative self-stretch text-4xs font-medium leading-[120%] text-dark-gray lg:text-3xs"
+            >
+              Присылайте ваше резюме
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

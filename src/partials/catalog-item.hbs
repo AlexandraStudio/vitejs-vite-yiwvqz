@@ -1,0 +1,62 @@
+<div
+  class="group flex flex-col items-start justify-start shadow-base {{{class}}}"
+>
+  <div
+    class="bg-white relative h-[210px] w-full shrink-0 self-stretch overflow-hidden"
+  >
+    <img
+      class="h-[210px] w-full overflow-hidden object-contain"
+      alt=""
+      src={{image-source}}
+    />
+  </div>
+  <div
+    class="bg-white flex flex-col items-start justify-start gap-[30px] self-stretch p-[30px]"
+  >
+    <div class="relative flex h-[84px] text-xs shrink-0 self-stretch leading-[140%]">
+      {{title}}
+    </div>
+
+    {{#if without-price}}
+    <div
+      class=" flex flex-1 flex-row items-start justify-start gap-[10px] self-stretch "
+    >
+      <button
+        class="button--outlined-gray flex !px-[20px] !py-[16px] group-hover:hidden"
+      >
+        <span class="!text-border-color !text-3xs !leading-[120%]">Узнать цену</span>
+      </button>
+      <button
+        class="button--outlined-gray flex !px-[20px] !py-[16px] group-hover:hidden"
+      >
+        <span class="!text-3xs !leading-[120%]">В корзину</span>
+      </button>
+      <button
+        class="button--outlined-gray w-full hidden !px-[20px] !py-[16px] group-hover:flex"
+      >
+        <span class="!text-3xs !leading-[120%]">Узнать стоимость</span>
+      </button>
+    </div>
+   
+    {{else}}
+      <div
+      class="{{#if hide-price}}hidden{{else}}flex{{/if}} w-full h-[51px] flex-row items-center justify-between !text-3xs"
+    >
+      <div class="flex flex-1 flex-col items-start justify-center gap-[5px]">
+        <div class="relative font-medium leading-[120%] opacity-[0.3]">
+          Цена от
+        </div>
+        <div class="relative text-xs font-medium leading-[100%]">
+          70 831 ₽
+        </div>
+      </div>
+      <button
+        class="button--outlined-gray hidden !px-[20px] !py-[16px] group-hover:flex"
+      >
+        <span class="!text-3xs !leading-[120%]">В корзину</span>
+      </button>
+
+    </div>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Проектирование</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Проектирование
+        </a>
+      </section>
+
+      {{> main-title title-text="Проектирование"}}
+
+      <div
+        class="absolute right-0 top-[341px] z-10 hidden md:flex lg:top-[458px]"
+      >
+        <img
+          class="h-[515px] w-[499px] object-cover lg:h-[728px] lg:w-[705px]"
+          alt=""
+          src="/images/30907975e63b7ee00d8821467d1fa4a7.png"
+        />
+      </div>
+
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:gap-[40px] md:pr-[435px] lg:mb-[120px] lg:max-w-[1410px] lg:pr-[600px] lg:text-xs"
+      >
+        <div
+          class="relative flex text-base font-medium leading-[130%] lg:text-xl"
+        >
+          Полноценная и грамотно разработанная проектная документация приводит
+          к уменьшению затрат на эксплуатацию и повышает эффективность системы
+          в целом.
+        </div>
+        <div class="relative self-stretch text-sm leading-[140%] lg:text-lg">
+          Отсутствие проектной документации приводит к внеплановым затратам,
+          увеличению срока выполнения работ, к удорожанию строительной стоимости
+          в целом.
+        </div>
+        <div
+          class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible"
+        >
+          <div
+            class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:text-xs"
+          >
+            <!-- prettier-ignore -->
+            {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/icon-pc.svg" text="Соответствие все требованиям ГОСТа, СНиПов, СП — мы состоим в СРО"}}
+            {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/component-4.svg" text="Инженеры с большим опытом работ в области проектирования систем ОВиК"}}
+            {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/icon-money.svg" text="Разумная цена без скрытых платежей и срывов сроков"}}
+          </div>
+        </div>
+        <button class="button--filled-green">
+          <span> Пример готового проекта </span>
+        </button>
+      </section>
+
+      <!-- stages -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        <div
+          class="flex flex-1 flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <div class="relative self-stretch font-medium leading-[110%]">
+            <h2>
+              Этапы<br />
+              разработки проекта
+            </h2>
+          </div>
+          <div
+            class="relative self-stretch text-sm leading-[140%] text-dark-gray lg:text-lg"
+          >
+            <p>Разработка проекта выполняется в четыре этапа</p>
+          </div>
+        </div>
+        <div
+          class="md: flex flex-col items-start justify-start gap-[10px] self-stretch text-4xl text-light-gray md:flex-row lg:gap-[30px] lg:text-6xl"
+        >
+          <div
+            class="flex w-full flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-5 shadow-base md:flex-col lg:gap-[30px] lg:px-[60px] lg:py-[40px]"
+          >
+            <b class="relative inline-block w-[105px] shrink-0 leading-[100%]"
+              >01</b
+            >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+            >
+              Техническое задание
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-5 shadow-base md:flex-col lg:gap-[30px] lg:px-[60px] lg:py-[40px]"
+          >
+            <b class="relative inline-block w-[105px] shrink-0 leading-[100%]"
+              >02</b
+            >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+            >
+              Эскизный проект
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-5 shadow-base md:flex-col lg:gap-[30px] lg:px-[60px] lg:py-[40px]"
+          >
+            <b class="relative inline-block w-[105px] shrink-0 leading-[100%]"
+              >03</b
+            >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+            >
+              Техническией проект
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-5 shadow-base md:flex-col lg:gap-[30px] lg:px-[60px] lg:py-[40px]"
+          >
+            <b class="relative inline-block w-[105px] shrink-0 leading-[100%]"
+              >04</b
+            >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+            >
+              Рабочий проект
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {{> discount}}
+
+      <!-- result -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Что вы получите в результате" subtitle="Пакет документов состоящий из этих разделов:" buttons="1"}}
+          <div class="swiper !ml-0 w-full !overflow-visible" id="design-result">
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto !w-fit ">
+                {{> design-advantage  title="Титульный лист" description="С информацией о проекте, его авторах, заказчике." }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Пояснительная записка" description="Содержит описание системы подачи воздуха, её характеристик и принципа работы."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Технические данные" description="Это — характеристики оборудования, используемого в системе, его технические параметры, мощность и прочие данные."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Исполнительная схема" description="Позволит вам получить наглядное представление о конструкции техники и её возможностях."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Пояснительная схема" description="Графическое изображение всех элементов системы и направления потока воздуха."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Аксонометрия" description="Трехмерное изображение системы вентилирования."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Спецификация" description="Содержит информацию о характеристиках материалов и оборудования, а также стоимости проекта."}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-advantage title="Привязки" description="Изображение климаттехники на плане здания с указанием местоположения и точных координат каждого элемента системы."}}
+              </div>
+            </div>
+
+            {{> pages}}
+          </div>
+        </div>
+      </section>
+
+      <!-- types -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:text-xs"
+      >
+        <div
+          class="flex flex-row items-end justify-start gap-[30px] self-stretch text-xxl md:text-3xl lg:gap-[40px] lg:text-5xl"
+        >
+          <div
+            class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+          >
+            <div class="relative self-stretch font-medium leading-[110%]">
+              Виды объектов
+            </div>
+            <div
+              class="relative self-stretch text-sm leading-[140%] text-dark-gray lg:text-lg"
+            >
+              В нашем проектном отделе трудятся специалисты, успешно выполнющие
+              работы по проектированию даже самых сложных в техническом
+              отношении объектов:
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[30px] self-stretch"
+        >
+          <div class="relative h-full w-full md:hidden">
+            <div
+              class="swiper !ml-0 !overflow-visible"
+              id="cable-systems-video"
+            >
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper"
+            >
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                  title="Частный дом"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                  title="В автосервис"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                  title="В квартиру"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                  title="В бассейн"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                  title="Гараж"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> design-item
+                  image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                  title="Офис"
+                }}
+              </div>
+            </div>
+
+              {{> pages}}
+            </div>
+          </div>
+          <div
+            class="hidden flex-col items-start justify-start gap-[30px] self-stretch md:flex lg:gap-[40px]"
+          >
+            <div
+              class="flex flex-row items-start justify-start gap-[12px] md:grid md:grid-cols-3 md:gap-[20px] lg:grid-cols-4 lg:gap-[30px]"
+            >
+              <!-- prettier-ignore -->
+              {{> design-item
+              image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+              title="Частный дом"
+            }}
+            {{> design-item
+              image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+              title="В автосервис"
+            }}
+            {{> design-item
+              image="/images/f47a6314ec3774ea23fee363511f8541.png"
+              title="В квартиру"
+            }}
+            {{> design-item
+              image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+              title="В бассейн"
+            }}
+            {{> design-item
+              image="/images/89b8fd39503bf0629f339f10137b881d.png"
+              title="Гараж"
+            }}
+            {{> design-item
+              image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+              title="Офис"
+            }}
+              <span class="hidden lg:flex">
+                {{> design-item
+                image="/images/6368356c51e87ef22017577636c8f240.png"
+                title="Магазин" }}
+              </span>
+
+              <span class="hidden lg:flex">
+                {{> design-item
+                image="/images/d60385e918ea2ec95bfd8f16d4e011f4.png"
+                title="Склад" }}
+              </span>
+            </div>
+          </div>
+          <div
+            class="grid w-full grid-cols-1 gap-[4px] md:grid-cols-2 md:gap-[20px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-[10px]"
+          >
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px] lg:hidden"
+            >
+              <p>Магазины</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px] lg:hidden"
+            >
+              <p>Склады</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Торговые центры</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Рестораны и кафе</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Гостиницы и отели</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Цеха и мастерские</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Больницы и клиники</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Кинотеатры и театры</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Спортивные сооружения</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Музеи и выставочные залы</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Школы и учебные заведения</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Промышленные помещения</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Баня</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Бомбоубежище</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Котельная</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Лаборатория</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Баня</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Магазин</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Сауна</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Серверная</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Сварочный цех</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+            >
+              <p>Покрасочная камера</p>
+            </button>
+            <button
+              class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:col-span-2 md:px-[60px] md:py-[20px] lg:col-span-1"
+            >
+              <p>Детский сад</p>
+            </button>
+          </div>
+        </div>
+        <button class="button--filled-green max-md:w-full">
+          <span> Заказать разработку проекта </span>
+        </button>
+      </section>
+
+      <div
+        class="absolute right-[-80px] top-[6550px] z-10 md:top-[4600px] lg:top-[4986px]"
+      >
+        <img
+          class="h-[416px] w-[500px] object-cover md:h-[408px] md:w-[490px] lg:h-[580px] lg:w-[680px]"
+          alt=""
+          src="/images/082f3f8b2dbdb80435d38e094979fa7e.png"
+        />
+      </div>
+
+      <!-- why -->
+      <section class="relative bg-light-bg">
+        <!-- prettier-ignore -->
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] pb-[536px] pt-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          {{> title title="Зачем нужен<br />проект вентиляции здания?"
+          subtitle="Проект климаттехники разрабатывается, чтобы достичь этих целей."}}
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch rounded text-xxs md:pr-[348px] lg:pr-[480px] lg:text-xs"
+          >
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>Улучшение качества воздуха</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>Минимизация шума и вибрации</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>Финансовая выгода</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] text-base text-green shadow-base md:px-10 md:py-[30px] lg:text-xl"
+            >
+              <div
+                class="flex flex-row items-center justify-between self-stretch"
+              >
+                <div class="relative flex-1 font-medium leading-[130%]">
+                  <p>Повышение эффективности системы кондиционирования</p>
+                </div>
+                <img
+                  class="relative h-7 w-3.5"
+                  alt=""
+                  src="/images/green-minus.svg"
+                />
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Качественное планирование позволяет уменьшить нагрузку
+                  на систему подачи воздуха. А это — путь к экономии
+                  электроэнергии и повышению эффективности климаттехники.
+                </p>
+              </div>
+            </button>
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>Обеспечение комфортных климатических условий</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>Соответствие нормам и требованиям</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section
+        class="relative mb-[80px] bg-black text-white md:mb-[100px] lg:mb-[140px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] text-xxs text-white md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:text-xs"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Преимущества<br />сотрудничества с нами"
+          subtitle="Помимо огромного опыта работы в данной сфере:"}}
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch text-dark-gray md:flex-row"
+          >
+            <!-- prettier-ignore -->
+            {{> duct-production-advantage text="Для проектирования систем вентиляции и кондиционирования применяются современные CAD-средства."}}
+            {{> duct-production-advantage text="Проектирование систем вентиляции может выполняться удалённо. Нам необходимо знать определённые параметры, возможно, вам придётся заполнить анкету."}}
+            {{> duct-production-advantage text="В процессе проектирования мы даём рекомендации по подбору материалов и оборудования, которые подойдут для решения задачи."}}
+            {{> duct-production-advantage text="Размер системы для нас не имеет значения. Все помещения будут эффективно получать приток воздуха с выводом отработанной воздушной среды"}}
+          </div>
+          <div
+            class="relative flex items-center justify-start self-stretch leading-[140%]"
+          >
+            <p>
+              Проектирование вентиляции и отопления от нашей компании позволяет
+              существенно экономить средства. Будут включены такие средства
+              контроля температуры воздуха, которые позволят существенно
+              сэкономить в демисезонный период или летнюю жару
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me}} 
+
+      {{> specialist }}
+
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

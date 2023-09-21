@@ -1,0 +1,86 @@
+@import "./reset.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 leading-[normal];
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+b {
+  font-weight: 700;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 60%;
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer components {
+  .button--filled-green {
+    @apply flex items-center justify-center rounded bg-green-gradient px-[30px] py-5 hover:bg-dark-green-gradient lg:py-[24px];
+  }
+
+  .button--filled-green > span {
+    @apply relative text-center text-xxs font-medium leading-[100%] text-white lg:text-xs;
+  }
+
+  .button--filled-gray {
+    @apply flex flex-row items-center justify-center rounded bg-border-color p-0 hover:bg-light-gray;
+  }
+
+  .button--outlined-green {
+    @apply flex items-center justify-center rounded border-[1px] border-solid border-green bg-transparent px-[30px] py-5 hover:border-light-bg hover:bg-light-bg lg:py-[24px];
+  }
+
+  .button--outlined-green > span {
+    @apply relative text-xxs font-medium leading-[100%] text-black lg:text-xs;
+  }
+
+  .button--outlined-gray {
+    @apply flex flex-row items-center justify-center rounded border-[1px] border-solid border-border-color px-[30px] py-5 hover:border-white hover:bg-white lg:py-[24px];
+  }
+
+  .button--outlined-gray > span {
+    @apply relative text-xxs font-medium leading-[100%] lg:text-xs;
+  }
+
+  .active {
+    @apply bg-green-gradient bg-clip-text text-transparent;
+  }
+
+  .swiper-pagination {
+    @apply !mx-auto mt-[30px] flex flex-row items-center justify-center gap-[10px] md:hidden;
+  }
+  .swiper-pagination-bullet {
+    @apply relative h-5 w-5 rounded bg-border-color;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply !w-10 !bg-dark-gray;
+  }
+}

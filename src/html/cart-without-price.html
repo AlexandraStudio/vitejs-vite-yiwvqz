@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Корзина
+        </a>
+      </section>
+
+      <section
+        class="relative mx-auto mb-[107px] flex max-w-[360px] text-xxl font-medium leading-[110%] text-black md:mb-[30px] md:max-w-[1024px] md:text-3xl lg:mb-[40px] lg:max-w-[1410px] lg:text-5xl"
+      >
+        <h1 class="w-full">Корзина</h1>
+      </section>
+
+      <!-- cart -->
+      <section
+        class="relative mx-auto mb-[160px] flex max-w-[360px] flex-col gap-[40px] md:mb-[200px] md:max-w-[1024px] md:flex-row md:gap-[20px] lg:mb-[240px] lg:max-w-[1410px] lg:gap-[30px]"
+      >
+        <div
+          class="flex h-full flex-col items-center justify-start gap-[20px] text-xxs md:gap-0 md:shadow-base lg:text-xs"
+        >
+          <!-- prettier-ignore -->
+          {{> cart-item 
+            image="/images/aa7f86678246d67bd160f7b8052f84c3.png"
+            title="Наружные блоки HI-FLEXI Высокоэнергоэффективная серия SXA"
+            without-price="1"
+          }}
+
+          {{> cart-item 
+            image="/images/f2f212cbe5e3438d84b60e6210892c71.png"
+            title="Инверторные сплит-системы канального типа серии HEAVY DC Inverter"
+            without-price="1"
+          }}
+        </div>
+        <div
+          class="box-border flex w-[360px] flex-col items-start justify-center gap-[18px] self-start rounded bg-light-bg p-[30px] text-xxs md:w-[328px] lg:w-[450px] lg:gap-[30px] lg:p-[40px] lg:text-xs"
+        >
+          <img class="relative h-6 w-6" alt="" src="/images/9.svg" />
+
+          <div class="relative self-stretch leading-[140%]">
+            <p class="text-sm lg:text-lg">
+              Вы заказываете товар без указанной стоимости
+            </p>
+            <p class="text-xxs lg:text-xs">
+              После оформления заказа с вами свяжется специалист для уточнения
+              итоговой суммы и подтверждения заказа
+            </p>
+          </div>
+
+          <button class="button--filled-green w-full">
+            <span>Перейти к оформлению</span>
+          </button>
+        </div>
+      </section>
+
+      {{> main-title title-text="Оформление заказа"}}
+
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col gap-[30px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        <!-- prettier-ignore -->
+        {{> cart-tabs}}
+
+        {{> cart-tabs-mobile}}
+
+        <div
+          class="flex flex-col items-center gap-[20px] md:flex-row md:gap-[40px]"
+        >
+          <button class="button--filled-green max-md:w-full">
+            <span>Оформить заказ</span>
+          </button>
+          <div
+            class="flex flex-row items-center justify-start gap-[10px] text-4xs text-dark-gray lg:text-3xs"
+          >
+            <div class="relative h-5 w-5">
+              <input
+                class="absolute bottom-0 left-0 right-0 top-0 m-0 box-border h-full w-full appearance-none rounded border-[1px] border-solid border-green checked:border-0 checked:bg-icon-checkbox-active"
+                type="checkbox"
+              />
+            </div>
+
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Даю согласие на обработку моих персональных данных</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

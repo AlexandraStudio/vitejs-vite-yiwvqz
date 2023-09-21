@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-3xs text-white"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Контакты
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="Контакты"}}
+
+      {{> contacts-popup}}
+
+      <!-- map -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col gap-[40px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[20px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[30px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] text-xxs text-black lg:gap-[30px] lg:text-xs"
+        >
+          <!-- prettier-ignore  -->
+          {{> address title="Офис:" address="610033, г. Киров, Студенческий проезд 23" hours="Пн-Пт — 08:30–17:30, Сб-Вс — выходной"}}
+          {{> address title="Производство и склад:" address="610033, г. Киров,ул.Калинина 38" hours="Пн-Пт — 08:00–17:00, Сб-Вс — выходной" button="1"}}
+        </div>
+
+        <div
+          class="bg-contacts relative h-[675px] w-[480px] bg-[position:-333px_-163px] max-md:mx-[-60px] md:w-[589px] md:bg-[position:-266px_-158px] lg:h-[861px] lg:w-[810px] lg:bg-[position:-216px_-66px]"
+        >
+          <div
+            class="absolute left-[162px] top-[193px] z-10 flex flex-col items-center justify-start gap-[3px] md:left-[229px] md:top-[197px] lg:left-[279px] lg:top-[279px]"
+          >
+            <div class="flex flex-col items-center justify-start">
+              <div
+                class="box-border flex h-12 w-12 flex-row items-center justify-center rounded bg-green-gradient p-2"
+              >
+                <img
+                  class="relative h-7 w-[30px]"
+                  alt=""
+                  src="/images/vector3.svg"
+                />
+              </div>
+              <img
+                class="relative h-2 w-4"
+                alt=""
+                src="/images/rectangle-171.svg"
+              />
+            </div>
+            <div
+              class="relative h-0.5 w-2 rounded-[50%] bg-black opacity-[0.2]"
+            ></div>
+          </div>
+          <div
+            class="absolute left-[197px] top-[435px] z-10 flex flex-col items-center justify-start gap-[3px] md:left-[264px] md:top-[440px] lg:left-[314px] lg:top-[522px]"
+          >
+            <div class="flex flex-col items-center justify-start">
+              <div
+                class="box-border flex h-12 w-12 flex-row items-center justify-center rounded bg-green-gradient p-2"
+              >
+                <img
+                  class="relative h-7 w-[30px]"
+                  alt=""
+                  src="/images/vector3.svg"
+                />
+              </div>
+              <img
+                class="relative h-2 w-4"
+                alt=""
+                src="/images/rectangle-171.svg"
+              />
+            </div>
+            <div
+              class="relative h-0.5 w-2 rounded-[50%] bg-black opacity-[0.2]"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <sectiom
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] overflow-hidden rounded border-[1px] border-solid border-border-color p-10 text-4xs text-black md:mb-[100px] md:max-w-[1024px] md:flex-row lg:mb-[120px] lg:max-w-[1410px] lg:gap-[60px] lg:p-[60px] lg:text-3xs"
+      >
+        <div class="flex flex-col items-start justify-start gap-[5px]">
+          <div class="relative leading-[140%]">Компания:</div>
+          <div class="relative text-xxs leading-[140%] text-black lg:text-xs">
+            ООО «Элком групп»
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[5px]">
+          <div class="relative leading-[140%]">ИНН:</div>
+          <div class="relative text-xxs leading-[140%] text-black lg:text-xs">
+            4345255582 КПП: 434501001
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[5px]">
+          <div class="relative leading-[140%]">ОГРН:</div>
+          <div class="relative text-xxs leading-[140%] text-black lg:text-xs">
+            1094345006920
+          </div>
+        </div>
+      </sectiom>
+
+      <section
+        class="relative mx-auto mb-[80px] max-w-[360px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px]"
+      >
+        {{> contact-me--full}}
+      </section>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1369 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Смета на вентиляцию</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Вентиляция
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Смета на вентиляцию
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="Смета на вентиляцию"}}
+
+      <!-- cropped-picture -->
+      <section
+        class="mx-auto mb-[80px] flex max-w-[360px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px]"
+      >
+        <div class="hidden h-[570px] w-[1410px] lg:flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="1410"
+            height="570"
+            viewBox="0 0 1410 570"
+            fill="none"
+          >
+            <path d="M0 0H1410V570L0 528.733V0Z" fill="url(#pattern01)" />
+            <defs>
+              <pattern
+                id="pattern01"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_2043_242831"
+                  transform="matrix(0.000621504 0 0 0.0015374 0 -0.19875)"
+                />
+              </pattern>
+              <image
+                id="image0_2043_242831"
+                width="1609"
+                height="909"
+                xlink:href="/images/ce679aea6266c03a5e9acc6a681d9dec.png"
+              />
+            </defs>
+          </svg>
+        </div>
+        <div class="hidden h-[420px] w-[1024px] md:flex lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="1024"
+            height="420"
+            viewBox="0 0 1024 420"
+            fill="none"
+          >
+            <path d="M0 0H1024V420L0 389.593V0Z" fill="url(#pattern02)" />
+            <defs>
+              <pattern
+                id="pattern02"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_2123_338282"
+                  transform="matrix(0.000621504 0 0 0.00151529 0 -0.188698)"
+                />
+              </pattern>
+              <image
+                id="image0_2123_338282"
+                width="1609"
+                height="909"
+                xlink:href="/images/ce679aea6266c03a5e9acc6a681d9dec.png"
+              />
+            </defs>
+          </svg>
+        </div>
+        <div class="h-[420px] w-[360px] md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="360"
+            height="420"
+            viewBox="0 0 360 420"
+            fill="none"
+          >
+            <path d="M0 0H360V420L0 389.593V0Z" fill="url(#pattern03)" />
+            <defs>
+              <pattern
+                id="pattern03"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_2123_340933"
+                  transform="matrix(0.00128346 0 0 0.00110011 -0.532545 0)"
+                />
+              </pattern>
+              <image
+                id="image0_2123_340933"
+                width="1609"
+                height="909"
+                xlink:href="/images/ce679aea6266c03a5e9acc6a681d9dec.png"
+              />
+            </defs>
+          </svg>
+        </div>
+      </section>
+
+      <!-- installation -->
+      <article
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[20px] text-base md:mb-[100px] md:max-w-[1024px] md:flex-row md:justify-between md:gap-0 lg:mb-[120px] lg:max-w-[1410px] lg:text-xl"
+      >
+        <div
+          class="relative self-stretch font-medium leading-[130%] md:w-[328px] lg:w-[450px]"
+        >
+          <h3>
+            Расчет стоимости работ — одна из важнейших частей всего проекта
+          </h3>
+        </div>
+        <div
+          class="relative self-stretch text-sm leading-[140%] text-dark-gray md:w-[589px] lg:w-[813px] lg:text-lg"
+        >
+          <p>
+            Важнейшая часть формирования проектной документации — составление
+            сметы на вентиляцию, а именно закупки всех необходимых
+            комплектующих, их сборки в единую систему, установки, дальнейшей
+            проверке и настройки каналов вентилирования. При этом важно брать
+            в учёт действующие сборники с расценками, одобренные государством,
+            не забывать про рыночные цены и их изменение.<br />
+            <br />
+            Ниже будут представлены особенности составления смет монтажа,
+            отладки, введения в эксплуатацию систем вентиляции на сегодняшний
+            день, чтобы заказчик ощущал максимальную прозрачность
+            сотрудничества.
+          </p>
+        </div>
+      </article>
+
+      <!-- service -->
+      <section class="relative bg-light-bg">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Разновидности смет" subtitle="Из всего многообразия смет можно выделить 3 основных вида отчетных документов, с указанием стоимости комплектующих и работ:" }}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible"
+            id="ac-installation-service"
+          >
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !w-fit !h-auto">
+                {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="min-h-[430px] md:h-[543px] lg:h-[600px] h-full"  image="/images/704b067a77f6563a435c65a16c284c2a.png" title="Сводная или общая" description="Составляется “под ключ”, с указанием всех необходимых составных частей вентиляции, комплектующих, расходников, выполняемых работ. Сводная смета включает в себя несколько локальных списков."}}
+              </div>
+              <div class="swiper-slide !w-fit !h-auto">
+                {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="min-h-[430px] md:h-[543px] lg:h-[600px] h-full"  image="/images/bdb10c830116578d62d7d4d21937cea7.png" title="Объектная (локальная)" description="Такие сметы составляют для определенных участков вентиляции. При этом дополнение систем каким-либо оборудованием, требует составление новой локальной сметы."}}
+              </div>
+              <div class="swiper-slide !w-fit !h-auto">
+                {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="min-h-[430px] md:h-[543px] lg:h-[600px] h-full"  image="/images/80b1c64c1a3154ed7de992680eeb6119.png" title="Сметный расчет" description="Документ, в котором уточняются отдельные затраты"}}
+              </div>
+            
+            </div>
+
+            <div class="max-md:mt-[40px]">{{> pages}}</div>
+          </div>
+          <div
+            class="flex flex-col gap-[20px] text-xxs leading-[140%] lg:text-xs"
+          >
+            <p>
+              Стандартные сметы, которые составляются для монтажа вентиляции,
+              объединяют комплекс процедур по восстановлению несущих
+              конструкций, установку отдельных элементов вентиляции,
+              вспомогательного, контролирующего и защитного оборудования. Сметы
+              могут расширяться, зависимо от выполнения дополнительных работ,
+              которые не относятся к основным. При этом тонкости сотрудничества
+              оговариваются с заказчиком заранее, чтобы утвердить точную
+              конечную стоимость.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- design -->
+      <section
+        class="relative mb-[509px] overflow-hidden bg-black md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] pb-[80px] pt-[330px] text-white md:max-w-[1024px] md:py-[100px] md:pr-[522px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:pr-[600px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Как считается стоимость монтажных работ" }}
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch text-xxs md:gap-[30px] lg:gap-[40px] lg:text-xs"
+          >
+            <div class="text-xxs leading-[140%] lg:text-xs">
+              <p>
+                Классические сметы составляемые на монтаж вентиляции, ее
+                введения в эксплуатацию составляются по формуле:
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch rounded bg-dark-green p-[30px] text-sm"
+            >
+              <div class="relative self-stretch font-semibold leading-[100%]">
+                Ссмр=ПЗ+НР+ПН
+              </div>
+              <div
+                class="relative self-stretch text-4xs leading-[140%] text-dark-gray lg:text-3xs"
+              >
+                Каждую из частей формулы формирования сметы нужно рассмотреть
+                подробнее.
+              </div>
+            </div>
+            <div class="flex flex-col gap-[20px]">
+              <div class="text-base leading-[130%] lg:text-xl">
+                <h3>Накладные расходы</h3>
+              </div>
+              <div class="text-xxs leading-[140%] lg:text-xs">
+                <p>
+                  К данной группе затрат относятся расходы, которые идут на
+                  управление, обеспечение бесперебойного функционирования,
+                  организацию монтажных и строительных работ. Для их определения
+                  используются укрупненные показатели, действующие нормативы для
+                  строительных компаний, проценты от прямых затрат, которые
+                  фиксируются в федеральных стандартах.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[20px]">
+              <div class="text-base leading-[130%] lg:text-xl">
+                <h3>Прямые затраты</h3>
+              </div>
+              <div class="text-xxs leading-[140%] lg:text-xs">
+                <p>
+                  К данной группе расходов, которые относятся составление сметы
+                  монтажа вентиляции или выполнения различных строительных работ
+                  входят расходы на:
+                </p>
+              </div>
+              <ul
+                class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+              >
+                <li
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                >
+                  <img
+                    class="relative h-7 w-7"
+                    alt=""
+                    src="/images/frame-327.svg"
+                  />
+
+                  <p class="relative flex-1">
+                    цена на специализированное оборудование, составные элементы
+                    вентиляции, используемые инструменты, расходники;
+                  </p>
+                </li>
+                <li
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                >
+                  <img
+                    class="relative h-7 w-7"
+                    alt=""
+                    src="/images/frame-327.svg"
+                  />
+
+                  <p class="relative flex-1">
+                    выделение заработной платы рабочим;
+                  </p>
+                </li>
+                <li
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                >
+                  <img
+                    class="relative h-7 w-7"
+                    alt=""
+                    src="/images/frame-327.svg"
+                  />
+
+                  <p class="relative flex-1">
+                    обеспечение рабочего процесса используемого оборудования,
+                    его починку в случае поломок.
+                  </p>
+                </li>
+              </ul>
+              <div class="text-xxs leading-[140%] lg:text-xs">
+                <p class="mb-[10px]">
+                  Для расчета заработной платы используют формулу З=ТхЗмес/t. В
+                  ней “t” является обозначением среднего числа рабочих часов за
+                  месяц, “Змес” – средняя зарплата рабочего за месяц, T –
+                  обозначение трудоемкости работы.
+                </p>
+                <p class="mb-[10px]">
+                  Для расчета цены задействованных материалов, расходников
+                  умножается норма их расхода на рыночную стоимость.
+                </p>
+                <p>
+                  Затраты на эксплуатацию специализированного оборудования
+                  высчитываются по перемножению стоимость одного маш. часа на
+                  норму часов применения данной техники.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[20px]">
+              <div class="text-base leading-[130%] lg:text-xl">
+                <h3>Плановые накопления</h3>
+              </div>
+              <div class="text-xxs leading-[140%] lg:text-xs">
+                <p>
+                  Данный термин чаще всего обозначает сметную прибыль. Это
+                  затраты, которые не связаны с монтажными, строительными
+                  работами, однако, именно за счет них строительный процесс
+                  продолжается. К ним относятся необходимые вычеты по оплате
+                  налогов, получению соответствующих разрешений, затраты на
+                  материальное поощрение, развитие производственного процесса.
+                  Для определения плановых накоплений по монтажу вентиляции,
+                  используются нормативные документы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] text-white lg:flex-row lg:items-center lg:gap-[40px]"
+          >
+            <button class="button--filled-green">
+              <span>Бесплатная консультация</span>
+            </button>
+            <div
+              class="flex flex-row items-center justify-start gap-[20px] text-3xs text-dark-gray"
+            >
+              <div class="flex flex-row items-center justify-start gap-[10px]">
+                <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+                <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+              </div>
+              <div class="flex flex-col items-start justify-center gap-[8px]">
+                <div class="relative self-stretch leading-[140%]">
+                  Напишите или позвоните нам
+                </div>
+                <div
+                  class="flex flex-col items-end justify-start self-stretch text-base text-white"
+                >
+                  <div
+                    class="relative self-stretch font-semibold leading-[100%]"
+                  >
+                    +7 8332 76-05-05
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute right-0 top-0 h-[330px] w-[342px] md:h-[979px] md:w-[586px] lg:top-[403px] lg:h-[824px] lg:w-[759px]"
+        >
+          <img
+            class="h-full w-full object-cover object-left-bottom"
+            src="/images/082f3f8b2dbdb80435d38e094979fa7e.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <div
+        class="absolute right-[-30px] top-[5825px] z-10 h-[399px] w-[420px] md:top-[4996px] md:h-[545px] md:w-[499px] lg:top-[5314px] lg:h-[920px] lg:w-[705px]"
+      >
+        <img
+          class="h-full w-full object-cover object-left"
+          alt=""
+          src="/images/d9961bfc1169c491012f2f845ba1120c.png"
+        />
+      </div>
+
+      <!-- work process -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:pr-[261px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pr-[360px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Как мы работаем" subtitle="Как происходит процесс обслуживания кондиционеров после получения и обработки заявки:"}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible text-light-gray md:!hidden"
+          id="cctv-repair-process"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >01</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Оформление заявки
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      Сначала вам необходимо связаться с нашим сотрудником
+                      и указать, в каком именно техническом обслуживании
+                      возникла потребность. Наш специалист может задать
+                      уточняющие вопросы для прояснения обстоятельств.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >02</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Выезд специалиста
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      Следующий этап — выезд специалиста на объект. Мастер
+                      осмотрит здание и все помещения, чтобы установить тип
+                      кондиционирования, его состояние для прояснения перечня
+                      необходимых работ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >03</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Подписание договора
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      После выезда инженера мы согласовываем перечень
+                      необходимых работ, периодичность их оказания, цены и
+                      другие факторы. Всё это вносится в текст договора.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >04</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Обслуживание
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      В дальнейшем наши мастера выполняют оговорённые действия.
+                      Это может быть разовая ситуация или проведение
+                      технического обслуживания на постоянной основе
+                      с определённой регулярностью.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >05</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Сдача работы
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    Приемка выполненных работ во избежание недоразумений
+                    оформляется соответствующим актом.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{> pages}}
+        </div>
+
+        <div
+          class="hidden w-full flex-row items-start justify-start gap-[12px] py-0 pr-0 text-4xl text-light-gray md:flex md:flex-col md:gap-[20px] lg:text-6xl"
+        >
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >01</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Оформление заявки
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  Сначала вам необходимо связаться с нашим сотрудником
+                  и указать, в каком именно техническом обслуживании возникла
+                  потребность. Наш специалист может задать уточняющие вопросы
+                  для прояснения обстоятельств.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >02</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Выезд специалиста
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  Следующий этап — выезд специалиста на объект. Мастер осмотрит
+                  здание и все помещения, чтобы установить тип
+                  кондиционирования, его состояние для прояснения перечня
+                  необходимых работ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >03</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Подписание договора
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  После выезда инженера мы согласовываем перечень необходимых
+                  работ, периодичность их оказания, цены и другие факторы. Всё
+                  это вносится в текст договора.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >04</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Обслуживание
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  В дальнейшем наши мастера выполняют оговорённые действия.
+                  Это может быть разовая ситуация или проведение технического
+                  обслуживания на постоянной основе с определённой
+                  регулярностью.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >05</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Сдача работы
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                Приемка выполненных работ во избежание недоразумений оформляется
+                соответствующим актом.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- result -->
+      <section
+        class="relative mb-[80px] bg-black text-white md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Обратившись к нам вы получите" }}
+          <div class="relative w-full">
+            <div
+              class="swiper !ml-0 !overflow-visible"
+              id="air-conditioner-maintenance-result"
+            >
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide !w-fit !h-auto">
+                    {{> result-item  title="Качество работ" description="Опытные специалисты проводят работы строго по регламенту"}}
+                  </div>
+                  <div class="swiper-slide !w-fit !h-auto">
+                    {{> result-item title="Гарантии" description="Ответственно подходим к своим обязательствам и готовы поручиться за то, что делаем"}}
+                  </div>
+                  <div class="swiper-slide !w-fit !h-auto">
+                    {{> result-item title="Оборудование" description="У нас есть при себе всё необходимое. От вас ничего не требуется"}}
+                  </div>
+                  <div class="swiper-slide !w-fit !h-auto">
+                    {{> result-item title="Доступные цены" description="Узнать актуальные расценки можно в любой момент у наших сотрудников"}}
+                  </div>
+                </div>
+
+              <div class="max-md:mt-[40px]">{{> pages}}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- estimate calculation -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] md:flex-row-reverse md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <img
+          class="relative h-[360px] w-[360px] rounded object-cover md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          alt=""
+          src="/images/91dfe6d0d90fc48777497f36ea327844.png"
+        />
+
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch lg:gap-[40px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Как должна рассчитываться смета на вентиляцию" }}
+
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch text-xxs lg:gap-[40px] lg:text-xs"
+          >
+            <div class="text-xxs leading-[140%] lg:text-xs">
+              <p class="mb-[10px]">
+                Согласно негласным правилам, сметы на любые ремонтные работы
+                рассчитываются по действующим расценкам на демонтаж, а также
+                замену оборудования. Сметы на монтаж вентиляции составляются по
+                ценам из существующих подбором по монтажным работам.
+              </p>
+              <p class="mb-[10px]">
+                Основной государственный сборник расценок на ремонтные,
+                монтажные работы, обслуживание вентиляции – ГЭСН ч.20. Также для
+                составителей смет на вентиляции доступные такие документы, как
+                ФЕР и ТЕР, а именно – 20 части из этих документов.
+              </p>
+              <p class="mb-[10px]">
+                Сметы на монтаж насосного оборудования, крупных промышленных
+                вентиляторов, компрессоров составляются по сборникам ФЕРм-07,
+                ГЭСНм-07. Стоимость демонтажа вентиляции в различных зданиях, а
+                также воздуховодов, коробов, вентиляторов рассчитывается по
+                сборникам ФЕРр-65, ГЭСНр-65. Сметы на работы, связанные с
+                настройкой, запуском систем вентиляции составляются согласно
+                документам ФЕРм-03, ГЭСНп-03.
+              </p>
+              <p>
+                Общая стоимость выполнения работ по монтажу, введению в
+                эксплуатацию вентиляции напрямую зависит от множества факторов:
+              </p>
+            </div>
+            <ul
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+            >
+              <li
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <p class="relative flex-1">
+                  общая протяженность системы, ее сложность;
+                </p>
+              </li>
+              <li
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <p class="relative flex-1">количество отдельных элементов;</p>
+              </li>
+              <li
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <p class="relative flex-1">
+                  размеры составных частей, тип сечения вентиляции;
+                </p>
+              </li>
+              <li
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <p class="relative flex-1">
+                  количества и вида крепежных элементов;
+                </p>
+              </li>
+              <li
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <p class="relative flex-1">
+                  наличие дополнительных элементов для эффективной работы
+                  системы вентиляции (вентиляторов, решеток, диффузоров и т.д).
+                </p>
+              </li>
+            </ul>
+            <div class="text-xxs leading-[140%] lg:text-xs">
+              <p>
+                Наша компания предлагает комплекс услуг по проектированию и
+                монтажу различных по сложности вентиляционных систем, а также
+                дополнительного оборудования, автоматики. При этом составляются
+                максимально точные сметы, заключается официальный договор,
+                предоставляется гарантия на выполняемые работы.
+              </p>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Заказать расчет стоимости </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- price list -->
+      <section class="relative bg-light-bg">
+        <!-- prettier-ignore -->
+        <div
+      class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] text-xxs  md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+    >
+      
+      {{> title title="Цены на услуги" subtitle="Компания «ЭЛКОМ» — это безупречная репутация и высокий профессионализм специалистов, доступный прайс, быстрое реагирование на поступающие заявки и официальные гарантийные обязательства на услуги."}}
+      <div
+        class="flex w-full flex-col items-start justify-start gap-[10px] rounded"
+      >
+        {{#> table-row head="1"}}
+        <div class="flex-1">
+          Тип кондиционера
+        </div>
+        <div class=" flex-1 text-right">
+          Цена
+        </div>
+        {{/table-row}} {{#> table-row}}
+        <div class="flex-1">
+          Чистка домашнего кондиционера
+        </div>
+        <div class=" flex-1 text-right">
+          от 2400
+        </div>
+        {{/table-row}} {{#> table-row}}
+        <div class="flex-1">
+          Наружный блок
+        </div>
+        <div class=" flex-1 text-right">
+          от  3500
+        </div>
+        {{/table-row}} {{#> table-row}}
+        <div class="flex-1">
+          Внутренний блок настенного типа
+        </div>
+        <div class=" flex-1 text-right">
+          от  4900
+        </div>
+        {{/table-row}} {{#> table-row}}
+        <div class="flex-1">
+          Внутренний блок канального типа
+        </div>
+        <div class=" flex-1 text-right">
+          от  4900
+        </div>
+        {{/table-row}} {{#> table-row }}
+        <div class="flex-1">
+          Внутренний блок кассетного, потолочного типа типа
+        </div>
+        <div class=" flex-1 text-right">
+          от  4900
+        </div>
+        {{/table-row}} {{#> table-row}}
+        <div class="flex-1">
+          Заправка фреоном
+        </div>
+        <div class=" flex-1 text-right">
+          от  4900
+        </div>
+        {{/table-row}}
+      </div>
+      <div
+      class="leading-[140%] flex flex-row items-center justify-start gap-[20px] self-stretch text-xxs lg:text-xs"
+      >
+        <p class="relative flex-1 ">
+          Своевременные услуги по поддержанию работоспособности климатического оборудования — гарант надежной его работы на долгие годы. Мы предлагаем комплексное обслуживание, стоимость которого привлекательна для наших клиентов. Цены на услуги фиксированы и не изменятся после оказания их нашим сотрудником. Несмотря на лояльность прайса, вы можете не сомневаться в 100% качестве наших работ.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-start justify-start gap-[20px] self-stretch text-border-color md:flex-row"
+      >
+        <button class="button--filled-green max-md:w-full">
+          <span> Заказать услугу </span>
+        </button>
+        <button class="button--outlined-green text-center text-black max-md:w-full">
+          <span> Получить консультацию </span>
+        </button>
+      </div>
+      
+    </div>
+      </section>
+
+      <!-- licence -->
+      <section class="relative bg-black">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] text-white md:max-w-[1024px] md:flex-row md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <div class="md:max-w-[328px] lg:max-w-[450px]">
+            {{> title title="Имеем лицензии и состоим в СРО"}}
+          </div>
+          <div class="flex w-full flex-col gap-[20px] self-stretch md:flex-row">
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Сертификат ISO
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Допуск СРО монтаж
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Лицензия МЧС
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews  -->
+      <section class="relative bg-light-bg">
+        <div
+          class="relative mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Нам доверяют" subtitle="Клиенты, которые выбрали нас — довольны и рекомендуют!" buttons="1"}}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible text-xxs"
+            id="reviews"
+          >
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                text="Хочу выразить огромную благодарность специалистам компании «Элком» за качественную установку вентиляционной системы в моем доме. Все работы были выполнены профессионально и в соответствии со всеми нормами и требованиями.В результате у меня теперь всегда свежий и чистый воздух в доме, что очень важно для здоровья моей семьи."
+                name="Ерёмин Алёша, 35 годиков" 
+              }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                
+                text=" Результат превзошёл все мои ожидания! Качество работы высочайшее, специалисты компании проявили профессионализм на всех этапах работы — от проектирования до монтажа оборудования. Теперь у меня в квартире всегда свежий и чистый воздух, а мои дети реже болеют — это самое главное для меня! Спасибо огромное за качественную и профессиональную работу!"
+                name="Вячеслав, Компания «Рога и копыта»"
+              }} 
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                class="swiper-slide"
+                text="Обратился в компанию «Элком» для установки системы приточно-вытяжной вентиляции в офисе. Менеджеры компании предложили оптимальный вариант системы, учитывая все наши требования. Работы были выполнены очень быстро и качественно. Теперь у нас в офисе всегда свежий воздух, а рабочий процесс стал более комфортным."
+                name="Алевтина Квакушина, 23 июня 2023"
+              }}
+              </div>  
+            </div>
+
+            {{> pages}}
+          </div>
+          <button class="button--outlined-gray w-full">
+            <span>Все отзывы</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- partners -->
+      <section
+        class="relative mb-[80px] box-border bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[480px] flex-col items-start justify-center gap-[30px] px-[60px] pb-[50px] md:max-w-[1366px] md:gap-[40px] md:px-[171px] md:pb-[50px] lg:max-w-[1920px] lg:px-[255px] lg:pb-[120px]"
+        >
+          <div
+            class="flex flex-row items-end justify-start gap-[30px] self-stretch"
+          >
+            <div
+              class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+            >
+              <div
+                class="relative w-[200px] self-stretch font-medium leading-[110%] md:w-full"
+              >
+                <h2 class="m-0">Наши партнёры</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative h-full w-full mix-blend-multiply md:hidden">
+            <div class="swiper !ml-0 w-full !overflow-visible" id="partners">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[53px] w-[53px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner1.png"
+                    />
+
+                    <img
+                      class="relative h-9 w-[75px] shrink-0 overflow-hidden mix-blend-multiply"
+                      alt=""
+                      src="/images/partner2.svg"
+                    />
+
+                    <img
+                      class="relative h-[34px] w-[125px]"
+                      alt=""
+                      src="/images/partner3.svg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-10 w-[63px]"
+                      alt=""
+                      src="/images/partner4.svg"
+                    />
+                    <img
+                      class="relative h-[30px] w-[117px] object-cover"
+                      alt=""
+                      src="/images/partner5.png"
+                    />
+                    <img
+                      class="relative h-[57px] w-8 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner6.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[41px] w-[93px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner7.png"
+                    />
+                    <img
+                      class="relative h-[35px] w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner8.png"
+                    />
+                    <img
+                      class="relative h-5 w-[120px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner9.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-10 w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner10.png"
+                    />
+                    <img
+                      class="relative h-[30px] w-[123px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner11.png"
+                    />
+                    <img
+                      class="relative h-[35px] w-[59px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner12.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[43px] w-[69px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner13.png"
+                    />
+                    <img
+                      class="relative h-[47px] w-[58px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner14.png"
+                    />
+                    <img
+                      class="relative h-[42px] w-16 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner15.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[18px] w-[152px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner16.png"
+                    />
+                    <img
+                      class="relative h-[54px] w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner17.png"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="max-md:mt-[-6px]">{{> pages}}</div>
+            </div>
+          </div>
+
+          <div
+            class="hidden w-full flex-row items-center justify-start gap-[40px] md:flex md:flex-col md:gap-[40px]"
+          >
+            <div
+              class="flex w-full flex-row items-center justify-start max-md:mr-[740px] max-md:gap-[40px] md:justify-between"
+            >
+              <img
+                class="relative h-[53px] w-[53px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner1.png"
+              />
+
+              <img
+                class="relative h-9 w-[75px] shrink-0 overflow-hidden"
+                alt=""
+                src="/images/partner2.svg"
+              />
+
+              <img
+                class="relative h-[34px] w-[125px]"
+                alt=""
+                src="/images/partner3.svg"
+              />
+
+              <img
+                class="relative h-10 w-[63px]"
+                alt=""
+                src="/images/partner4.svg"
+              />
+
+              <img
+                class="relative h-[30px] w-[117px] object-cover"
+                alt=""
+                src="/images/partner5.png"
+              />
+
+              <img
+                class="relative h-[57px] w-8 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner6.png"
+              />
+
+              <img
+                class="relative h-[41px] w-[93px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner7.png"
+              />
+
+              <img
+                class="relative h-[35px] w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner8.png"
+              />
+
+              <img
+                class="relative h-5 w-[120px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner9.png"
+              />
+            </div>
+
+            <div
+              class="flex w-full flex-row items-center justify-start max-md:gap-[40px] md:justify-between"
+            >
+              <img
+                class="relative h-10 w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner10.png"
+              />
+
+              <img
+                class="relative h-[30px] w-[123px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner11.png"
+              />
+
+              <img
+                class="relative h-[35px] w-[59px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner12.png"
+              />
+
+              <img
+                class="relative h-[43px] w-[69px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner13.png"
+              />
+
+              <img
+                class="relative h-[47px] w-[58px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner14.png"
+              />
+
+              <img
+                class="relative h-[42px] w-16 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner15.png"
+              />
+
+              <img
+                class="relative h-[18px] w-[152px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner16.png"
+              />
+
+              <img
+                class="relative h-[54px] w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner17.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- prettier-ignore -->
+      {{#> specialist }}
+      <div class="flex flex-col gap-[20px]">
+        <div class="text-xxs leading-[140%] lg:text-xs">
+          <p>
+            На сегодняшний день сметы на вентиляцию рассчитываются по одному из
+            нескольких способов:
+          </p>
+        </div>
+        <ul
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <li
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <p class="relative flex-1">
+              <b>Базисно-компенсационный</b> – с помощью данного способа можно
+              решить задачу сметного расчета, если базисная цена изменяется
+              согласно тарифам и стоимости строительных работ.
+            </p>
+          </li>
+          <li
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <p class="relative flex-1">
+              <b>Базисно-индексный</b> – данный метод предполагает перемножение
+              базовой стоимости всех пунктов сметы на требуемый индекс. На
+              основе полученных данных осуществляется расчет конечной цены.
+            </p>
+          </li>
+          <li
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <p class="relative flex-1">
+              <b>Ресурсно-индексный</b> – по этому способу осуществляется
+              дополнительная индексация затрата на строительные и монтажные
+              работы, при этом учитывается базисная стоимость.
+            </p>
+          </li>
+          <li
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <p class="relative flex-1">
+              <b>Ресурсный</b> – эффективный метод для расчета сметы на
+              установку вентиляции в данный момент времени. При этом за основу
+              берут текущие расценки, которые распространяются на затраты по
+              закупке оборудования, материалов, расходников, выполнение работ.
+            </p>
+          </li>
+        </ul>
+      </div>
+      {{/specialist}}
+
+      <!-- prettier-ignore -->
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

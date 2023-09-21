@@ -1,0 +1,64 @@
+<div
+  class="flex w-[360px] flex-col items-start justify-start gap-[30px] self-stretch overflow-hidden rounded bg-white max-md:shadow-base md:w-[676px] md:flex-row md:items-center md:gap-[20px] lg:w-[930px] lg:gap-[30px]"
+>
+  <img
+    class="relative h-[150px] w-[150px] rounded object-cover mix-blend-normal"
+    alt=""
+    src={{image}}
+  />
+
+  <div
+    class="flex w-full flex-col max-md:px-[30px] max-md:py-0 lg:flex-row {{#if without-price}}justify-between{{else}}gap-[10px] lg:gap-[30px]{{/if}}"
+  >
+    <span class="relative flex leading-[140%] lg:max-w-[390px]">
+      {{title}}
+    </span>
+    <div
+      class="flex flex-row items-center justify-between self-stretch text-4xs md:justify-start md:gap-[20px] lg:justify-start lg:gap-[30px] lg:text-3xs"
+    >
+      <div class="flex flex-row items-start justify-start gap-[5px]">
+        <button
+          class="flex  w-10 bg-minus h-[40px] lg:h-[46px]"
+        ></button>
+
+        <div
+          class="box-border flex w-[50px] flex-row items-center justify-center rounded bg-light-bg px-5 py-3"
+        >
+          <input
+            class="relative w-full leading-[140%] opacity-[0.3]"
+            placeholder="1"
+          />
+        </div>
+        <button class="flex h-[40px] w-10 bg-plus lg:h-[46px]">
+        </button>
+      </div>
+      {{#if new-price}}
+        <div class="flex flex-col items-end ">
+          <div class="relative leading-[140%] text-left text-red [text-decoration:line-through]">
+            {{old-price}}
+          </div>
+          <div
+            class="relative text-sm font-semibold leading-[100%] text-left text-black lg:text-lg"
+          >
+            {{new-price}}
+          </div>
+        </div>
+      {{else}}
+        <div class="flex flex-col items-end text-black">
+          <div class="relative text-sm font-semibold leading-[100%] lg:text-lg">
+            {{old-price}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+  <button
+    class="relative flex h-[30px] w-full items-center justify-center bg-light-bg py-[11px] md:h-[150px] md:max-w-[30px] md:py-0"
+  >
+    <img
+      class="overflow-hidden object-cover"
+      alt=""
+      src="/images/Vector 37.svg"
+    />
+  </button>
+</div>

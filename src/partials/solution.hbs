@@ -1,0 +1,39 @@
+<div
+  class="group relative h-[460px] w-[360px] overflow-hidden rounded bg-white shadow-base md:h-[460px] lg:h-[570px]
+    {{{class}}}"
+>
+
+  <img
+    class="absolute top-[calc(100%_-_190px)] h-full w-full object-cover duration-300 group-hover:top-0 group-hover:bg-light-gray group-hover:opacity-[0.15]"
+    alt=""
+    src="/images/66.svg"
+  />
+
+  <div
+    class="absolute bottom-0 object-cover duration-300 group-hover:scale-110"
+  >
+    <img class="h-full w-full scale-150" alt="" src={{image}} />
+  </div>
+
+  <div
+    class="absolute left-0 right-0 top-0 box-border flex w-full flex-col items-start justify-start gap-[20px] p-10 lg:p-[60px]"
+  >
+    <div
+      class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+    >
+      <p>
+        {{{title}}}
+      </p>
+    </div>
+    <div
+      class="relative m-0 self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+    >
+      {{text}}
+    </div>
+    <div
+      class="relative hidden self-stretch bg-green-gradient bg-clip-text text-xs leading-[140%] text-transparent duration-300 group-hover:block"
+    >
+      <a href="#">Рассчет цены</a>
+    </div>
+  </div>
+</div>

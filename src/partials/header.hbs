@@ -1,0 +1,395 @@
+{{> book-call-popup}}
+{{> thanks-popup}}
+<header
+  class="{{class}}
+    relative flex w-full flex-col items-center justify-start gap-[20px] text-3xs text-white md:gap-[30px] lg:gap-[40px] lg:text-xs"
+>
+
+  <nav class="w-full bg-black">
+    <div
+      class="mx-auto flex w-[360px] flex-row items-start justify-between self-stretch text-3xs max-lg:h-[15px] md:w-[1024px] lg:w-[1410px] lg:py-5"
+    >
+      <ul class="hidden flex-row items-start justify-start gap-[30px] lg:flex">
+        <li class="flex flex-row items-center justify-start gap-[5px]">
+          <a href="#">
+            <div class="relative font-medium leading-[120%]">О компании</div>
+            <img class="relative h-[19px] w-2.5" alt="" src="/images/3.svg" />
+          </a>
+        </li>
+        <li class="relative font-medium leading-[120%]"><a
+            href="#"
+          >Портфолио</a></li>
+        <li class="relative font-medium leading-[120%]">
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li class="relative font-medium leading-[120%]">
+          <a href="#">Оформление заказа</a>
+        </li>
+      </ul>
+      <div
+        class="hidden flex-row items-end justify-end gap-[30px] text-white lg:flex"
+      >
+        <div class="relative font-medium leading-[120%]">
+          info@smk-l.com
+        </div>
+        <div class="relative font-medium leading-[120%]">
+          г. Киров, Студенческий проезд 23
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="mx-auto flex w-[360px] flex-col items-center justify-start gap-[20px] md:w-[1024px] md:gap-[30px] lg:w-[1410px] lg:gap-[40px]"
+  >
+    <div
+      class="relative flex w-full flex-row items-center justify-between text-right text-sm text-black md:static md:text-start md:text-xs lg:justify-start lg:gap-[30px]"
+    >
+      <img
+        class="relative h-[52px] w-[52px] md:hidden md:h-[52px] md:w-[210px]"
+        alt=""
+        src="/images/vector.svg"
+      />
+
+      <img
+        class="relative hidden h-[52px] w-[210px] md:block"
+        alt=""
+        src="/images/4.svg"
+      />
+
+      <div class="relative hidden flex-1 leading-[140%] lg:block">
+        <p class="m-0">
+          Проектирование, поставка,<br />монтаж и обслуживание инженерных систем
+        </p>
+      </div>
+      <div
+        class="flex flex-row items-center justify-start gap-[40px] text-sm md:gap-[30px] lg:text-lg"
+      >
+        <div class="flex flex-col items-end justify-start gap-[5px]">
+          <div class="relative font-semibold leading-[100%]">
+            +7 8332 76-05-05
+          </div>
+          <div
+            class="relative hidden text-4xs font-medium leading-[120%] md:block lg:text-3xs"
+          >
+            Мы работаем в будни с 08:30 до 17:30
+          </div>
+        </div>
+        <button
+          class="relative hidden h-[50px] w-[50px] flex-row items-center justify-center gap-[10px] text-center text-5xs md:flex"
+        >
+          <img class="relative z-[0] h-10 w-10" alt="" src="/images/5.svg" />
+
+          <div
+            class="absolute right-[-8px] top-[-8px] z-[1] mx-[!important] my-0 box-border flex h-5 w-5 flex-col items-center justify-center rounded bg-light-gray p-2.5"
+          >
+            <div class="relative font-medium leading-[100%]">2</div>
+          </div>
+        </button>
+        <div
+          class="flex flex-row items-center justify-start gap-[10px] text-xxs text-white lg:text-xs"
+        >
+          <button
+            class="button--filled-green hidden md:flex"
+            id="book-call-button"
+          >
+            <span> Заказать звонок </span>
+          </button>
+          <button
+            class="z-[2] flex h-[50px] w-[50px] flex-row items-center justify-center rounded bg-dark-gray hover:bg-dark-green-gradient md:h-[58px] md:w-[58px] lg:hidden"
+            id="menu-button"
+          >
+            <img
+              class="relative h-6 w-6"
+              alt=""
+              src="/images/property-1menu-property2light.svg"
+            />
+          </button>
+          <div
+            class="absolute right-[-8px] top-[-7px] z-[3] mx-[!important] my-0 box-border flex h-5 w-5 flex-col items-center justify-center rounded bg-light-gray p-2.5 text-center text-5xs text-black md:hidden"
+          >
+            <div class="relative font-medium leading-[100%]">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="box-border hidden w-full flex-row items-center justify-start gap-[30px] rounded bg-dark-green px-[30px] py-5 text-xxs md:flex lg:py-[24px] lg:text-xs"
+    >
+      <div class="flex flex-row items-center justify-center gap-[10px]">
+        <div class="relative font-medium leading-[100%]">
+          <a href="#">Каталог</a>
+        </div>
+        <img class="relative h-[18px] w-[18px]" alt="" src="/images/6.svg" />
+      </div>
+      <div class="flex flex-row items-center justify-center gap-[10px]">
+        <div class="relative font-medium leading-[100%]">
+          <a href="#">Наши услуги</a>
+        </div>
+        <img class="relative h-[18px] w-[18px]" alt="" src="/images/6.svg" />
+      </div>
+      <div class="relative hidden font-medium leading-[100%] lg:block">
+        <a href="#"> Вентиляция </a>
+      </div>
+      <div class="relative hidden font-medium leading-[100%] lg:block">
+        <a href="#"> Проектирование </a>
+      </div>
+      <div class="relative hidden font-medium leading-[100%] lg:block">
+        <a href="#"> Контакты </a>
+      </div>
+      <div
+        class="flex flex-row items-center justify-end gap-[30px] py-0 pl-[327px] pr-0 lg:pl-[213px]"
+      >
+        <div class="relative font-medium leading-[100%]">
+          <a href="#"> Калькулятор воздуховодов </a>
+        </div>
+        <div
+          class="flex flex-row items-center justify-end gap-[10px] text-right"
+        >
+          <img class="relative h-6 w-6" alt="" src="/images/7.svg" />
+          <a href="#">
+            <div class="relative font-medium leading-[100%]">Поиск</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div
+  class="font-base fixed top-0 z-50 hidden h-[stretch] w-full overflow-y-auto overscroll-contain bg-black text-right text-sm text-white"
+  id="menu"
+>
+  <div
+    class="mx-auto flex w-full max-w-[360px] flex-col items-start justify-start md:max-w-[1024px]"
+  >
+    <section
+      class="box-border flex w-full flex-col items-center justify-start gap-[20px] px-0 pb-0 pt-9"
+    >
+      <div class="flex w-full flex-row items-center justify-between">
+        <img
+          class="relative h-[52px] w-[52px]"
+          alt=""
+          src="/images/vector.svg"
+        />
+
+        <div class="relative font-semibold leading-[100%]">
+          +7 8332 76-05-05
+        </div>
+        <button
+          class="flex h-[50px] w-[50px] flex-row items-center justify-center rounded border-[1px] border-solid border-border-color p-[16px] hover:bg-dark-gray md:h-[58px] md:w-[58px] lg:hidden"
+          id="close-button"
+        >
+          <img class="relative h-6 w-6" alt="" src="/images/icon-cross.svg" />
+        </button>
+      </div>
+    </section>
+    <section
+      class="box-border flex w-full flex-col items-start justify-start gap-[30px] pb-[60px] pt-[30px] text-left text-4xs"
+    >
+      <div
+        class="flex flex-col items-start justify-start gap-[30px] self-stretch"
+      >
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+        <div
+          class="tabs__container--mobile group flex w-full flex-col gap-[30px]"
+        >
+          <button class="tabs__button--mobile flex w-full self-stretch">
+            <div
+              class="relative flex-1 font-medium leading-[120%] group-[.open]:text-green"
+            >
+              <p>Навигация</p>
+            </div>
+            <div
+              class="h-[19px] w-2.5 bg-header bg-no-repeat duration-300 group-[.open]:rotate-180 group-[.open]:bg-center"
+            ></div>
+          </button>
+          <div
+            class="tabs__item--mobile hidden w-full flex-col items-start justify-start gap-[30px] self-stretch group-[.open]:flex"
+          >
+            <div
+              class="relative h-px self-stretch bg-light-bg opacity-[0.2]"
+            ></div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Вентиляция</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кондиционирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кабельные системы</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование воздуховодов</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+        <div
+          class="tabs__container--mobile group flex w-full flex-col gap-[30px]"
+        >
+          <button class="tabs__button--mobile flex w-full self-stretch">
+            <div
+              class="relative flex-1 font-medium leading-[120%] group-[.open]:text-green"
+            >
+              <p>Каталог</p>
+            </div>
+            <div
+              class="h-[19px] w-2.5 bg-header bg-no-repeat duration-300 group-[.open]:rotate-180 group-[.open]:bg-center"
+            ></div>
+          </button>
+          <div
+            class="tabs__item--mobile hidden w-full flex-col items-start justify-start gap-[30px] self-stretch group-[.open]:flex"
+          >
+            <div
+              class="relative h-px self-stretch bg-light-bg opacity-[0.2]"
+            ></div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Вентиляция</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кондиционирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кабельные системы</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование воздуховодов</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+        <div
+          class="tabs__container--mobile group flex w-full flex-col gap-[30px]"
+        >
+          <button class="tabs__button--mobile flex w-full self-stretch">
+            <div
+              class="relative flex-1 font-medium leading-[120%] group-[.open]:text-green"
+            >
+              <p>Услуги</p>
+            </div>
+            <div
+              class="h-[19px] w-2.5 bg-header bg-no-repeat duration-300 group-[.open]:rotate-180 group-[.open]:bg-center"
+            ></div>
+          </button>
+          <div
+            class="tabs__item--mobile hidden w-full flex-col items-start justify-start gap-[30px] self-stretch group-[.open]:flex"
+          >
+            <div
+              class="relative h-px self-stretch bg-light-bg opacity-[0.2]"
+            ></div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Вентиляция</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кондиционирование</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Кабельные системы</a>
+            </div>
+            <div
+              class="relative flex-1 font-medium leading-[120%] text-dark-gray"
+            >
+              <a href="#">Проектирование воздуховодов</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+        <div class="flex w-full font-medium leading-[120%]">
+          <a href="#">Калькулятор воздуховодов</a>
+        </div>
+
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+        <div class="flex w-full font-medium leading-[120%]">
+          <a href="#">Поиск</a>
+        </div>
+
+        <div class="relative h-px self-stretch bg-light-bg opacity-[0.2]"></div>
+
+      </div>
+
+      {{! buttons }}
+      <div
+        class="flex flex-col items-start justify-start gap-[10px] self-stretch text-xxs"
+      >
+        <button
+          class="flex w-full flex-row items-center justify-center gap-[10px] rounded bg-dark-gray p-0 px-[30px] py-5"
+        >
+          <div class="relative font-medium leading-[100%]">
+            Ваша корзина
+          </div>
+          <div
+            class="box-border flex h-5 w-5 flex-col items-center justify-center rounded bg-light-gray p-2.5 text-center text-5xs text-light-gray"
+          >
+            <div class="relative font-medium leading-[100%] text-black">2</div>
+          </div>
+        </button>
+        <button class="button--filled-green w-full">
+          <span>
+            Заказать звонок
+          </span>
+        </button>
+      </div>
+
+      {{! address }}
+      <div
+        class="flex flex-col items-start justify-start gap-[20px] text-dark-gray"
+      >
+        <div class="relative font-medium leading-[120%]">
+          г. Киров, Студенческий проезд 23
+        </div>
+        <div class="relative font-medium leading-[120%]">
+          Мы работаем в будни с 08:30 до 17:30
+        </div>
+        <div class="relative font-medium leading-[120%]">
+          info@smk-l.com
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+  

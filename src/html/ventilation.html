@@ -1,0 +1,1341 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Вентиляция</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Вентиляция
+        </a>
+      </section>
+
+      {{> main-title title-text="Вентиляция"}}
+
+      <div
+        class="absolute right-0 top-[307px] z-10 hidden h-[786px] w-[499px] md:flex lg:top-[419px] lg:h-[1110px] lg:w-[705px]"
+      >
+        <img
+          class=""
+          src="/images/201b80f0592dda68ad59605c9d622592.png"
+          alt=""
+        />
+      </div>
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:gap-[40px] md:pr-[435px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[60px] lg:pr-[600px] lg:text-xs"
+      >
+        <div class="relative self-stretch text-sm leading-[140%] lg:text-lg">
+          <p class="mb-[24px]">
+            Проектирование, подбор оборудования и установка под ключ систем
+            вентиляции в Кирове от профессионалов с опытом работы более 10 лет
+            для любых помещений.
+          </p>
+          <p>
+            Компания "Элком" предоставляет своим клиентам индивидуальную и
+            прозрачную схему работы для решения задач любой сложности. Имея
+            обширный опыт за плечами и большое портфолио реализованных проектов
+            мы можем решать задачи любой сложности, будь то простой монтаж
+            домашних кондиционеров или же работа по проекту вентиляционных
+            систем крупного предприятия.
+          </p>
+        </div>
+        <div
+          class="flex w-full flex-col items-start justify-start gap-[30px] text-base md:gap-[40px] lg:text-xl"
+        >
+          <div class="relative flex font-medium leading-[130%]">
+            <p>
+              Производим воздуховоды с 2004 г.<br />Предложим лучшее техническое
+              решение
+            </p>
+          </div>
+          <div
+            class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible"
+          >
+            <div
+              class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:text-xs"
+            >
+              <!-- prettier-ignore -->
+              {{> advantage class="w-[190px] lg:w-[230px]" small="1" image="/images/icon-stocks.svg" text="Успешно реализовано более 200 проектов"}}
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-pc.svg" text="Общая длина проложенной вентиляции более 120км"}}
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-checkmark.svg" text="Соответствие все требованиям ГОСТа, СНиПов, СП — мы состоим в СРО"}}
+            </div>
+          </div>
+          <button class="button--filled-green">
+            <span> Заказать монтаж вентиляции </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Предлагаем услуги" subtitle="Перечень продукции нашего производства, под заказ изготовим воздуховоды по вашим черетежам" buttons="1"}}
+
+        <div
+          class="swiper !ml-0 w-[360px] !overflow-visible md:w-[676px] lg:w-[930px]"
+          id="cable-systems-offer"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper w-full">
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation1 bg-cover h-full w-full" 
+                title="Монтаж воздуховодов"
+                description="Монтаж систем любой сложности под ключ"
+              }}
+              
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation2 bg-cover h-full w-full" 
+                title="Проектирование вентиляции"
+                description="Позволяет не тратить средства на установку нового оборудования"
+              }}
+              
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation3 bg-cover h-full w-full"
+                title="Монтаж и установка системы вентиляции"
+                description="Произведем монтаж в самые короткие сроки с гарантией оборудования"
+              }}
+              
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation4 bg-cover h-full w-full"
+                title="Обслуживание вентиляции"
+                description="Планово-профилактические осмотры. Ремонт и диагностика оборудования внутри системы"
+              }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation5 bg-cover h-full w-full"
+                title="Вентиляция офисных помещений"
+                description="Проведение вентиляции офисных помещений любой планировки и размера"
+              }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation6 bg-cover h-full w-full"
+                title="Вентиляция производственных помещений"
+                description="Грамотно выполненная вентиляция обеспечивает чистоту и безопасность воздуха"
+              }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> duct-production-item
+                imageClass="bg-ventilation7 bg-cover h-full w-full"
+                title="Смета на вентиляцию"
+                description="Сводная, объектная или сметный расчет"
+              }}
+            </div>
+          </div>
+          {{> pages}}
+        </div>
+      </section>
+
+      <!-- mounting -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] text-xxs md:mb-[100px] md:max-w-[1024px] md:py-[100px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:text-xs"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Куда будем монтировать вентиляцию" subtitle="В нашем проектном отделе трудятся специалисты, успешно выполнющие работы по проектированию даже самых сложных в техническом отношении объектов:"}}
+
+          <div
+            class="flex flex-col items-start justify-start gap-[30px] self-stretch"
+          >
+            <div class="relative h-full w-full md:hidden">
+              <div
+                class="swiper !ml-0 !overflow-visible"
+                id="ventilation-mounting"
+              >
+                <!-- prettier-ignore -->
+                <div class="swiper-wrapper flex w-max min-w-0 flex-row"
+              >
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                    title="Частный дом"
+                  }}
+                </div>
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                    title="В автосервис"
+                  }}
+                </div>
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                    title="В квартиру"
+                  }}
+                </div>
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                    title="В бассейн"
+                  }}
+                </div>
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                    title="Гараж"
+                  }}
+                </div>
+                <div class="swiper-slide">
+                  {{> design-item
+                    image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                    title="Офис"
+                  }}
+                </div>
+              </div>
+
+                {{> pages}}
+              </div>
+            </div>
+            <div
+              class="hidden flex-col items-start justify-start gap-[30px] self-stretch md:flex lg:gap-[40px]"
+            >
+              <div
+                class="flex flex-row items-start justify-start gap-[12px] md:grid md:grid-cols-3 md:gap-[20px] lg:grid-cols-4 lg:gap-[30px]"
+              >
+                <!-- prettier-ignore -->
+                {{> design-item
+                image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                title="Частный дом"
+              }}
+              {{> design-item
+                image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                title="В автосервис"
+              }}
+              {{> design-item
+                image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                title="В квартиру"
+              }}
+              {{> design-item
+                image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                title="В бассейн"
+              }}
+              {{> design-item
+                image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                title="Гараж"
+              }}
+              {{> design-item
+                image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                title="Офис"
+              }}
+                <span class="hidden lg:flex">
+                  {{> design-item
+                  image="/images/6368356c51e87ef22017577636c8f240.png"
+                  title="Магазин" }}
+                </span>
+
+                <span class="hidden lg:flex">
+                  {{> design-item
+                  image="/images/d60385e918ea2ec95bfd8f16d4e011f4.png"
+                  title="Склад" }}
+                </span>
+              </div>
+              {{> pages}}
+            </div>
+            <div
+              class="grid w-full grid-cols-1 gap-[4px] md:grid-cols-2 md:gap-[20px] lg:grid-cols-3 lg:gap-[10px] lg:gap-x-[30px]"
+            >
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px] lg:hidden"
+              >
+                <p>Магазины</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px] lg:hidden"
+              >
+                <p>Склады</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Торговые центры</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Рестораны и кафе</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Гостиницы и отели</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Цеха и мастерские</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Больницы и клиники</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Кинотеатры и театры</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Спортивные сооружения</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Музеи и выставочные залы</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Школы и учебные заведения</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Промышленные помещения</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Баня</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Бомбоубежище</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Котельная</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Лаборатория</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Баня</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Магазин</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Сауна</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Серверная</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Сварочный цех</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:px-[60px] md:py-[20px]"
+              >
+                <p>Покрасочная камера</p>
+              </button>
+              <button
+                class="flex flex-col items-start justify-start self-stretch bg-white px-10 py-[18px] font-medium leading-[100%] shadow-base md:col-span-2 md:px-[60px] md:py-[20px] lg:col-span-1"
+              >
+                <p>Детский сад</p>
+              </button>
+            </div>
+          </div>
+          <button class="button--filled-green max-md:w-full">
+            <span> Заказать разработку проекта </span>
+          </button>
+        </div>
+      </section>
+
+      <div
+        class="absolute left-0 top-[4271px] z-10 hidden h-[935px] w-[499px] md:flex lg:top-[3950px] lg:h-[1320px] lg:w-[705px]"
+      >
+        <img
+          class=""
+          src="/images/64e0729936b64126d17d01b1d6d3a24e.png"
+          alt=""
+        />
+      </div>
+
+      <!-- ventilation systems -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:pl-[435px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pl-[600px] lg:text-xs"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Системы общеобменной и местной вентиляции" subtitle="Системы вентиляции предусмотрены во всех современных зданиях. Наличие, назначение, тип системы вентиляции определяется проектной документацией."}}
+
+        <div
+          class="flex flex-col items-start justify-start gap-[10px] self-stretch rounded text-xxs lg:text-xs"
+        >
+          <button
+            class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+          >
+            <div class="relative flex-1 leading-[140%]">
+              <p>Естественная система вентиляции</p>
+            </div>
+            <img
+              class="relative h-7 w-3.5"
+              alt=""
+              src="/images/green-plus.svg"
+            />
+          </button>
+          <button
+            class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+          >
+            <div class="relative flex-1 leading-[140%]">
+              <p>Механическая (принудительная)</p>
+            </div>
+            <img
+              class="relative h-7 w-3.5"
+              alt=""
+              src="/images/green-plus.svg"
+            />
+          </button>
+          <button
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] text-base text-green shadow-base md:px-10 md:py-[30px] lg:text-xl"
+          >
+            <div
+              class="flex flex-row items-center justify-between self-stretch"
+            >
+              <div class="relative flex-1 font-medium leading-[130%]">
+                <p>Местная система вентиляции</p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-minus.svg"
+              />
+            </div>
+            <div
+              class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+            >
+              <p>
+                Местная вытяжная вентиляция: предназначена для удаления воздуха
+                от мест с наибольшей концентрацией вредных примесей (газов,
+                дыма, пыли и выделяющегося от оборудования тепла). Наибольший
+                эффект достигается, когда места выделения вредных выбросов
+                локализованы, а значит можно предотвратить распространение
+                их по всему помещению. К элементам местной вытяжной вентиляции
+                относятся вытяжные шкафы, зонты, завесы, кожухи у станков и др.
+                Местная приточная вентиляция: предназначена для подачи свежего
+                очищенного и, при необходимости, подогретого или охлаждённого
+                воздуха к рабочим местам (так называемое воздушное душирование
+                рабочих мест)
+              </p>
+            </div>
+          </button>
+          <button
+            class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+          >
+            <div class="relative flex-1 leading-[140%]">
+              <p>Общеобменная система вентиляции</p>
+            </div>
+            <img
+              class="relative h-7 w-3.5"
+              alt=""
+              src="/images/green-plus.svg"
+            />
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-start justify-center gap-[20px] text-white lg:flex-row lg:items-center lg:gap-[40px]"
+        >
+          <button class="button--filled-green">
+            <span> Бесплатная консультация </span>
+          </button>
+          <div
+            class="flex flex-row items-center justify-start gap-[20px] text-3xs text-dark-gray"
+          >
+            <div class="flex flex-row items-center justify-start gap-[10px]">
+              <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+              <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+            </div>
+            <div class="flex flex-col items-start justify-center gap-[8px]">
+              <div class="relative self-stretch leading-[140%]">
+                Напишите или позвоните нам
+              </div>
+              <div
+                class="flex flex-col items-end justify-start self-stretch text-base text-black"
+              >
+                <div class="relative self-stretch font-semibold leading-[100%]">
+                  +7 8332 76-05-05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- smoke removal -->
+      <section class="relative mb-[7px] bg-black">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] self-stretch overflow-hidden py-[80px] text-xxs text-white md:max-w-[1024px] md:py-[100px] md:pr-[435px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:pr-[600px] lg:text-xs"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Системы дымоудаления" subtitle="Система противодымной защиты здания или сооружения должна обеспечивать защиту людей на путях эвакуации и в безопасных зонах от воздействия опасных факторов пожара."}}
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch rounded text-xxs text-black lg:text-xs"
+          >
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Системы противодымной вентиляции с естественным побуждением
+                </p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-row items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] shadow-base lg:px-[40px] lg:py-[30px]"
+            >
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Системы противодымной вентиляции с искусственным
+                  (механическим) побуждением
+                </p>
+              </div>
+              <img
+                class="relative h-7 w-3.5"
+                alt=""
+                src="/images/green-plus.svg"
+              />
+            </button>
+            <button
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch rounded-lg bg-white px-[30px] py-[20px] text-base text-green shadow-base md:px-10 md:py-[30px] lg:text-xl"
+            >
+              <div
+                class="flex flex-row items-center justify-between self-stretch"
+              >
+                <div class="relative flex-1 font-medium leading-[130%]">
+                  <p>Противодымная защита подземных автостоянок</p>
+                </div>
+                <img
+                  class="relative h-7 w-3.5"
+                  alt=""
+                  src="/images/green-minus.svg"
+                />
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="mb-[10px]">
+                  Современные подземные автостоянки — капитальные сооружения,
+                  рассчитанные на длительные сроки эксплуатации. В течение этого
+                  срока они должны удовлетворять требованиям эксплуатационной
+                  надежности, обеспечивая безопасность для жизни людей.
+                </p>
+                <p class="mb-[10px]">
+                  Учитывая всю серьезность возможных последствий от пожаров в
+                  подземных сооружениях к обеспечению их пожарной безопасности
+                  предъявляются особые требования.
+                </p>
+                <p>
+                  При проектировании разрабатываются специальные технические
+                  условия по противопожарной защите сооружений и определению
+                  требуемых пределов огнестойкости строительных конструкций.
+                  Также предусматривают объемно-планировочные, конструктивные и
+                  инженерно-технические решения, обеспечивающие комплекс
+                  мероприятий по:
+                </p>
+              </div>
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] text-white lg:flex-row lg:items-center lg:gap-[40px]"
+          >
+            <button class="button--filled-green">
+              <span> Бесплатная консультация </span>
+            </button>
+            <div
+              class="flex flex-row items-center justify-start gap-[20px] text-3xs text-dark-gray"
+            >
+              <div class="flex flex-row items-center justify-start gap-[10px]">
+                <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+                <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+              </div>
+              <div class="flex flex-col items-start justify-center gap-[8px]">
+                <div class="relative self-stretch leading-[140%]">
+                  Напишите или позвоните нам
+                </div>
+                <div
+                  class="flex flex-col items-end justify-start self-stretch text-base text-black"
+                >
+                  <div
+                    class="relative self-stretch font-semibold leading-[100%]"
+                  >
+                    +7 8332 76-05-05
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="absolute bottom-0 right-0 z-10 h-[1811px] w-[480px] md:h-[1375px] md:w-[499px] lg:h-[1330px] lg:w-[825px]"
+          src="/images/02f8d95007a209d4635b48f1ca9e4fc2.png"
+          alt=""
+        />
+      </section>
+
+      <div
+        class="absolute left-0 top-[7268px] z-10 hidden h-[935px] w-[499px] mix-blend-multiply md:flex lg:top-[6900px] lg:h-[1320px] lg:w-[705px]"
+      >
+        <img
+          class=""
+          src="/images/c81041708a824f85b90336abe586a3e8.png"
+          alt=""
+        />
+      </div>
+
+      <section
+        class="relative mb-[581px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] text-sm md:max-w-[1024px] md:py-[100px] md:pl-[435px] lg:max-w-[1410px] lg:gap-[35px] lg:py-[120px] lg:pl-[600px] lg:text-lg"
+        >
+          <div
+            class="flex flex-row items-end justify-start gap-[30px] self-stretch text-xxl md:text-3xl lg:gap-[40px] lg:text-5xl"
+          >
+            <div
+              class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+            >
+              <div class="relative self-stretch font-medium leading-[110%]">
+                <h2>Системы аспирации</h2>
+              </div>
+              <div
+                class="relative self-stretch text-sm leading-[140%] lg:text-lg"
+              >
+                <p>
+                  С помощью аспирационных систем удаляют воздух вместе со
+                  взвешенными в нем пылевыми частицами от дробилок, грохотов,
+                  элеваторных подъемников, бункеров , металлообрабатывающих и
+                  деревообрабатывающих станков и др. оборудования.
+                </p>
+              </div>
+            </div>
+            <div class="hidden flex-row items-end justify-start gap-[10px]">
+              <div class="relative h-[68px] w-[68px]">
+                <div
+                  class="absolute bottom-[0px] left-[0px] right-[0px] top-[0px] box-border h-full w-full rounded border-[1px] border-solid border-border-color"
+                ></div>
+                <img
+                  class="absolute left-[calc(50%_-_4px)] top-[calc(50%_-_7px)] h-3.5 w-2"
+                  alt=""
+                  src="/images/union.svg"
+                />
+              </div>
+              <div
+                class="relative h-[68px] w-[68px] [transform-origin:0_0] [transform:_rotate(180deg)]"
+              >
+                <div
+                  class="absolute bottom-[0px] left-[0px] right-[0px] top-[0px] box-border h-full w-full rounded border-[1px] border-solid border-border-color"
+                ></div>
+                <img
+                  class="absolute left-[calc(50%_-_4px)] top-[calc(50%_-_7px)] h-3.5 w-2"
+                  alt=""
+                  src="/images/union2.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch lg:w-min"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <h3>Области применения</h3>
+            </div>
+            <div
+              class="grid w-full grid-cols-1 gap-[10px] self-stretch text-xxs md:grid-cols-2 lg:flex lg:text-xs"
+            >
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch bg-white px-6 py-5 md:h-[128px] md:flex-col lg:h-full lg:w-min"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <span class="relative leading-[140%] md:hidden">
+                  <p>Деревообработка</p>
+                </span>
+                <span class="relative hidden leading-[140%] md:flex">
+                  <p>Дерево-<br />обработка</p>
+                </span>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch bg-white px-6 py-5 md:h-[128px] md:flex-col lg:h-full lg:w-min"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <span class="relative leading-[140%]">
+                  <p>Металлургия и металлообработка</p>
+                </span>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch bg-white px-6 py-5 md:h-[128px] md:flex-col lg:h-full lg:w-min"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <span class="relative leading-[140%] md:hidden">
+                  <p>Пищевое производство</p>
+                </span>
+                <span class="relative hidden leading-[140%] md:flex">
+                  <p>Пищевое<br />производство</p>
+                </span>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch bg-white px-6 py-5 md:h-[128px] md:flex-col lg:h-full lg:w-min"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <span class="relative leading-[140%] md:hidden">
+                  <p>Химическая отрасль</p>
+                </span>
+                <span class="relative hidden leading-[140%] md:flex">
+                  <p>Химическая<br />отрасль</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="relative mb-[10px] self-stretch leading-[140%]">
+            <p>
+              В системах аспирации устанавливают пылевые вентиляторы, обладающие
+              повышенной прочностью и устойчивостью к абразивному изнашиванию,
+              пылеуловители. К воздуховодам для систем аспирации предъявляются
+              повышенные требования, они должны обладать повышенной плотностью и
+              быть достаточно устойчивыми к абразивному изнашиванию и обладать
+              малым сопротивлением по отношению перемещаемой среде.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] self-stretch rounded bg-light-gray p-10"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Для качественного проектирования, монтажа или экспертизы систем
+                аспирации требуются большие теоретические знания и огромный
+                практический опыт.
+              </p>
+            </div>
+            <div
+              class="relative self-stretch text-xxs leading-[140%] lg:text-xs"
+            >
+              <p>
+                Инженеры Элком выезжают на предприятие потенциального клиента
+                и проводят аудит, по итогам которого готовят техническое задание
+                и рассчитывают смету на поставку оборудования.
+              </p>
+            </div>
+          </div>
+          <div class="relative self-stretch leading-[140%]">
+            <p>
+              Обратившись в проектный отдел компании наши клиенты могут
+              рассчитывать на исключительно высокий уровень профессионализма
+              наших сотрудников.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] text-white lg:flex-row lg:items-center lg:gap-[40px]"
+          >
+            <button class="button--filled-green">
+              <span> Бесплатная консультация </span>
+            </button>
+            <div
+              class="flex flex-row items-center justify-start gap-[20px] text-3xs text-dark-gray"
+            >
+              <div class="flex flex-row items-center justify-start gap-[10px]">
+                <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+                <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+              </div>
+              <div class="flex flex-col items-start justify-center gap-[8px]">
+                <div class="relative self-stretch leading-[140%]">
+                  Напишите или позвоните нам
+                </div>
+                <div
+                  class="flex flex-col items-end justify-start self-stretch text-base text-black"
+                >
+                  <div
+                    class="relative self-stretch font-semibold leading-[100%]"
+                  >
+                    +7 8332 76-05-05
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="absolute right-0 top-[10530px] z-10 h-[457px] w-[481px] md:top-[8440px] md:h-[586px] md:w-[638px] lg:top-[8304px] lg:h-[825px] lg:w-[898px]"
+      >
+        <img
+          class=""
+          alt=""
+          src="/images/082f3f8b2dbdb80435d38e094979fa7e.png"
+        />
+      </div>
+
+      <!-- work process -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:pr-[261px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pr-[360px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Как мы работаем" subtitle="Специализация на объектах любой сложности:"}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible text-light-gray md:!hidden"
+          id="cctv-repair-process"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >01</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Заявка или звонок в офис</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Заявки от клиента принимаются любым удобным
+                      для вас способом: по телефону, через форму обратной связи
+                      или по email
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >02</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Бесплатный выезд специалиста</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Наш инженер бесплатно приезжает к вам на объект
+                      для замеров и консультации в подборе необходимого
+                      оборудования
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >03</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Предварительный расчёт</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Первоначальная калькуляция сметной стоимости вентиляции
+                      и согласование деталей будущего проекта с заказчиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >04</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Заключение договора</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Договор можно подписать в офисе нашей компании
+                      или с инженером при выезде специалиста компании на объект
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >05</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Проектирование вентиляции</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Создание проекта вентиляционной системы выполняется
+                      в соответсвии с требованиями СНиП и ГОСТ опытными
+                      проектировщиками
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >06</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Производство оборудования</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      У нас работает команда ведущих спеуиалистов на передовом
+                      оборудовании, мы гарантируем качество нашей продукции
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >07</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Монтаж вентиляции</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      Осуществялется доставка, разгрузка, подъем, монтаж
+                      вентиляционных трасс, оборудования, автоматики
+                      и пусконаладочные работы
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >08</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    <p>Завершаем работу</p>
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p>
+                      По мере окончания установки производится проверка системы,
+                      сдача работы заказчику, подписываются акты выполненных
+                      работ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{> pages}}
+        </div>
+
+        <div
+          class="hidden w-full flex-row items-start justify-start gap-[12px] py-0 pr-0 text-4xl text-light-gray md:flex md:flex-col md:gap-[20px] lg:text-6xl"
+        >
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >01</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Заявка или звонок в офис</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Заявки от клиента принимаются любым удобным для вас способом:
+                  по телефону, через форму обратной связи или по email
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >02</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Бесплатный выезд специалиста</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Наш инженер бесплатно приезжает к вам на объект для замеров
+                  и консультации в подборе необходимого оборудования
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >03</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Предварительный расчёт</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  Первоначальная калькуляция сметной стоимости вентиляции
+                  и согласование деталей будущего проекта с заказчиком
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >04</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Заключение договора</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Договор можно подписать в офисе нашей компании или с инженером
+                  при выезде специалиста компании на объект
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >05</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Проектирование вентиляции</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Создание проекта вентиляционной системы выполняется
+                  в соответсвии с требованиями СНиП и ГОСТ опытными
+                  проектировщиками
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >06</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Производство оборудования</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  У нас работает команда ведущих спеуиалистов на передовом
+                  оборудовании, мы гарантируем качество нашей продукции
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >07</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Монтаж вентиляции</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  Осуществялется доставка, разгрузка, подъем, монтаж
+                  вентиляционных трасс, оборудования, автоматики
+                  и пусконаладочные работы
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >08</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                <p>Завершаем работу</p>
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p>
+                  По мере окончания установки производится проверка системы,
+                  сдача работы заказчику, подписываются акты выполненных работ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-between gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:text-xs"
+      >
+        {{> project type="Мы уже сделали" title="ТСК «Мотор»"
+        image="/images/main-portfolio.svg" buttons="1" inverse-picture="1"}}
+      </section>
+
+      <!-- catalog -->
+      <section
+        class="relative mx-auto mb-[89px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Поставка оборудования и расходных материалов для систем вентиляции" subtitle="Компания ЭЛКОМ осуществляет поставку вентиляционного и климатического оборудования промышленного и коммерческого назначения ведущих мировых и российских марок. Всегда в наличии расходные материалы для монтажа систем вентиляции"}}
+        <div
+          class="swiper !ml-0 h-full w-[360px] !overflow-visible text-xs md:!hidden"
+          id="ventilation-catalog"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper flex w-max min-w-0 flex-row">
+               
+            <div class="swiper-slide">
+              {{> catalog-item image-source="/images/97505785ffb559115278199f412efbb4.png" title="Приточно-вытяжные установки" class="text-center max-md:w-[360px]" hide-price="1"}}
+            </div>
+            <div class="swiper-slide">
+              {{> catalog-item image-source="/images/08fd3a840e3906ff695b21e2d7f0c456.png" title="Радиальные вентиляторы" class="text-center max-md:w-[360px]"  hide-price="1"}}
+            </div>
+            <div class="swiper-slide">
+              {{> catalog-item image-source="/images/19fe7ec474fc880c791a5d3900cc2518.png" title="Отвод 90 градусов (прямоугольный)" class="text-center max-md:w-[360px]"  hide-price="1"}}
+            </div>
+            <div class="swiper-slide">
+              {{> catalog-item image-source="/images/4d57ddf8741aeb3ae6af366ef93f72f0.png" title="Отвод 45 градусов (прямоугольный)" class="text-center max-md:w-[360px]"  hide-price="1"}} 
+            </div>
+            <div class="swiper-slide">
+              {{> catalog-item image-source="/images/8296edeef1fd7e031dcae84526cd1e9d.png" title="Переход с прямоугольного сечения на прямоугольное сечение" class="text-center max-md:w-[360px]"  hide-price="1"}}
+            </div>
+            <div class="swiper-slide"> 
+              {{> catalog-item image-source="/images/5aa46b0a33ff3cf2f0738d6626b77d04.png" title="Адаптер прямоугольного сечения" class="text-center max-md:w-[360px]"  hide-price="1"}}
+            </div>
+          </div>
+          {{> pages}}
+        </div>
+
+        <div
+          class="hidden gap-[20px] text-xs text-black md:grid md:grid-cols-3 lg:grid-cols-4 lg:gap-[30px]"
+        >
+          <!-- prettier-ignore -->
+          {{> catalog-item image-source="/images/97505785ffb559115278199f412efbb4.png" title="Приточно-вытяжные установки" class="text-center max-md:w-[360px]" hide-price="1"}}
+          {{> catalog-item image-source="/images/08fd3a840e3906ff695b21e2d7f0c456.png" title="Радиальные вентиляторы" class="text-center max-md:w-[360px]"  hide-price="1"}}
+          {{> catalog-item image-source="/images/19fe7ec474fc880c791a5d3900cc2518.png" title="Отвод 90 градусов (прямоугольный)" class="text-center max-md:w-[360px]"  hide-price="1"}}
+          {{> catalog-item image-source="/images/4d57ddf8741aeb3ae6af366ef93f72f0.png" title="Отвод 45 градусов (прямоугольный)" class="text-center max-md:w-[360px]"  hide-price="1"}} 
+          {{> catalog-item image-source="/images/8296edeef1fd7e031dcae84526cd1e9d.png" title="Переход с прямоугольного сечения на прямоугольное сечение" class="text-center max-md:w-[360px]"  hide-price="1"}}
+          {{> catalog-item image-source="/images/5aa46b0a33ff3cf2f0738d6626b77d04.png" title="Адаптер прямоугольного сечения" class="text-center max-md:w-[360px]"  hide-price="1"}}
+          {{> catalog-item image-source="/images/89b43491dac21030e71dae7573ec4e23.png" title="Врезка прямоугольного сечения в плоскость" class="text-center max-md:w-[360px] max-lg:hidden"  hide-price="1"}} 
+          {{> catalog-item image-source="/images/24d36f44555fbe81c20070cfe00d03a9.png" title="Врезка прямоугольного сечения в круглый воздуховод" class="text-center max-md:w-[360px] max-lg:hidden"  hide-price="1"}}
+        </div>
+
+        <button
+          class="button--outlined-gray w-full px-[30px] py-5 text-xxs lg:text-xs"
+        >
+          <span> Подробнее в каталоге </span>
+        </button>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me}}
+
+      {{> specialist }}
+
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

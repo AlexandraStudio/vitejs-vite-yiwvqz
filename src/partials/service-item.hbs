@@ -1,0 +1,31 @@
+<div
+  class="{{class}}
+    flex h-full flex-col items-start justify-start overflow-hidden rounded bg-light-gray"
+>
+  <img
+    class="relative h-[200px] max-w-full shrink-0 self-stretch overflow-hidden object-cover"
+    alt=""
+    src={{image}}
+  />
+
+  <div
+    class="{{height}}
+      flex flex-col items-start justify-start gap-[40px] self-stretch p-10 md:justify-between md:gap-0 lg:p-[60px]"
+  >
+    <div class="flex h-full flex-col items-start justify-start gap-[20px]">
+      {{#if title}}
+        <div class="relative text-base font-medium leading-[130%] lg:text-xl">
+          {{title}}
+        </div>
+      {{/if}}
+      <div class="relative text-sm leading-[140%] text-dark-green lg:text-lg">
+        {{description}}
+      </div>
+    </div>
+    <div class="active relative text-sm leading-[140%] lg:text-lg">
+      <a href="#">
+        {{#if button}}{{button}}{{else}}Заказать услугу{{/if}}
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div
+  class="flex w-[360px] flex-col items-start justify-center gap-[10px] self-stretch rounded bg-light-bg p-[30px] md:w-[415px] lg:w-[570px] lg:gap-[18px] lg:p-[40px]"
+>
+  <div
+    class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+  >
+    <p>{{title}}</p>
+  </div>
+  <div class="relative self-stretch leading-[140%]">
+    <p>{{address}}</p>
+  </div>
+
+  <span class="relative self-stretch text-base font-medium leading-[130%]">
+    <p>8 800 500-59-33</p>
+  </span>
+
+  <span
+    class="relative self-stretch leading-[140%] text-[inherit] [text-decoration:none]"
+  >
+    <a href="#">info@smk-l.com</a>
+  </span>
+  <div class="flex flex-row items-start justify-start gap-[10px]">
+    <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+    <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+  </div>
+  <span class="relative self-stretch leading-[140%]">
+    {{hours}}
+  </span>
+
+  {{#if button}}
+    <button class="button--outlined-gray !px-5 !py-4" id="open-popup">
+      <span class="!text-3xs !leading-[120%]"> Схема проезда </span>
+    </button>
+  {{/if}}
+</div>

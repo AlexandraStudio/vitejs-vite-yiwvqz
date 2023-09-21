@@ -1,0 +1,58 @@
+<div
+  class="{{class}} flex w-[360px] md:w-full flex-col items-end justify-start overflow-hidden text-base lg:text-xl bg-white rounded {{#if reverse}}md:flex-row-reverse{{else}}md:flex-row{{/if}} md:gap-[107px] md:items-center lg:gap-[150px] shadow-base"
+>
+  <div class="{{imageClass}} 
+  relative w-[360px] md:w-[415px] lg:w-[570px] h-[360px] md:h-[415px] lg:h-[570px] overflow-hidden ">
+    {{!-- <img
+    class=" object-cover w-full h-full"
+    alt=""
+    src={{image}}
+  /> --}}
+  </div>
+
+  <div
+     class="{{height}}
+      lg:w-[660px] md:w-[462px] w-[360px] flex flex-col p-[30px] md:py-[40px] md:p-0 box-border items-start self-stretch justify-between md:justify-center gap-[20px] lg:gap-[40px] "
+  >
+    <div
+      class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+    >
+      <div class="self-stretch relative leading-[130%] font-medium">
+        <h3>{{title}}</h3>
+      </div>
+      <div class="self-stretch relative text-xxs lg:text-xs leading-[140%]">
+        <p>{{description}}</p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row items-start w-full justify-start gap-[4px] md:gap-[10px] lg:gap-[30px] text-4xs lg:text-3xs text-dark-gray"
+    >
+      <div
+        class="rounded bg-light-bg max-md:w-full flex flex-row md:flex-col p-2.5 md:items-start items-center justify-between md:justify-center"
+      >
+        <div class="relative leading-[140%]">Производитель:</div>
+        <div class="relative text-xxs lg:text-xs leading-[140%] text-black">
+          {{manufacturer}}
+        </div>
+      </div>
+      <div
+        class="rounded bg-light-bg max-md:w-full flex flex-row md:flex-col p-2.5 md:items-start items-center justify-between md:justify-center"
+      >
+        <div class=" relative leading-[140%]">Страна:</div>
+        <div class="relative text-xxs lg:text-xs leading-[140%] text-black">
+          Швейцария
+        </div>
+      </div>
+      <div
+        class="rounded bg-light-bg max-md:w-full flex flex-row md:flex-col p-2.5 md:items-start items-center justify-between md:justify-center"
+      >
+        <div class="relative leading-[140%]">
+          Рабочая длинна:
+        </div>
+        <div class="relative text-xxs lg:text-xs leading-[140%] text-black">
+          до 3000 мм
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

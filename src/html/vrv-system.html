@@ -1,0 +1,1376 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>VRV система</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="no-scrollbar relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] overflow-x-scroll text-dark-gray md:max-w-[1024px] md:overflow-x-visible lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Кондиционирование
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          VRV система
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="VRV система"}} 
+
+      {{> cropped-picture
+        image="/images/9658ef01f07e0eecab9b324d4bcf766f.png"
+        small-image="/images/9658ef01f07e0eecab9b324d4bcf766f_sm.png"}}
+
+      <!-- top taxt -->
+      <article
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[20px] text-base md:mb-[100px] md:max-w-[1024px] md:flex-row md:justify-between md:gap-0 lg:mb-[120px] lg:max-w-[1410px] lg:text-xl"
+      >
+        <div
+          class="relative self-stretch font-medium leading-[130%] md:w-[328px] lg:w-[450px]"
+        >
+          <h3>Установка, монтаж VRV/VRF систем под ключ</h3>
+        </div>
+        <div
+          class="relative self-stretch text-sm leading-[140%] text-dark-gray md:w-[589px] lg:w-[813px] lg:text-lg"
+        >
+          <p class="mb-[53px]">
+            Централизованная VRV система разработана для поддержания комфортной
+            атмосферы в больших зданиях, которые включают в себя много комнат
+            и переходов между ними. Поскольку все оборудование работает
+            в комплексе, оно обеспечивает стабильное кондиционирование воздуха
+            на больших пространствах, с чем не смогут справиться даже очень
+            мощные сплит-системы.
+          </p>
+          <p>
+            В материале мы подробно рассмотрим плюсы и минусы систем
+            кондиционирования этого вида, а также область их применения
+            и тонкости проведения ТО.
+          </p>
+        </div>
+      </article>
+
+      <!-- area of use -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:gap-[40px] lg:mb-[120px] lg:max-w-[1410px] lg:text-xs"
+      >
+        <!-- prettier-ignore -->
+        {{> title 
+              title="Сфера применения VRV систем" 
+              subtitle="Поскольку VRV системы кондиционирования по сути являются промышленным оборудованиям, они чаще всего прокладываются в больших многоэтажных зданиях:"
+            }}
+        <div class="relative h-full w-full md:hidden">
+          <div class="swiper !ml-0 !overflow-visible" id="cable-systems-video">
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper flex w-max min-w-0 flex-row"
+                >
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                      title="Частный дом"
+                    }}
+                  </div>
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                      title="В автосервис"
+                    }}
+                  </div>
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                      title="В квартиру"
+                    }}
+                  </div>
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                      title="В бассейн"
+                    }}
+                  </div>
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                      title="Гараж"
+                    }}
+                  </div>
+                  <div class="swiper-slide">
+                    {{> design-item
+                      image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                      title="Офис"
+                    }}
+                  </div>
+                </div>
+
+            {{> pages}}
+          </div>
+        </div>
+        <div
+          class="hidden flex-col items-start justify-start gap-[30px] self-stretch md:flex lg:gap-[40px]"
+        >
+          <div
+            class="flex flex-row items-start justify-start gap-[12px] md:grid md:grid-cols-3 md:gap-[20px] lg:grid-cols-4 lg:gap-[30px]"
+          >
+            <!-- prettier-ignore -->
+            {{> design-item
+                  image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                  title="Частный дом"
+                }}
+                {{> design-item
+                  image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                  title="В автосервис"
+                }}
+                {{> design-item
+                  image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                  title="В квартиру"
+                }}
+                {{> design-item
+                  image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                  title="В бассейн"
+                }}
+                {{> design-item
+                  image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                  title="Гараж"
+                }}
+                {{> design-item
+                  image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                  title="Офис"
+                }}
+            <span class="hidden lg:flex">
+              {{> design-item
+              image="/images/6368356c51e87ef22017577636c8f240.png"
+              title="Магазин" }}
+            </span>
+
+            <span class="hidden lg:flex">
+              {{> design-item
+              image="/images/d60385e918ea2ec95bfd8f16d4e011f4.png" title="Склад"
+              }}
+            </span>
+          </div>
+          {{> pages}}
+        </div>
+
+        <div class="flex w-full flex-col gap-[20px] md:flex-row">
+          <button class="button--filled-green max-md:w-full">
+            <span class="relative font-medium leading-[100%]">
+              Заказать чистку
+            </span>
+          </button>
+          <button class="button--outlined-green max-md:w-full">
+            <span class="relative font-medium leading-[100%]">
+              Получить беслптную консультацию
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- whats that -->
+      <article
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:flex-row md:justify-between md:gap-[107px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <img
+            class="relative h-[360px] w-[360px] rounded object-cover md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+            alt=""
+            src="/images/064194f1208bbf300e31904de3591bfd.png"
+          />
+
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch lg:w-[690px]"
+          >
+            <!-- prettier-ignore -->
+            {{> title title="Что такое VRV системы кондициониро<wbr />вания"}}
+
+            <div
+              class="flex flex-col items-start justify-start gap-[40px] self-stretch md:gap-[30px] lg:gap-[40px]"
+            >
+              <div class="text-xxs leading-[140%] lg:text-xs">
+                <p class="mb-[5px]">
+                  VRV — это система, которая отличается непостоянным объёмом
+                  охлаждающего вещества. Эта зарегистрированная торговая марка
+                  принадлежит корпорации Daikin – одному из ведущих
+                  производителей многозональных систем кондиционирования в мире.
+                </p>
+                <p>
+                  Оборудование состоит из нескольких блоков: одного основного
+                  (самого производительного) и множества дополнительных,
+                  различного типа. Все они подключаются к общей системе
+                  трубопроводов, которая может отличаться достаточно
+                  внушительными размерами: максимальное расстояние
+                  между блоками — до 100 метров, а перепад высот — до 50 метров.
+                </p>
+              </div>
+              <button class="button--filled-green max-md:w-full">
+                <span> Рассчитать стоимость установки </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- types -->
+      <section
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Типы VRV систем" subtitle="Системы кондиционирования VRV представлены тремя различными конфигурациями."}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible"
+          id="vrv-systems-types"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper">
+             <div class="swiper-slide !w-fit !h-auto">
+               {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="h-[357px] md:h-[419px] lg:h-[524px]" image="/images/a567b71be5d423cd4d27f632dbc32504.png" title="Тепловой насос" description="Оборудование отлично подходит для использования вместо традиционных отопительных систем" button="Мне подходит"}}
+             </div>
+             
+ 
+             <div class="swiper-slide !w-fit !h-auto">
+               {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="h-[357px] md:h-[419px] lg:h-[524px]" image="/images/57881adb0a7591e5f832839a6948d85c.png" title="VRV-системы работающие на охлаждение" description="Оборудование данного типа не имеет режима нагрева" button="Мне подходит"}}
+             </div>
+
+             <div class="swiper-slide !w-fit !h-auto">
+               {{> service-item class="w-[360px] md:w-[328px] lg:w-[450px]" height="h-[357px] md:h-[419px] lg:h-[524px]" image="/images/6992cc3c5311b95ec39532ab195bc639.png" title="Системы в режиме «тепло-холод»" description="Оборудование позволяет одновременно подогревать воздух в одних помещениях и охлаждать его в других" button="Мне подходит"}}
+             </div>          
+           </div>
+
+          <div class="max-md:mt-[40px]">{{> pages}}</div>
+        </div>
+      </section>
+
+      <!-- differences -->
+      <section class="relative bg-black">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] text-base text-white md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:text-xl"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Основные отличия VRV систем от обычных сплитов:" buttons-white="1"}}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible"
+            id="vrv-differences"
+          >
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Возможность прокладки магистрали на большое расстояние" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Минимальный расход электроэнергии" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Минимальный расход электроэнергии" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Корпуса VRV систем можно располагать практически где угодно: от стен до потолка" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Повышенная устойчивость к внештатным ситуациям" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--plus description="Возможность установки различных настроек кондиционирования воздуха в каждой отдельной комнате" }}
+              </div>            
+            </div>
+
+            <div class="max-md:mt-[40px]">{{> pages}}</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <article class="relative bg-light-bg">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] md:max-w-[1024px] md:flex-row md:gap-[107px] md:py-[100px] lg:max-w-[1410px] lg:gap-[150px] lg:py-[120px]"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+          >
+            <!-- prettier-ignore -->
+            {{> title title="Принцип работы многозональных систем кондиционирования"}}
+            <div
+              class="flex flex-col items-start justify-start gap-[40px] self-stretch text-xxs md:gap-[32px] lg:gap-[40px] lg:text-xs"
+            >
+              <div class="relative self-stretch leading-[140%]">
+                <p>
+                  VRV системы основаны на принципе пофазного изменения
+                  физических состояний охлаждающего агента. Поскольку переход
+                  из жидкого состояния в газообразное происходит с ощутимым
+                  поглощением тепла, это приводит к понижению температуры
+                  воздуха в помещении.
+                </p>
+              </div>
+              <div
+                class="flex h-[210px] flex-row items-start justify-start gap-[20px] self-stretch"
+              >
+                <img
+                  class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                  alt=""
+                  src="/images/ff6181a5538f6f6b840615ce8852877d.png"
+                />
+
+                <img
+                  class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                  alt=""
+                  src="/images/ab301da1a6ec5badf0f5540e03e3b922.png"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start gap-[20px] self-stretch text-xxs lg:gap-[40px] lg:text-xs"
+              >
+                <div class="text-base leading-[130%] lg:text-xl">
+                  <h3>Принцип работы VRV систем пошагово:</h3>
+                </div>
+                <ul
+                  class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+                >
+                  <li
+                    class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                  >
+                    <img
+                      class="relative h-7 w-7"
+                      alt=""
+                      src="/images/frame-327.svg"
+                    />
+
+                    <p class="relative flex-1">
+                      Охлаждающий агент (фреон) в газообразном виде поступает в
+                      компрессорную часть основного блока от дополнительных
+                      корпусов.
+                    </p>
+                  </li>
+                  <li
+                    class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                  >
+                    <img
+                      class="relative h-7 w-7"
+                      alt=""
+                      src="/images/frame-327.svg"
+                    />
+
+                    <p class="relative flex-1">
+                      Когда хладагент сжимается, он нагревается до температуры
+                      от 70 до 1000 С.
+                    </p>
+                  </li>
+                  <li
+                    class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                  >
+                    <img
+                      class="relative h-7 w-7"
+                      alt=""
+                      src="/images/frame-327.svg"
+                    />
+
+                    <p class="relative flex-1">
+                      Вещество поступает в теплообменную систему конденсатора.
+                      Здесь мощные фены охлаждают фреон-газ, преобразуя его в
+                      жидкость
+                    </p>
+                  </li>
+                  <li
+                    class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                  >
+                    <img
+                      class="relative h-7 w-7"
+                      alt=""
+                      src="/images/frame-327.svg"
+                    />
+
+                    <p class="relative flex-1">
+                      Хладагент перемещается по трубопроводу к дополнительным
+                      корпусам. Там он поступает в испаритель и вскипает, снова
+                      превращаясь в пар.
+                    </p>
+                  </li>
+                  <li
+                    class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+                  >
+                    <img
+                      class="relative h-7 w-7"
+                      alt=""
+                      src="/images/frame-327.svg"
+                    />
+
+                    <p class="relative flex-1">
+                      Далее газообразный фреон снова подается в базовый блок,
+                      одновременно из дополнительных корпусов подается наружу
+                      поток холодного воздуха.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button class="button--filled-green max-md:w-full">
+                <span> Установить VRV систему </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-end justify-start gap-[20px] text-4xs text-dark-gray lg:text-3xs"
+          >
+            <div
+              class="flex h-[360px] w-[360px] flex-col items-start justify-start shadow-base md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+            >
+              <img
+                class="relative h-full w-full rounded object-cover mix-blend-normal"
+                alt=""
+                src="/images/fa145f82c6884ba1e1c1f4683ebb1186.png"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- result -->
+      <section
+        class="relative mb-[509px] bg-black text-white md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Обратившись к нам вы получите" }}
+          <div class="relative w-full">
+            <div
+              class="swiper !ml-0 !overflow-visible"
+              id="air-conditioner-maintenance-result"
+            >
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !w-fit !h-auto">
+                  {{> result-item  title="Качество работ" description="Опытные специалисты проводят работы строго по регламенту"}}
+                </div>
+                <div class="swiper-slide !w-fit !h-auto">
+                  {{> result-item title="Гарантии" description="Ответственно подходим к своим обязательствам и готовы поручиться за то, что делаем"}}
+                </div>
+                <div class="swiper-slide !w-fit !h-auto">
+                  {{> result-item title="Оборудование" description="У нас есть при себе всё необходимое. От вас ничего не требуется"}}
+                </div>
+                <div class="swiper-slide !w-fit !h-auto">
+                  {{> result-item title="Доступные цены" description="Узнать актуальные расценки можно в любой момент у наших сотрудников"}}
+                </div>
+              </div>
+
+              <div class="max-md:mt-[40px]">{{> pages}}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="absolute right-0 top-[8038px] z-10 h-[470px] w-[510px] md:top-[6959px] md:h-[595px] md:w-[609px] lg:top-[8420px] lg:h-[770px] lg:w-[705px]"
+      >
+        <img
+          class="h-full w-full object-cover object-left"
+          alt=""
+          src="/images/4c9f02c5e08df377aeb989f6ef190a23.png"
+        />
+      </div>
+
+      <!-- work process -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:pr-[261px] md:pt-[100px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pr-[360px] lg:pt-[120px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Как мы работаем" subtitle="Как происходит процесс обслуживания кондиционеров после получения и обработки заявки:"}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible text-light-gray md:!hidden"
+          id="cctv-repair-process"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >01</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Оформление заявки
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      Сначала вам необходимо связаться с нашим сотрудником
+                      и указать, в каком именно техническом обслуживании
+                      возникла потребность. Наш специалист может задать
+                      уточняющие вопросы для прояснения обстоятельств.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >02</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Выезд специалиста
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      Следующий этап — выезд специалиста на объект. Мастер
+                      осмотрит здание и все помещения, чтобы установить тип
+                      кондиционирования, его состояние для прояснения перечня
+                      необходимых работ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >03</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Подписание договора
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      После выезда инженера мы согласовываем перечень
+                      необходимых работ, периодичность их оказания, цены и
+                      другие факторы. Всё это вносится в текст договора.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >04</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Обслуживание
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    <p class="m-0">
+                      В дальнейшем наши мастера выполняют оговорённые действия.
+                      Это может быть разовая ситуация или проведение
+                      технического обслуживания на постоянной основе
+                      с определённой регулярностью.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              <div
+                class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+              >
+                <b
+                  class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                  >05</b
+                >
+                <div
+                  class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                >
+                  <div class="relative self-stretch font-medium leading-[130%]">
+                    Сдача работы
+                  </div>
+                  <div
+                    class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                  >
+                    Приемка выполненных работ во избежание недоразумений
+                    оформляется соответствующим актом.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{> pages}}
+        </div>
+
+        <div
+          class="hidden w-full flex-row items-start justify-start gap-[12px] py-0 pr-0 text-4xl text-light-gray md:flex md:flex-col md:gap-[18px] lg:text-6xl"
+        >
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >01</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Оформление заявки
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  Сначала вам необходимо связаться с нашим сотрудником
+                  и указать, в каком именно техническом обслуживании возникла
+                  потребность. Наш специалист может задать уточняющие вопросы
+                  для прояснения обстоятельств.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >02</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Выезд специалиста
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  Следующий этап — выезд специалиста на объект. Мастер осмотрит
+                  здание и все помещения, чтобы установить тип
+                  кондиционирования, его состояние для прояснения перечня
+                  необходимых работ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >03</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Подписание договора
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  После выезда инженера мы согласовываем перечень необходимых
+                  работ, периодичность их оказания, цены и другие факторы. Всё
+                  это вносится в текст договора.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >04</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Обслуживание
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                <p class="m-0">
+                  В дальнейшем наши мастера выполняют оговорённые действия.
+                  Это может быть разовая ситуация или проведение технического
+                  обслуживания на постоянной основе с определённой
+                  регулярностью.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+          >
+            <b
+              class="relative inline-block w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+              >05</b
+            >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Сдача работы
+              </div>
+              <div
+                class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+              >
+                Приемка выполненных работ во избежание недоразумений оформляется
+                соответствующим актом.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bottom text -->
+      <article
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-base md:mb-[100px] md:max-w-[1024px] md:flex-row md:justify-between md:gap-0 lg:mb-[120px] lg:max-w-[1410px] lg:text-xl"
+      >
+        <div
+          class="relative self-stretch font-medium leading-[130%] md:w-[328px] lg:w-[450px]"
+        >
+          <h3>
+            Наши мастера имеют большой опыт работы с кондиционерами марок и
+            моделей: как домашних, так и промышленных.
+          </h3>
+        </div>
+        <div
+          class="relative self-stretch text-sm leading-[140%] text-dark-gray md:w-[589px] lg:w-[813px] lg:text-lg"
+        >
+          <p class="mb-[20px]">
+            Мы в кратчайшие сроки и с документально подтвержденной гарантией
+            проведем для вас чистку климатической техники, заправку
+            кондиционеров, антибактериальную обработку и любое другое
+            техническое обслуживание ваших сплит-систем.
+          </p>
+          <p class="mb-[20px]">
+            Наши цены – одни из самых выгодных в Кирове, при этом мы работаем
+            честно, предоставляя своим клиентам прайс-лист и подробную смету.
+          </p>
+          <p>
+            Если вы хотите рассчитать точную стоимость чистки вашего
+            кондиционера и заказать вызов специалиста, оставьте заявку по
+            телефону – в течение нескольких минут мы свяжемся с вами для
+            консультации и согласования.
+          </p>
+        </div>
+      </article>
+
+      <!-- catalog  -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="relative mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] md:max-w-[1024px] md:gap-[35px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Продукция в наличии" }}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible text-xxs"
+            id="vrv-catalog"
+          >
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> catalog-item image-source="/images/aa88435ac56210523fb72a582c1e8dd9.png" title="Кассетные кондиционеры" class="w-[360px] md:w-[326px] lg:w-[330px]"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                 {{> catalog-item image-source="/images/f91df2d0a2c73cc1a706abb8f827d3c3.png" title="Кассетные кондиционеры" class="w-[360px] md:w-[326px] lg:w-[330px]"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> catalog-item image-source="/images/d60fc8a0d4f9995957534e79cbf44b4b.png" title="Кассетные кондиционеры" class="w-[360px] md:w-[326px] lg:w-[330px]"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit !hidden lg:!flex">
+                {{> catalog-item image-source="/images/65c0ca062ea6213716c2b93e955675e9.png" title="Кассетные кондиционеры" class="w-[360px] md:w-[326px] lg:w-[330px]"}}
+              </div>
+            </div>
+            <div class="max-md:mt-[38px]">{{> pages}}</div>
+          </div>
+          <button class="button--outlined-gray w-full">
+            <span>Посмотреть больше</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <article
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <img
+          class="relative h-[360px] w-[360px] rounded object-cover md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          alt=""
+          src="/images/d21e0971b57d98a472675b3eb9adde46.png"
+        />
+
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Особенности проведения периодического ТО систем" }}
+
+          <div
+            class="flex flex-col items-start justify-start gap-[40px] self-stretch md:gap-[30px] lg:gap-[40px]"
+          >
+            <div class="text-xxs leading-[140%] lg:text-xs">
+              <p class="mb-[7px]">
+                Специалисты по ремонту и обслуживанию систем кондиционирования
+                проводят комплексные работы по очистке сплит-систем и другой
+                климатической техники средней периодичностью раз в полгода,
+                до и после окончания сезона. В процессе обслуживания специалисты
+                тщательно очищают дренажную систему, радиатор, фильтр,
+                вентилятор и другие компоненты оборудования, а также проверяют
+                его работу.
+              </p>
+              <p class="mb-[7px]">
+                Однако, если ваша климатическая техника установлена в помещении,
+                где она может особенно интенсивно загрязняться, например, пылью
+                или шерстью домашних животных, рекомендуется проводить
+                обслуживание чаще. Но не рекомендуется снижать периодичность
+                обслуживания до одного раза в год: даже если система
+                кондиционирования установлена в идеально чистом месте, она все
+                равно требует обязательной проверки и очистки до начала и после
+                окончания работы.
+              </p>
+              <p>
+                Если ваше оборудование начало работать нестандартно,
+                рекомендуется провести внеплановую чистку кондиционера как можно
+                скорее, чтобы избежать его поломки.
+              </p>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Рассчитать стоимость чистки </span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- licence -->
+      <section class="relative bg-black">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] py-[80px] text-white md:max-w-[1024px] md:flex-row md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <div class="md:max-w-[328px] lg:max-w-[450px]">
+            {{> title title="Имеем лицензии и состоим в СРО"}}
+          </div>
+          <div class="flex w-full flex-col gap-[20px] self-stretch md:flex-row">
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Сертификат ISO
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Допуск СРО монтаж
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-row items-center justify-start gap-[20px] self-stretch rounded bg-white p-[30px] text-xxs text-black md:flex-col md:items-start lg:p-[40px] lg:text-xs"
+            >
+              <div class="relative h-10 w-10">
+                <img class="h-full w-full" alt="" src="/images/Frame-432.svg" />
+              </div>
+              <div
+                class="flex flex-1 flex-col items-start justify-start gap-[10px]"
+              >
+                <div class="relative self-stretch leading-[140%]">
+                  Лицензия МЧС
+                </div>
+                <a href="#" class="active relative self-stretch leading-[140%]">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews  -->
+      <section class="relative bg-light-bg">
+        <div
+          class="relative mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Нам доверяют" subtitle="Клиенты, которые выбрали нас — довольны и рекомендуют!" buttons="1"}}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible text-xxs"
+            id="reviews"
+          >
+            <!-- prettier-ignore -->
+            <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                text="Хочу выразить огромную благодарность специалистам компании «Элком» за качественную установку вентиляционной системы в моем доме. Все работы были выполнены профессионально и в соответствии со всеми нормами и требованиями.В результате у меня теперь всегда свежий и чистый воздух в доме, что очень важно для здоровья моей семьи."
+                name="Ерёмин Алёша, 35 годиков" 
+              }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                
+                text=" Результат превзошёл все мои ожидания! Качество работы высочайшее, специалисты компании проявили профессионализм на всех этапах работы — от проектирования до монтажа оборудования. Теперь у меня в квартире всегда свежий и чистый воздух, а мои дети реже болеют — это самое главное для меня! Спасибо огромное за качественную и профессиональную работу!"
+                name="Вячеслав, Компания «Рога и копыта»"
+              }} 
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> review 
+                class="swiper-slide"
+                text="Обратился в компанию «Элком» для установки системы приточно-вытяжной вентиляции в офисе. Менеджеры компании предложили оптимальный вариант системы, учитывая все наши требования. Работы были выполнены очень быстро и качественно. Теперь у нас в офисе всегда свежий воздух, а рабочий процесс стал более комфортным."
+                name="Алевтина Квакушина, 23 июня 2023"
+              }}
+              </div>  
+            </div>
+
+            {{> pages}}
+          </div>
+          <button class="button--outlined-gray w-full">
+            <span>Все отзывы</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- partners -->
+      <section
+        class="relative mb-[80px] box-border bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[480px] flex-col items-start justify-center gap-[30px] px-[60px] pb-[50px] md:max-w-[1366px] md:gap-[40px] md:px-[171px] md:pb-[50px] lg:max-w-[1920px] lg:px-[255px] lg:pb-[120px]"
+        >
+          <div
+            class="flex flex-row items-end justify-start gap-[30px] self-stretch"
+          >
+            <div
+              class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+            >
+              <div
+                class="relative w-[200px] self-stretch font-medium leading-[110%] md:w-full"
+              >
+                <h2 class="m-0">Наши партнёры</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative h-full w-full mix-blend-multiply md:hidden">
+            <div class="swiper !ml-0 w-full !overflow-visible" id="partners">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[53px] w-[53px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner1.png"
+                    />
+
+                    <img
+                      class="relative h-9 w-[75px] shrink-0 overflow-hidden mix-blend-multiply"
+                      alt=""
+                      src="/images/partner2.svg"
+                    />
+
+                    <img
+                      class="relative h-[34px] w-[125px]"
+                      alt=""
+                      src="/images/partner3.svg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-10 w-[63px]"
+                      alt=""
+                      src="/images/partner4.svg"
+                    />
+                    <img
+                      class="relative h-[30px] w-[117px] object-cover"
+                      alt=""
+                      src="/images/partner5.png"
+                    />
+                    <img
+                      class="relative h-[57px] w-8 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner6.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[41px] w-[93px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner7.png"
+                    />
+                    <img
+                      class="relative h-[35px] w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner8.png"
+                    />
+                    <img
+                      class="relative h-5 w-[120px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner9.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-10 w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner10.png"
+                    />
+                    <img
+                      class="relative h-[30px] w-[123px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner11.png"
+                    />
+                    <img
+                      class="relative h-[35px] w-[59px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner12.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[43px] w-[69px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner13.png"
+                    />
+                    <img
+                      class="relative h-[47px] w-[58px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner14.png"
+                    />
+                    <img
+                      class="relative h-[42px] w-16 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner15.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  <div class="flex items-center gap-[40px]">
+                    <img
+                      class="relative h-[18px] w-[152px] object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner16.png"
+                    />
+                    <img
+                      class="relative h-[54px] w-12 object-cover mix-blend-multiply"
+                      alt=""
+                      src="/images/partner17.png"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="max-md:mt-[-6px]">{{> pages}}</div>
+            </div>
+          </div>
+
+          <div
+            class="hidden w-full flex-row items-center justify-start gap-[40px] md:flex md:flex-col md:gap-[40px]"
+          >
+            <div
+              class="flex w-full flex-row items-center justify-start max-md:mr-[740px] max-md:gap-[40px] md:justify-between"
+            >
+              <img
+                class="relative h-[53px] w-[53px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner1.png"
+              />
+
+              <img
+                class="relative h-9 w-[75px] shrink-0 overflow-hidden"
+                alt=""
+                src="/images/partner2.svg"
+              />
+
+              <img
+                class="relative h-[34px] w-[125px]"
+                alt=""
+                src="/images/partner3.svg"
+              />
+
+              <img
+                class="relative h-10 w-[63px]"
+                alt=""
+                src="/images/partner4.svg"
+              />
+
+              <img
+                class="relative h-[30px] w-[117px] object-cover"
+                alt=""
+                src="/images/partner5.png"
+              />
+
+              <img
+                class="relative h-[57px] w-8 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner6.png"
+              />
+
+              <img
+                class="relative h-[41px] w-[93px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner7.png"
+              />
+
+              <img
+                class="relative h-[35px] w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner8.png"
+              />
+
+              <img
+                class="relative h-5 w-[120px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner9.png"
+              />
+            </div>
+
+            <div
+              class="flex w-full flex-row items-center justify-start max-md:gap-[40px] md:justify-between"
+            >
+              <img
+                class="relative h-10 w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner10.png"
+              />
+
+              <img
+                class="relative h-[30px] w-[123px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner11.png"
+              />
+
+              <img
+                class="relative h-[35px] w-[59px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner12.png"
+              />
+
+              <img
+                class="relative h-[43px] w-[69px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner13.png"
+              />
+
+              <img
+                class="relative h-[47px] w-[58px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner14.png"
+              />
+
+              <img
+                class="relative h-[42px] w-16 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner15.png"
+              />
+
+              <img
+                class="relative h-[18px] w-[152px] object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner16.png"
+              />
+
+              <img
+                class="relative h-[54px] w-12 object-cover mix-blend-multiply"
+                alt=""
+                src="/images/partner17.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me title="Калькуляция стоимости обслуживания" description="Расчет затрат обслуживания видеонаблюдения производится индивидуально, с учетом особенностей конкретной системы."}}
+
+      <!-- specialist -->
+      {{#> specialist}}
+      <div class="text-xxs font-bold leading-[140%] lg:text-xs">
+        <h3>Плюсы и минусы мультизонального кондиционирования</h3>
+      </div>
+      <div class="text-xxs leading-[140%] lg:text-xs">
+        К недостаткам VRV систем кондиционирования можно отнести только их
+        высокую цену, но этот минус нивелируется за счет большого количества
+        плюсов:
+      </div>
+      <ul
+        class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+      >
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Экономичность и повышенная энергоэффективность систем
+          </p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">Небольшой вес дополнительных блоков</p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Возможность подключения различных дополнительных модулей к одному
+            базовому, что позволяет проложить магистраль, учитывая все
+            особенности помещения
+          </p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Повышенная точность поддержания температуры (максимальная
+            погрешность составляет 10 градусов в любую сторону)
+          </p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Возможность объединения с вентиляционными блоками
+          </p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">Минимально возможный уровень шума</p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Высокая производительность и большой срок эксплуатации оборудования
+          </p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">Низкая цена и простота монтажа</p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">Несложное обслуживание</p>
+        </li>
+        <li
+          class="flex flex-row items-start justify-start gap-[10px] self-stretch leading-[140%]"
+        >
+          <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+          <p class="relative flex-1">
+            Все оборудование интегрируется в единую IT-систему на базе
+            специализированного ПО
+          </p>
+        </li>
+      </ul>
+      {{/specialist}}
+
+      <!-- prettier-ignore -->
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

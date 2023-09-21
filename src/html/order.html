@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Оформление заказа</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxs text-black lg:text-xs"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Оформление заказа
+        </a>
+      </section>
+
+      {{> main-title title-text="Оформление заказа"}}
+
+      <!-- order help -->
+      <section
+        class="relative mx-auto mb-[447px] flex max-w-[360px] flex-col gap-[40px] md:mb-[100px] md:max-w-[1024px] md:pr-[348px] lg:mb-[120px] lg:max-w-[1410px] lg:pr-[480px]"
+      >
+        <div class="flex flex-col gap-[40px] lg:gap-[60px]">
+          <div class="flex text-sm leading-[140%] lg:text-lg">
+            <p>
+              Заказ можно оформить несколькими способами, постараемся наиболее
+              подробно их описать. Товары, которые вы можете добавить в корзину,
+              находятся на главной странице сайта в подборках, в категориях —
+              выбрать которую можно в верхнем меню, либо в каталоге в левой
+              части сайта, более подробно о товаре можно узнать из полного
+              описания.
+            </p>
+          </div>
+          <div
+            class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible"
+          >
+            <!-- prettier-ignore -->
+            <div
+              class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:text-xs"
+            >
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-phone.svg"
+              text="По телефону +7 8332 76-05-05"}}
+              {{> advantage class="w-[190px] lg:w-[340px]"  small="1" image="/images/icon-mail.svg"
+              text="Написав нам письмо info@smk-l.com"}}
+              {{> advantage class="w-[190px] lg:w-[270px]"  small="1" image="/images/icon-cart.svg"
+              text="Через корзину интернет-магазина"}}
+            </div>
+          </div>
+          <div class="flex text-sm leading-[140%] lg:text-lg">
+            <p>
+              Все товары, продающиеся в нашем магазине, имеют все необходимые
+              документы, включая сертификаты соответствия.
+            </p>
+          </div>
+        </div>
+
+        <button class="button--filled-green w-max">
+          <span> Бесплатная консультация </span>
+        </button>
+      </section>
+
+      <!-- order options -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[60px] py-[80px] md:max-w-[1024px] md:gap-[40px] md:py-[100px] lg:max-w-[1410px] lg:gap-[60px] lg:py-[120px]"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch md:pr-[348px] lg:pr-[480px]"
+          >
+            <div
+              class="relative self-stretch text-sm leading-[140%] lg:text-xl lg:font-medium"
+            >
+              <h2 class="hidden md:flex">Заказ самостоятельно на сайте:</h2>
+              <h2 class="md:hidden">Заказ самостоятельно<br />на сайте:</h2>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Выберите понравившуюся модель, определитесь с размером
+                  и цветом
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Нажмите кнопку «Купить». Товар мгновенно добавится в корзину.
+                  Вы можете дальше совершать покупки или перейти в раздел
+                  «Корзина» для оформления заказа
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  В разделе «Корзина» проверьте размер и укажите желаемое
+                  количество товара, после этого нажмите кнопку «Оформить заказ»
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Выберите удобный способ получения товара: доставка
+                  или самовывоз
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Заполните форму с контактными данными</p>
+              </div>
+            </div>
+            <div
+              class="hidden flex-row items-start justify-start gap-[10px] self-stretch text-xs"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Выберите форму оплаты</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Убедитесь, что вы заполнили все поля верно, и нажмите кнопку
+                  «Продолжить»
+                </p>
+              </div>
+            </div>
+            <div class="relative flex-1 self-stretch leading-[140%]">
+              <p>
+                Ваш заказ примет статус «Принят», о чем вы будете
+                проинформированы по той электронной почте, которую указывали
+                при оформлении заказа.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch md:pr-[348px] lg:pr-[480px]"
+          >
+            <div
+              class="relative self-stretch text-sm leading-[140%] lg:text-xl lg:font-medium"
+            >
+              <h2>Заказ по телефону</h2>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Продиктуйте менеджеру параметры и количество нужного товара, а
+                  также свои контактные данные и адрес доставки
+                </p>
+              </div>
+            </div>
+            <div class="relative flex-1 self-stretch leading-[140%]">
+              <p>
+                Если вы по какой-то причине передумали, вы можете отказаться от
+                доставки, но только до того момента, пока ваш заказ не передали
+                в курьерскую службу.
+              </p>
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Если вы планируете забрать заказ самостоятельно в Пункте
+                самовывоза, предупредите об этом менеджера.
+              </p>
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Вы можете дополнить свой заказ новыми покупками, пока заказ не
+                ушел на сборку.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch md:pr-[348px] lg:pr-[480px]"
+          >
+            <div
+              class="relative self-stretch text-sm leading-[140%] lg:text-xl lg:font-medium"
+            >
+              <h2>Заказ по электронной почте</h2>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Укажите в письме параметры и количество нужного товара, а
+                  также свои контактные данные и адрес доставки
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Наш менеджер свяжется с вами в ближайшее время для
+                  подтверждения заказа и уточнения деталей
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  О статусе заказа мы будем информировать вас по электронной
+                  почте
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] self-stretch bg-border-color p-[30px] text-4xs text-dark-gray md:p-[40px] lg:text-3xs"
+          >
+            <img class="relative h-6 w-6" alt="" src="/images/9.svg" />
+
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Обращаем ваше внимание, что консультации менеджеров «ЭЛКОМ»
+                не могут гарантировать точное представление клиента о выбранном
+                товаре и, как следствие, не могут являться основанием
+                для претензий продавцу. Окончательное решение по заказу товара
+                вы принимаете самостоятельно.
+              </p>
+            </div>
+            <div
+              class="relative hidden self-stretch text-base font-semibold leading-[100%] text-black lg:text-xl"
+            >
+              +7 8332 76-05-05
+            </div>
+            <div class="hidden flex-row items-start justify-start gap-[10px]">
+              <button class="h-[50px] w-[50px] bg-telegram"></button>
+
+              <button class="h-[50px] w-[50px] bg-whatsapp"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img
+        class="absolute right-[0px] top-[1226px] h-[467px] w-[420px] object-cover md:top-[669px] md:h-[459px] md:w-[413px] lg:top-[684px] lg:h-[650px] lg:w-[585px]"
+        alt=""
+        src="/images/phone-in-hand.png"
+      />
+
+      <!-- prettier-ignore -->
+      {{> contact-me}}
+      
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

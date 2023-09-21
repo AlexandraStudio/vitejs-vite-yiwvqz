@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Поиск</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-3xs text-black"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Поиск
+        </a>
+      </section>
+
+      {{> main-title title-text="Результат поиска"}}
+
+      <!-- search -->
+      <div
+        class="relative mx-auto mb-[30px] box-border flex max-w-[360px] flex-row items-center justify-start gap-[30px] rounded bg-light-bg px-[30px] py-5 text-xxs md:max-w-[1024px] lg:mb-[40px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[24px] lg:text-xs"
+      >
+        <input
+          class="relative flex-1 font-medium leading-[100%]"
+          placeholder="Давайте поищем..."
+        />
+        <button
+          class="flex flex-row items-center justify-end gap-[10px] text-right"
+        >
+          <img
+            class="relative h-6 w-6"
+            alt=""
+            src="/images/search-normal.svg"
+          />
+
+          <span class="relative font-medium leading-[100%]">Поиск</span>
+        </button>
+      </div>
+
+      <!-- search result -->
+      <section
+        class="relative mx-auto mb-[30px] flex max-w-[360px] flex-row items-start justify-start gap-[5px] text-sm md:max-w-[1024px] lg:mb-[40px] lg:max-w-[1410px] lg:text-lg"
+      >
+        <span class="relative leading-[140%]">Результатов поиска:</span>
+        <span class="relative leading-[140%]">4</span>
+      </section>
+
+      <div
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[20px] text-xxs md:mb-[100px] md:max-w-[1024px] md:gap-[10px] lg:mb-[240px] lg:max-w-[1410px] lg:text-xs"
+      >
+        <!-- prettier-ignore -->
+        {{> search-item image="/images/a25095d3f83cd474c179c32e956e0f11.png" title="Решетка вентиляционная ERA 10РК с фланцем"}}
+        {{> search-item image="/images/b194c31c495c92306c8dba4e1a84d025.png" title="Решетка вентиляционная Viento 600x900 (белый)"}}
+        {{> search-item image="/images/22fe04e12876fd0ded5a94644b802ba8.png" title="Решетка вентиляционная Viento BP вытяжная (180x250, белый)"}}
+        {{> search-item image="/images/4332ea1b7783ba5e78f714a3ff3cf35b.png" title="Решетка вентиляционная Vents 872"}}
+      </div>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

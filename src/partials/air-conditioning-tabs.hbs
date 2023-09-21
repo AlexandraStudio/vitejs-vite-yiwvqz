@@ -1,0 +1,46 @@
+<div
+  class="air-conditioning-tabs__container hidden w-full flex-col items-start justify-start rounded text-xs text-white md:flex"
+>
+  <div
+    class="flex flex-row items-start justify-start gap-[5px] self-stretch text-xxs lg:gap-[10px] lg:text-xs"
+  >
+    <button
+      class="air-conditioning-tabs__button flex flex-row items-start justify-start gap-[20px] rounded-b-none rounded-t bg-light-gray px-[20px] py-[10px] leading-[140%] text-black lg:px-10 lg:py-5"
+      id="tab1"
+    >
+      <p>Шаг 1</p>
+
+    </button>
+    <button
+      class="air-conditioning-tabs__button flex flex-row items-start justify-start gap-[20px] rounded-b-none rounded-t bg-dark-gray px-[20px] py-[10px] leading-[140%] lg:px-10 lg:py-5"
+      id="tab2"
+    >
+      <p>Шаг 2</p>
+    </button>
+    <button
+      class="air-conditioning-tabs__button flex flex-row items-start justify-start gap-[20px] rounded-b-none rounded-t bg-dark-gray px-[20px] py-[10px] leading-[140%] lg:px-10 lg:py-5"
+      id="tab3"
+    >
+      <p>Шаг 3</p>
+
+    </button>
+    <button
+      class="air-conditioning-tabs__button flex flex-row items-start justify-start gap-[20px] rounded-b-none rounded-t bg-dark-gray px-[20px] py-[10px] leading-[140%] lg:px-10 lg:py-5"
+      id="tab4"
+    >
+      <p>Шаг 4</p>
+
+    </button>
+    <button
+      class="air-conditioning-tabs__button flex flex-row items-start justify-start gap-[20px] rounded-b-none rounded-t bg-dark-gray px-[20px] py-[10px] leading-[140%] lg:px-10 lg:py-5"
+      id="tab5"
+    >
+      <p>Шаг 5</p>
+
+    </button>
+  </div>
+
+  {{#if @partial-block}}
+    {{> @partial-block }}
+  {{/if}}
+</div>

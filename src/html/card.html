@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Карточка</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-4xs text-white lg:text-3xs"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="no-scrollbar relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] overflow-x-scroll text-dark-gray md:max-w-[1024px] md:overflow-x-visible lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Каталог
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          VRF-системы
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Наружные блоки HI-FLEXI Высокоэнергоэффективная серия SXA
+        </a>
+      </section>
+
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-row items-start justify-start text-dark-green md:mb-[100px] md:max-w-[1024px] md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <div
+          class="hidden flex-col items-start justify-start gap-[20px] md:flex"
+        >
+          <div class="flex flex-col items-start justify-start gap-[10px]">
+            <div
+              class="relative h-[415px] w-[415px] rounded shadow-base lg:h-[570px] lg:w-[570px]"
+            >
+              <div class="swiper showcase !ml-0 w-full">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[415px] w-[415px] lg:h-[570px] lg:w-[570px]"
+                      data-thumb-src="/images/card__thumbnail1.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail1.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[415px] w-[415px] lg:h-[570px] lg:w-[570px]"
+                      data-thumb-src="/images/card__thumbnail2.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail2.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[415px] w-[415px] lg:h-[570px] lg:w-[570px]"
+                      data-thumb-src="/images/card__thumbnail3.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail3.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[415px] w-[415px] lg:h-[570px] lg:w-[570px]"
+                      data-thumb-src="/images/card__thumbnail4.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail4.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[415px] w-[415px] lg:h-[570px] lg:w-[570px]"
+                      data-thumb-src="/images/card__thumbnail5.png"
+                    >
+                      <img
+                        class="absolute bottom-[0px] left-[0px] right-[0px] top-[0px] h-full max-h-full w-full max-w-full overflow-hidden object-cover"
+                        alt=""
+                        src="/images/card__thumbnail5.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {{> pages}}
+              </div>
+            </div>
+
+            <div class="relative h-[60px] w-[415px] lg:h-[100px] lg:w-[570px]">
+              <div
+                thumbsSlider=""
+                class="thumbnails swiper !ml-0 w-full !overflow-visible"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[60px] w-[75px] shrink-0 overflow-hidden rounded shadow-base lg:h-[100px] lg:w-[106px]"
+                      data-thumb-src="/images/card__thumbnail1.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail1.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[60px] w-[75px] shrink-0 overflow-hidden rounded shadow-base lg:h-[100px] lg:w-[106px]"
+                      data-thumb-src="/images/card__thumbnail2.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail2.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[60px] w-[75px] shrink-0 overflow-hidden rounded shadow-base lg:h-[100px] lg:w-[106px]"
+                      data-thumb-src="/images/card__thumbnail3.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail3.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[60px] w-[75px] shrink-0 overflow-hidden rounded shadow-base lg:h-[100px] lg:w-[106px]"
+                      data-thumb-src="/images/card__thumbnail4.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail4.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[60px] w-[75px] shrink-0 overflow-hidden rounded shadow-base lg:h-[100px] lg:w-[106px]"
+                      data-thumb-src="/images/card__thumbnail5.png"
+                    >
+                      <img
+                        class="absolute bottom-[0px] left-[0px] right-[0px] top-[0px] h-full max-h-full w-full max-w-full overflow-hidden object-cover"
+                        alt=""
+                        src="/images/card__thumbnail5.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {{> pages}}
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="box-border flex flex-row items-center justify-start gap-[20px] border-[1px] border-solid border-dark-green p-[20px] md:w-[415px] lg:w-[570px] lg:p-10"
+          >
+            <img class="relative h-6 w-6" alt="" src="/images/9.svg" />
+
+            <div class="relative flex-1 leading-[140%]">
+              <p>
+                Внешний вид изделия может отличаться отизображений,
+                представленных на сайте.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[30px] lg:gap-[40px]"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] text-lg"
+          >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+            >
+              <div
+                class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+              >
+                <h1>
+                  Наружные блоки HI-FLEXI Высокоэнергоэффективная серия SXA
+                </h1>
+              </div>
+            </div>
+            <div
+              class="flex w-[360px] flex-col items-start justify-start gap-[20px] text-4xs text-dark-gray md:hidden lg:text-3xs"
+            >
+              <div class="swiper mobile !ml-0 w-full" id="mobile">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[360px] w-[360px]"
+                      data-thumb-src="/images/card__thumbnail1.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail1.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[360px] w-[360px]"
+                      data-thumb-src="/images/card__thumbnail2.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail2.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[360px] w-[360px]"
+                      data-thumb-src="/images/card__thumbnail3.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail3.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[360px] w-[360px]"
+                      data-thumb-src="/images/card__thumbnail4.png"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        alt=""
+                        src="/images/card__thumbnail4.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide !h-auto !w-fit">
+                    <div
+                      class="relative h-[360px] w-[360px]"
+                      data-thumb-src="/images/card__thumbnail5.png"
+                    >
+                      <img
+                        class="absolute bottom-[0px] left-[0px] right-[0px] top-[0px] h-full max-h-full w-full max-w-full overflow-hidden object-cover"
+                        alt=""
+                        src="/images/card__thumbnail5.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-[-10px]">{{> pages}}</div>
+              </div>
+              <div
+                class="flex flex-row items-center justify-start gap-[20px] self-stretch border-[1px] border-solid border-border-color p-5"
+              >
+                <img class="relative h-6 w-6" alt="" src="/images/9.svg" />
+
+                <div class="relative flex-1 leading-[140%]">
+                  <p>
+                    Внешний вид изделия может отличаться отизображений,
+                    представленных на сайте.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative self-stretch text-xxs leading-[140%] text-black lg:text-xs"
+            >
+              <p class="mb-[45px]">
+                Новейшая высокоэффективная серия SX VRF-систем Hisense является
+                продолжением развития новой улучшенной платформыVRF-систем
+                Hisense. Данная система сочетает в себе все передовые разработки
+                в области мультизональных систем,что позволило достичь
+                высочайших показателей энергоэффективности, расширило
+                температурный диапазон работы,упростило процессы монтажа,
+                запуска и сервисного обслуживания.
+              </p>
+              <p class="max-md:mb-[-4px]">
+                Новая форма ламелей теплообменника ускоряет процесс оттайки
+                в режиме работы на обогрев, повышая эффективность использования
+                оборудования серии SX в качестве альтернативного источника
+                теплоты в зимний период.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] text-black"
+          >
+            <div class="relative font-medium leading-[120%]">
+              Толщина стали:
+            </div>
+            <div class="flex flex-row items-start justify-start gap-[10px]">
+              <button
+                class="tab-button button--outlined-gray !bg-border-color px-3.5 py-2.5 lg:p-[14px]"
+              >
+                <span class="relative font-medium leading-[120%]">0,1 мм</span>
+              </button>
+              <button
+                class="tab-button button--outlined-gray px-3.5 py-2.5 lg:p-[14px]"
+              >
+                <div class="relative font-medium leading-[120%]">0,5 мм</div>
+              </button>
+              <button
+                class="tab-button button--outlined-gray px-3.5 py-2.5 lg:p-[14px]"
+              >
+                <div class="relative font-medium leading-[120%]">0,7 мм</div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch overflow-hidden rounded bg-light-bg p-[30px] lg:p-[40px]"
+          >
+            <div class="flex flex-col items-start justify-start">
+              <div class="relative leading-[140%]">Актуально на 14 июня</div>
+              <div
+                class="relative text-base font-medium leading-[130%] text-black lg:text-xl"
+              >
+                от 70 831 ₽
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] text-xxs text-black md:flex-row lg:text-xs"
+            >
+              <div class="flex flex-row items-start justify-start gap-[5px]">
+                <button
+                  class="flex h-[58px] w-[50px] lg:h-[68px]"
+                  id="decrease"
+                >
+                  <img
+                    class="min-h-full min-w-full overflow-hidden rounded object-cover"
+                    alt=""
+                    src="/images/minus-white.svg"
+                  />
+                </button>
+
+                <div
+                  class="box-border flex h-[58px] w-[80px] flex-row items-center justify-center rounded bg-white px-[30px] py-[20px] lg:h-[68px]"
+                >
+                  <input
+                    class="relative w-full leading-[140%] opacity-[0.3]"
+                    value="1"
+                    id="counter"
+                  />
+                </div>
+                <button
+                  class="flex h-[58px] w-[50px] lg:h-[68px]"
+                  id="increase"
+                >
+                  <img
+                    class="min-h-full min-w-full overflow-hidden rounded object-cover"
+                    alt=""
+                    src="/images/plus-white.svg"
+                  />
+                </button>
+              </div>
+              <button class="button--filled-green">
+                <span>В корзину</span>
+              </button>
+              <div
+                class="hidden flex-1 flex-row items-center justify-center rounded border-[1px] border-solid border-border-color px-[30px] py-6 text-xs"
+              >
+                <div class="relative font-medium leading-[100%]">
+                  Уточнить стоимость
+                </div>
+              </div>
+            </div>
+            <div class="relative self-stretch leading-[140%] text-dark-gray">
+              В связи с ежемесячными изменениями цен на рынке металлопроката,
+              просим уточнять актуальные цены у менеджеров.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="tabs__container relative mx-auto mb-[80px] max-w-[360px] text-xxs text-dark-gray md:mb-[100px] md:h-[584px] md:max-w-[1024px] lg:mb-[120px] lg:h-[810px] lg:max-w-[1410px] lg:text-xs"
+      >
+        <div
+          class="no-scrollbar mb-[30px] box-border flex flex-row items-center justify-start gap-[30px] overflow-x-scroll bg-dark-green px-[30px] py-[20px] md:overflow-x-visible md:py-[24px] lg:mb-[40px] lg:gap-[40px] lg:p-[30px]"
+        >
+          <button
+            class="tabs__button relative font-medium leading-[100%] text-white"
+            id="tab1"
+          >
+            Описание
+          </button>
+          <button
+            class="tabs__button relative font-medium leading-[100%]"
+            id="tab2"
+          >
+            Характеристики
+          </button>
+          <button
+            class="tabs__button relative font-medium leading-[100%]"
+            id="tab3"
+          >
+            Варианты
+          </button>
+          <button
+            class="tabs__button relative font-medium leading-[100%]"
+            id="tab4"
+          >
+            Доставка и оплата
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[50px] text-black md:flex-row md:gap-[107px] lg:gap-[150px]"
+        >
+          <div
+            class="tabs__item flex flex-col items-start justify-start gap-[30px] self-stretch md:w-[676px] lg:w-[930px] lg:gap-[40px]"
+            id="content1"
+          >
+            <div
+              class="relative flex w-full flex-col justify-between self-stretch leading-[140%]"
+            >
+              <p class="mb-[10px] lg:mb-[30px]">
+                Новейшая высокоэффективная серия SX VRF-систем Hisense является
+                продолжением развития новой улучшенной платформы VRF-систем
+                Hisense. Данная система сочетает в себе все передовые разработки
+                в области мультизональных систем, что позволило достичь
+                высочайших показателей энергоэффективности, расширило
+                температурный диапазон работы, упростило процессы монтажа,
+                запуска и сервисного обслуживания.
+              </p>
+              <p>
+                Новая форма ламелей теплообменника ускоряет процесс оттайки
+                в режиме работы на обогрев, повышая эффективность использования
+                оборудования серии SX в качестве альтернативного источника
+                теплоты в зимний период.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch text-base lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Высокоэффективый компрессор Hitachi
+              </div>
+              <div
+                class="relative flex flex-col justify-between self-stretch text-xxs leading-[140%] lg:h-[168px] lg:text-xs"
+              >
+                <p class="mb-[10px]">
+                  Новый инверторный компрессор Hitachi c уникальной
+                  запатентованной технологией компенсации действия центробежной
+                  силы.
+                </p>
+                <p>
+                  В процессе работы и вращения спирали происходит изгиб
+                  оси основного вала под действием центробежной силы,
+                  что приводит к его износу и возникновению перетоков хладагента
+                  между подвижной и неподвижной спиралями.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tabs__item hidden flex-col items-start justify-start gap-[40px] self-stretch md:w-[676px] lg:w-[930px] lg:gap-[40px]"
+            id="content2"
+          >
+            <div class="flex w-full flex-col gap-[26px]">
+              <div
+                class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+              >
+                <h3>Основное</h3>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-xxs lg:text-xs"
+              >
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]"><p>Бренд</p></div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>Hisense</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]"><p>Серия</p></div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>SXA</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Модель наружного блока</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]">
+                    <p>AVWT-76HKFSXA</p>
+                  </div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Направление выброса воздуха</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>Верхнее</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Тип наружного блока</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>Двухтрубный</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Охлаждение конденсатора</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>Воздушное</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Количество подключаемых блоков, штs</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>13</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full flex-col gap-[26px]">
+              <div
+                class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+              >
+                <h3>Производительность</h3>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-xxs lg:text-xs"
+              >
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Холодопроизводительность, кВт</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>22.4</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Теплопроизводительность, кВт</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>25</p></div>
+                </div>
+                <div
+                  class="flex w-full flex-row items-baseline justify-start gap-[10px]"
+                >
+                  <div
+                    class="flex flex-1 flex-row items-baseline justify-start gap-[7px]"
+                  >
+                    <div class="relative leading-[140%]">
+                      <p>Расход воздуха наружного блока, м3/ч</p>
+                    </div>
+                    <div
+                      class="relative h-px max-w-full flex-1 overflow-hidden bg-light-gray"
+                    ></div>
+                  </div>
+                  <div class="relative leading-[140%]"><p>10980</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tabs__item hidden md:w-[676px] lg:w-[930px]"
+            id="content3"
+          >
+            <div
+              class="grid w-full grid-cols-1 gap-[30px] md:grid-cols-4 md:grid-rows-2"
+            >
+              <div
+                class="h-[210px] w-[210px] bg-card1 bg-[length:240%_120%] bg-[-38.64px_-26.04px] bg-no-repeat"
+              ></div>
+
+              <div
+                class="h-[210px] w-[210px] bg-card2 bg-[length:240%_120%] bg-[-262.08px_-26.04px] bg-no-repeat"
+              ></div>
+
+              <div
+                class="h-[210px] w-[210px] bg-card3 bg-[length:240%_120%] bg-[-34.111px_-26.04px] bg-no-repeat"
+              ></div>
+
+              <div
+                class="h-[210px] w-[210px] bg-card4 bg-[length:240%_120%] bg-[-249.151px_-26.04px] bg-no-repeat"
+              ></div>
+
+              <div
+                class="h-[210px] w-[210px] bg-card5 bg-[length:240%_120%] bg-[-33.6px_-26.04px] bg-no-repeat"
+              ></div>
+
+              <div
+                class="h-[210px] w-[210px] bg-card6 bg-[length:240%_120%] bg-[-236.88px_-26.04px] bg-no-repeat"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="tabs__item hidden flex-col items-start justify-start gap-[40px] self-stretch md:w-[676px] lg:w-[930px] lg:gap-[40px]"
+            id="content4"
+          >
+            <div
+              class="relative flex w-full flex-col justify-between self-stretch leading-[140%]"
+            >
+              <p class="mb-[10px] lg:mb-[30px]">
+                Новейшая высокоэффективная серия SX VRF-систем Hisense является
+                Гарантируем 100% сохранность оборудования. Доставляем
+                собственным транспортом и сотрудничаем только с проверенными
+                транспортными компаниями. Грузы надёжно упаковываются
+                и обрешечиваются.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch text-base lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Доставка
+              </div>
+              <div
+                class="relative flex flex-col justify-between self-stretch text-xxs leading-[140%] lg:h-[168px] lg:text-xs"
+              >
+                <p>
+                  Доставка товаров от 10 до 50 кг осуществляется до подъезда.
+                  Доставка крупногабаритных товаров (свыше 50 кг) осуществляется
+                  до адреса назначения. Разгрузочные работы согласовываются
+                  дополнительно, возможно привлечение спецтехники. Сроки
+                  доставки указаны для товаров в наличии. Срок поставки заказных
+                  позиций обговаривается при заказе. При оплате от юрлица
+                  для получения груза потребуется паспорт и доверенность.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch text-base lg:text-xl"
+            >
+              <div class="relative self-stretch font-medium leading-[130%]">
+                Оплата
+              </div>
+              <div
+                class="relative flex flex-col justify-between self-stretch text-xxs leading-[140%] lg:h-[168px] lg:text-xs"
+              >
+                <p>Оплата — по счёту для юредических и физических лиц</p>
+              </div>
+            </div>
+          </div>
+          {{> info-contact}}
+        </div>
+      </section>
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] text-xxl text-black md:mb-[100px] md:max-w-[1024px] md:text-3xl lg:mb-[120px] lg:max-w-[1410px] lg:text-5xl"
+      >
+        <div
+          class="flex flex-row items-end justify-start gap-[30px] self-stretch lg:gap-[40px]"
+        >
+          <div
+            class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+          >
+            <div class="relative self-stretch font-medium leading-[110%]">
+              С этим товаром покупают:
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 items-start justify-start gap-[20px] text-xs md:grid-cols-3 md:flex-row lg:grid-cols-4 lg:gap-[30px]"
+        >
+          {{> catalog-item
+          image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png"
+          title="Прямые участки воздуховода"}} {{> catalog-item
+          image-source="/images/fe6a0bee987be8f67140010b7b8cc12b.png"
+          title="Переход с прямоугольного сечения на прямоугольное сечение"}}
+          {{> catalog-item
+          image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png"
+          title="Отвод 90 градусов(прямоугольный)"}} {{> catalog-item
+          class="hidden lg:flex"
+          image-source="/images/e02a989ee5d7172aa2020df2d1ebaecd.png"
+          title="Отвод 45 градусов(прямоугольный)"}}
+        </div>
+        <button class="button--outlined-gray w-full">
+          <span> Посмотреть больше </span>
+        </button>
+      </section>
+
+      {{> contact-me}} {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,796 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Ремонт видеонаблюдения</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="no-scrollbar relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] overflow-x-scroll text-dark-gray md:max-w-[1024px] md:overflow-x-visible lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Кабельные системы
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative whitespace-nowrap text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Ремонт видеонаблюдения
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="Ремонт видеонаблюдения"}} 
+      
+      {{> cropped-picture
+      image="/images/111bee1357cfbc9470d486901a0def33.png"
+      small-image="/images/111bee1357cfbc9470d486901a0def33_sm.png"}}
+
+      <!-- service -->
+      <section
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] lg:mb-[140px] lg:max-w-[1410px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Предлагаем услуги" subtitle="Мы осуществляем жёсткий контроль качества работ и оригинальных запчастей на всех этапах, что позволяет нам делать работу быстро и качественно и давать гарантии на работы" buttons="1"}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible"
+          id="cctv-repair-service"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/41ed501fc33de43c520e055c452ba437.png" title="Диагностика" description="Поможет выявить неполадки системы видеонаюлюдения"}}
+            </div>
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/60cbc97314909ae31f94f962e8a1d59b.png" title="Ремонт" description="Видеооборудовния любой степени сложности"}}
+            </div>
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/c6c414d89504a06ef40774ffbca40442.png" title="Восстановление" description="Восстановление камеры с гарантией"}}
+            </div>
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/60cbc97314909ae31f94f962e8a1d59b.png" title="Замена модулей" description="Обеспечьте более эффективную работу"}}
+            </div>
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/999889ab040300bc0b92a1511066a7fe.png" title="Настройка" description="Настроим, обясним и оставим инструкцию"}}
+            </div>
+            <div class="swiper-slide !w-fit !h-auto">
+              {{> service-item class="w-[360px] lg:w-[480px]" height="h-[295px] lg:h-[330px]" image="/images/490f82e352801757bb8d60b06d427325.png" title="Тестирование" description="Полное тестирование системы видеонаблюдения"}}
+
+            </div>
+           
+          </div>
+
+          {{> pages}}
+        </div>
+      </section>
+
+      <!-- professional approach -->
+      <section
+        class="mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[20px] text-base md:mb-[100px] md:max-w-[1024px] md:flex-row md:justify-between md:gap-0 lg:mb-[120px] lg:max-w-[1410px] lg:text-xl"
+      >
+        <div
+          class="relative self-stretch font-medium leading-[130%] md:w-[328px] lg:w-[450px]"
+        >
+          Мы гарантируем профессиональный подход
+        </div>
+        <div
+          class="relative self-stretch text-sm leading-[140%] text-dark-gray md:w-[589px] lg:w-[813px] lg:text-lg"
+        >
+          Ремонт камер видеонаблюдения позволяет сэкономить средства, которые
+          в противном случае пришлось бы тратить на приобретение и установку
+          нового оборудования. Ремонтные работы могут включать в себя чистку,
+          устранение поломок, переустановку системы или замену её отдельных
+          компонентов. Если ваша система видеонаблюдения начала сбоить
+          или вообще перестала работать, следует как можно быстрее выявить
+          и устранить причину поломки, так как все это время безопасность вашего
+          объекта находится под угрозой.
+        </div>
+      </section>
+
+      <!-- result -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[40px] pb-[90px] pt-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Обратившись к нам вы получите" }}
+          <div class="relative w-full">
+            <div
+              class="swiper !ml-0 w-full !overflow-visible"
+              id="cctv-repair-result"
+            >
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> result-item  title="Качество работ" description="Опытные специалисты проводят работы строго по регламенту" }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> result-item title="Гарантии" description="Ответственно подходим к своим обязательствам и готовы поручиться за то, что делаем"}}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> result-item title="Оборудование" description="У нас есть при себе всё необходимое. От вас ничего не требуется"}}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> result-item title="Доступные цены" description="Узнать актуальные расценки можно в любой момент у наших сотрудников"}}
+                </div>
+             
+              </div>
+
+              {{> pages}}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me title="Расчет<wbr /> стоимости ремонта<br />
+      видео<wbr />наблюдения" description="Цена будет рассчитываться
+      индивидуально для каждого случая. Вы платите только за фактический объем
+      ремонта"}}
+
+      <!-- frequent break downs -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[42px] py-[80px] text-base text-black md:max-w-[1024px] md:gap-[40px] md:py-[100px] lg:max-w-[1410px] lg:py-[120px] lg:text-xl"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Частые поломки видеонаблюдения" subtitle=" В большинстве случаев ремонт видеонаблюдения требуется при поломке блока питания. По статистике именно с ним связаны самые частые поломки. Из-за блока питания на модули камеры не поступает питание, из-за чего устройство не работает" buttons="1"}}
+          <div class="flex w-full flex-col gap-[30px]">
+            <span
+              class="relative self-stretch font-medium leading-[130%] text-dark-gray"
+            >
+              Также ремонт камер видеонаблюдения требуется при следующих
+              дефектах:
+            </span>
+
+            <div class="swiper !ml-0 w-full !overflow-visible" id="id">
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Выходе из строя микрофона" }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red red=1 description="Износе основных элементов камеры"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Выходе из строя сервера IP-камеры"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Перегреве элементов камеры (часто случается после грозы)"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Обрыве соединения от износа кабеля или других проводов"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Проблемах с переключением режимов съемки"}}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> result-item--red description="Поломке линз в объективе"}}
+              </div>
+           
+            </div>
+
+              {{> pages}}
+            </div>
+          </div>
+
+          <div class="text-xxs leading-[140%] lg:text-xs">
+            <p>
+              Еще ремонт систем видеонаблюдения может требоваться при
+              расфокусировке, запотевании защитного стекла и загрязнении
+              датчиков контроля или шестеренок сервоприводной системы. Это
+              неполный список поломок. Ремонт систем видеонаблюдения может
+              требоваться и во многих других случаях, к примеру,
+              микроповреждениях токоведущих жил или временных потерях сигнала,
+              вызванных импульсными помехами сети питания.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- can you repair -->
+      <section
+        class="relative mx-auto mb-[509px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Можно ли отремонтировать систему самостоятельно"
+          description="Реализация инженерных систем в жилых, офисных, производственных помещениях."}}
+          <div
+            class="flex flex-col items-start justify-start gap-[40px] self-stretch text-xxs lg:text-xs"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <p class="mb-[-4px]">
+                К ремонту систем видеонаблюдения необходимо подходить
+                ответственно. Если ваша камера вышла из строя или начала
+                работать нестандартно, не стоит браться за ремонт
+                самостоятельно. Непрофессиональное вмешательство может вывести
+                из строя всю систему. Если что‑то пойдёт не так, вы не только
+                не сможете продолжать вести видеонаблюдение за вашим объектом,
+                но и будете вынуждены расходовать деньги на приобретение нового
+                оборудования.
+              </p>
+            </div>
+            <div
+              class="flex h-[210px] flex-row items-start justify-start gap-[20px] self-stretch"
+            >
+              <img
+                class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                alt=""
+                src="/images/46e89f152be56c679886b4fdd10b44a0.png"
+              />
+
+              <img
+                class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                alt=""
+                src="/images/d73ab60cefc9b6f4277101d240dd7191.png"
+              />
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Заказав ремонт видеонаблюдения у профессионалов, вы можете
+                не сомневаться в том, что ваша система безопасности снова будет
+                качественно и безотказно работать. К тому же, периодическое
+                техническое обслуживание системы обойдутся вам гораздо дешевле,
+                чем покупка и установка новой камеры видеонаблюдения.
+              </p>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Заказать ремонт видеонаблюдения </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-end justify-start gap-[20px] text-4xs text-dark-gray lg:text-3xs"
+        >
+          <div
+            class="flex h-[360px] w-[360px] flex-col items-start justify-start shadow-base md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          >
+            <img
+              class="relative h-full w-full rounded object-cover mix-blend-normal"
+              alt=""
+              src="/images/763abadd5bc7d1aaf4e31392fb6e4ffa.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="absolute right-0 top-[6905px] z-10 h-[450px] w-[420px] mix-blend-multiply md:top-[5617px] md:h-[545px] md:w-[499px] lg:top-[6192px] lg:h-[770px] lg:w-[705px]"
+      >
+        <img
+          class="h-full w-full object-cover"
+          alt=""
+          src="/images/aa576488bd8565e3dd2e08ba562d08bb.png"
+        />
+      </div>
+
+      <!-- work process -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:py-[100px] md:pr-[261px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:pr-[360px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Как мы работаем" subtitle="Специализация на объектах любой сложности:"}}
+
+          <div
+            class="swiper !ml-0 w-full !overflow-visible text-light-gray md:!hidden"
+            id="work-process"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >01</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Оформление заявки
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">
+                        Сначала вам необходимо связаться с нашим сотрудником
+                        и указать, в каком именно техническом обслуживании
+                        возникла потребность. Наш специалист может задать
+                        уточняющие вопросы для прояснения обстоятельств.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >02</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Выезд на объект
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">Проектировщика и инженера</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >03</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Проектирование
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">Разработка проекта с учётом всех ГОСТов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >04</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Смета и согласование
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">
+                        Подбор оборудования, расчёт монтажных работ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >05</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Заключение договора
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      Закрепление обязательств обеих сторон
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >06</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Поставляем оборудование, материалы, проводим работы
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">
+                        Проводим монтажные работы, опрессовку системы
+                        и пуско-наладочные работы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >07</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Сдаём объект заказчику
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">
+                        Проводим инструктаж по пользованию системой. Принимаем
+                        доплату по договору подряда
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                <div
+                  class="flex h-full w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base"
+                >
+                  <b
+                    class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                    >08</b
+                  >
+                  <div
+                    class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+                  >
+                    <div
+                      class="relative self-stretch font-medium leading-[130%]"
+                    >
+                      Завершаем работу
+                    </div>
+                    <div
+                      class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                    >
+                      <p class="m-0">
+                        Ведём сопровождение и постгарантийное обслуживание
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {{> pages}}
+          </div>
+
+          <div
+            class="hidden w-full flex-row items-start justify-start gap-[12px] py-0 pr-0 text-4xl text-light-gray md:flex md:flex-col md:gap-[20px] lg:text-6xl"
+          >
+            <div
+              class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+            >
+              <b
+                class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                >01</b
+              >
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  Оформление заявки
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                >
+                  <p class="m-0">
+                    Сначала вам необходимо связаться с нашим сотрудником
+                    и указать, в каком именно техническом обслуживании возникла
+                    потребность. Наш специалист может задать уточняющие вопросы
+                    для прояснения обстоятельств.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+            >
+              <b
+                class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                >02</b
+              >
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  Выезд специалиста
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                >
+                  <p class="m-0">
+                    Следующий этап — выезд специалиста на объект. Мастер
+                    осмотрит здание и все помещения, чтобы установить тип
+                    кондиционирования, его состояние для прояснения перечня
+                    необходимых работ.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+            >
+              <b
+                class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                >03</b
+              >
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  Подписание договора
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                >
+                  <p class="m-0">
+                    После выезда инженера мы согласовываем перечень необходимых
+                    работ, периодичность их оказания, цены и другие факторы. Всё
+                    это вносится в текст договора.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+            >
+              <b
+                class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                >04</b
+              >
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  Обслуживание
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                >
+                  <p class="m-0">
+                    В дальнейшем наши мастера выполняют оговорённые действия.
+                    Это может быть разовая ситуация или проведение технического
+                    обслуживания на постоянной основе с определённой
+                    регулярностью.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex w-[298px] flex-col items-start justify-start gap-[10px] self-stretch rounded bg-white px-10 py-[30px] shadow-base md:w-full md:flex-row md:items-center lg:gap-[30px] lg:px-[60px] lg:px-[60px] lg:py-10"
+            >
+              <b
+                class="relative flex w-[105px] text-4xl font-bold leading-[100%] lg:text-6xl"
+                >05</b
+              >
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base text-black md:w-[568px] lg:w-[690px] lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  Сдача работы
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] text-dark-gray lg:text-xs"
+                >
+                  Приемка выполненных работ во избежание недоразумений
+                  оформляется соответствующим актом.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how to save -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:flex-row-reverse md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <img
+          class="relative h-[360px] w-[360px] rounded object-cover md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          alt=""
+          src="/images/a43768ed0fc574b74db5067693fbf675.png"
+        />
+
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch md:gap-[10px] lg:gap-[20px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Как сэкономить на ремонте систем видеонаблюдения" subtitle="Лучший способ избежать расходов на ремонт IP- камер и сопутствующего оборудования – не допускать их поломки. Для этого следует изначально ответственно относиться к своей системе:"}}
+
+          <div
+            class="flex flex-col items-start justify-start gap-[40px] self-stretch text-xxs lg:text-xs"
+          >
+            <div
+              class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+            >
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Приобретайте только качественное и официальное оборудование.
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  <p>
+                    Заказывайте проектирование, монтаж и настройку систем
+                    видеонаблюдения у профессионалов. Если вы сомневаетесь в
+                    репутации выбранной вами компании, обратите внимание на
+                    отзывы ее клиентов и время работы на рынке. Если фирма
+                    проработала десять или больше лет, и все еще продолжает
+                    существовать – опыту ее сотрудников можно доверять
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  <p>
+                    Допускайте к работе с оборудованием только профессионалов и
+                    не пренебрегайте мануалами и рекомендациями, выданными вам
+                    специалистами, устанавливавшими систему. Согласно
+                    статистике, одна из основных причин поломок
+                    автоматизированных систем безопасности – неквалифицированное
+                    использование или обслуживание
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  <p>
+                    Позаботьтесь о защите оборудования от порывов ветра или
+                    других негативных факторов. Если вы монтируете внешнюю
+                    систему, приобретайте устройства с достаточной степенью
+                    защиты IPXX. Еще один немаловажный фактор – защита от
+                    случайного или намеренного вандализма. Проектируя систему,
+                    убедитесь, что оборудование хорошо закреплено и расположено
+                    в труднодоступном месте
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  <p>
+                    Не забывайте про периодическое техническое обслуживание.
+                    Обеспечьте своевременное выполнение всех профилактических
+                    работ, и вы сможете избежать поломки или преждевременного
+                    износа отдельных компонентов системы
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Заказать услугу </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{#> specialist}}
+      <p class="mb-[10px]">
+        И ещё один важный совет: не стоит рассказывать посторонним людям о том,
+        что на вашем объекте сейчас не работают системы безопасности —
+        так вы подвергаете своё помещение или территорию дополнительному риску.
+      </p>
+      <p>
+        О ваших проблемах должны знать только вы и сотрудники компании, которые
+        будут проводить ремонт оборудования. В таком случае даже временно
+        неработающая система станет достаточно надёжной защитой для вашего
+        объекта.
+      </p>
+      " {{/specialist}}
+      <!-- prettier-ignore -->
+      {{> faq}} {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

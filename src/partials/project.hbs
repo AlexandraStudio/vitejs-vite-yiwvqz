@@ -1,0 +1,108 @@
+<div
+  class=" flex flex-col {{#if reverse}}md:flex-row-reverse{{else}}md:flex-row{{/if}} items-start justify-start gap-[30px]  md:gap-[107px] lg:gap-[150px]"
+>
+  <img
+    class="relative rounded w-[360px] md:w-[502px] lg:w-[690px] h-[391px] md:h-[545px] lg:h-[750px] object-cover"
+    alt=""
+    src={{image}}
+  />
+
+  <div
+    class="w-[360px] md:w-[415px] lg:w-[570px] md:mt-[60px] lg:mt-[80px] flex flex-col items-start justify-start gap-[30px] lg:gap-[40px]"
+  >
+    <div
+      class="self-stretch flex flex-col items-start justify-start gap-[20px] text-sm lg:text-lg text-dark-green"
+    >
+      <div
+        class="self-stretch flex flex-col items-start justify-start gap-[10px]"
+      >
+        <div class="self-stretch relative leading-[140%]">
+          {{type}}
+        </div>
+        <div
+          class="self-stretch relative text-xxl md:text-3xl lg:text-5xl leading-[110%] font-medium text-black"
+        >
+          {{title}}
+        </div>
+      </div>
+      <span class="self-stretch relative leading-[140%] text-black">
+        <p>Центральная система кондиционирования. Проектирование, поставка
+        и монтаж. Система «Чиллер-фанкоил»</p>
+      </span>
+    </div>
+    <div class="flex flex-row items-start justify-start gap-[18px]">
+      <div
+        class="rounded bg-light-gray flex flex-row p-3.5 items-start justify-start"
+      >
+        <div class="relative leading-[100%] font-medium">
+          2021 год
+        </div>
+      </div>
+      <div
+        class="rounded bg-light-gray flex flex-row p-3.5 items-start justify-start"
+      >
+        <div class="relative leading-[100%] font-medium">245м<sup>2</sup></div>
+      </div>
+    </div>
+    <div
+      class="self-stretch flex flex-col items-start justify-start gap-[20px] text-base lg:text-xl"
+    >
+      <div class="self-stretch relative leading-[130%] font-medium">
+        Было сделано:
+      </div>
+      <div
+        class="self-stretch flex flex-col items-start justify-start gap-[15px] text-xxs lg:text-xs"
+      >
+        <div
+          class="self-stretch flex flex-row items-center justify-start gap-[10px]"
+        >
+          <img alt="" src="/images/tick-square.svg"/>
+
+          <div class="flex-1 relative leading-[140%]">
+            Проектирование
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-start gap-[10px]"
+        >
+          <img alt="" src="/images/tick-square.svg"/>
+
+          <div class="flex-1 relative leading-[140%]">Монтаж</div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-start gap-[10px]"
+        >
+         <img alt="" src="/images/tick-square.svg"/>
+
+          <div class="flex-1 relative leading-[140%]">
+            Пуско-наладка систем вентиляции и дымоудаления.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-[20px] flex-col">
+      <button
+        class="text-white button--filled-green"
+        id="open-popup"
+      >
+        <span>
+          Рассчитать стоимость под мой объект
+        </span>
+      </button>
+      {{#if buttons}}
+      <div
+        class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+      >
+        <button
+          class="button--outlined-gray h-[58px] w-[58px] !p-0 lg:h-[68px] lg:w-[68px]"
+        >
+          <img alt="" src="/images/union.svg" />
+        </button>
+        <button class="button--outlined-gray w-max">
+          <span> Следующий проект </span>
+        </button>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

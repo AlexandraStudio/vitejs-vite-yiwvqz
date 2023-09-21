@@ -1,0 +1,60 @@
+<section
+  class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-sm text-dark-green md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px] lg:text-lg"
+>
+
+  <div
+    class="h-[360px] w-[360px] bg-specialist-sm bg-center md:h-[328px] md:w-[328px] md:bg-specialist-md lg:h-[450px] lg:w-[450px] lg:bg-specialist-lg"
+  >
+  </div>
+
+  <div
+    class="flex w-full flex-1 flex-col items-start justify-start gap-[30px] self-stretch md:mt-[60px] lg:mt-[80px] lg:gap-[40px]"
+  >
+    <div
+      class="flex flex-col items-start justify-start gap-[20px] self-stretch md:gap-[30px] lg:gap-[40px]"
+    >
+      <div
+        class="flex flex-col items-start justify-start gap-[10px] self-stretch"
+      >
+        <div class="relative self-stretch leading-[140%]">
+          <p>Прямая речь</p>
+        </div>
+        <div
+          class="relative self-stretch text-xxl font-medium leading-[110%] text-black md:text-3xl lg:text-5xl"
+        >
+          <p>Специалиста</p>
+        </div>
+      </div>
+      <div
+        class="relative self-stretch text-xxs leading-[140%] text-black lg:text-xs"
+      >
+        {{#if @partial-block}}
+          {{> @partial-block }}
+        {{else}}
+          <p>
+            Приятное совместное сотрудничество и качество наших продуктов — наши
+            основные приоритеты. Мы надеемся на долгосрочные и успешные
+            отношения с вами в области поставки металлических воздуховодов.
+            Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах
+            и начать работу над вашими проектами. Будем рады помочь вам!
+          </p>
+        {{/if}}
+      </div>
+      <div
+        class="flex flex-col items-start justify-start gap-[10px] self-stretch text-base lg:text-xl"
+      >
+        <div class="relative self-stretch font-medium leading-[130%]">
+          Смирнов Сергей
+        </div>
+        <div
+          class="relative self-stretch text-4xs leading-[140%] text-black lg:text-3xs"
+        >
+          Старший инженер, опыт работы 34 года
+        </div>
+      </div>
+    </div>
+    <button class="button--filled-green max-md:w-full lg:text-xs">
+      <span> Задать вопрос специалисту </span>
+    </button>
+  </div>
+</section>

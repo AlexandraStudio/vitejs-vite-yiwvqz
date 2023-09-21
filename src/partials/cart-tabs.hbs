@@ -1,0 +1,138 @@
+<div
+  class="cart-tabs__container relative hidden h-full w-full flex-col items-start justify-start overflow-visible bg-light-bg text-base md:flex lg:text-xl"
+>
+  <div
+    class="box-border flex w-full flex-row items-center justify-start gap-[20px] rounded bg-light-bg px-[40px] py-[30px] lg:gap-[40px] lg:py-[40px]"
+  >
+    <button
+      class="cart-tabs__button relative font-medium leading-[130%] text-light-gray"
+      id="cart-tab1"
+    >
+      Контактные данные
+    </button>
+    <button class="cart-tabs__button relative font-medium leading-[130%]" id="cart-tab2">
+      Способ получения
+    </button>
+    <button
+      class="cart-tabs__button relative font-medium leading-[130%]"
+      id="cart-tab3"
+    >Оплата</button>
+    <button
+      class="cart-tabs__button relative font-medium leading-[130%]"
+      id="cart-tab4"
+    >Комментарий</button>
+  </div>
+  <div class="relative h-px self-stretch bg-border-color"></div>
+  <div
+    class="cart-tabs__item flex flex-row items-start justify-start gap-[10px] self-stretch p-10 text-xxs lg:text-xs"
+    id="cart-content1"
+  >
+    <input
+      class="flex flex-1 flex-row items-center justify-start rounded bg-white px-[30px] py-5 leading-[140%] placeholder:opacity-[0.3]"
+      placeholder="Ваше имя"
+    />
+    <input
+      class="flex max-w-[240px] flex-1 flex-row items-center justify-start rounded bg-white px-[30px] py-5 leading-[140%] placeholder:opacity-[0.3]"
+      placeholder="Номер телефона"
+    />
+    <input
+      class="flex max-w-[240px] flex-1 flex-row items-center justify-start rounded bg-white px-[30px] py-5 leading-[140%] placeholder:opacity-[0.3]"
+      placeholder="Эл. почта"
+    />
+  </div>
+
+  <div
+    class="cart-tabs__item flex flex-row items-start justify-start gap-[10px] self-stretch p-10 text-xxs lg:text-xs"
+    style="display: none"
+    id="cart-content2"
+  >
+    <div class="w-[240px]">
+      {{#> dropdown text="Способ доставки"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Самовывоз</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Доставка</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+    <input
+      class="flex flex-1 flex-row items-center justify-start rounded bg-white px-[30px] py-5 leading-[140%] placeholder:opacity-[0.3]"
+      placeholder="Адрес доставки"
+    />
+
+  </div>
+
+  <div
+    class="cart-tabs__item flex flex-row items-center justify-start gap-[40px] self-stretch p-10 text-xxs lg:text-xs"
+    style="display: none"
+    id="cart-content3"
+  >
+    <div class="w-[400px]">
+      {{#> dropdown text="Способ оплаты"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>По счету</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>По карте</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Наличными</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+    <div class="relative inline-block w-[542px] shrink-0 leading-[140%]">
+      Оплата наличными при получении по средставам доставки или при самовывозе
+    </div>
+  </div>
+
+  <div
+    class="cart-tabs__item flex flex-row items-start justify-start self-stretch p-10 text-xxs lg:text-xs"
+    style="display: none"
+    id="cart-content4"
+  >
+    <input
+      class="flex flex-1 flex-row items-center justify-start rounded bg-white px-[30px] py-5 leading-[140%] placeholder:opacity-[0.3]"
+      placeholder="Ваш комментарий"
+    />
+  </div>
+</div>

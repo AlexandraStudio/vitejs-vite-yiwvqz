@@ -1,0 +1,61 @@
+<div
+  class="group text-base lg:text-xl relative rounded w-[360px] md:w-[415px] lg:w-[570px] h-[460px] md:h-[415px] lg:h-[500px] overflow-hidden shrink-0 {{#if gray}}text-black{{else}}text-white{{/if}}"
+>
+  <div class="absolute w-full h-full overflow-hidden">
+    {{#if dark-green}}
+      <div class="absolute w-full h-full bg-green"></div>
+    {{/if}}
+    {{#if gray}}
+      <div class="absolute w-full h-full bg-dark-green"></div>
+    {{/if}}
+    {{#if green}}
+      <div class="absolute w-full h-full bg-light-gray"></div>
+    {{/if}}
+
+    <img
+      class="absolute h-full w-full top-[0%] rounded max-w-full overflow-hidden max-h-full object-cover"
+      alt=""
+      src="/images/57@2x.png"
+    />
+    <div class="absolute w-full h-full bg-green-gradient-top"></div>
+  </div>
+  {{#if dark-green}}
+    <div
+      class="absolute h-[calc(100%_-_15px)] lg:h-[calc(100%_-_20px)] w-full top-[0%] right-0 bottom-[0%] left-0 bg-dark-green duration-300 group-hover:h-0 group-hover:opacity-0"
+    ></div>
+  {{/if}}
+  {{#if gray}}
+    <div
+      class="absolute h-[calc(100%_-_15px)] lg:h-[calc(100%_-_20px)] w-full duration-300 bg-light-gray group-hover:h-0 group-hover:opacity-0"
+    ></div>
+  {{/if}}
+  {{#if green}}
+    <div
+      class="absolute h-[calc(100%_-_15px)] lg:h-[calc(100%_-_20px)] w-full bg-green duration-300 group-hover:h-0 group-hover:opacity-0"
+    ></div>
+  {{/if}}
+
+  <div
+    class="absolute w-[calc(100%_-_80px)] lg:w-[calc(100%_-_120px)] top-[40px] lg:top-[60px] right-[40px] lg:right-[60px] left-[40px] lg:left-[60px] flex flex-col items-start justify-start gap-[10px] lg:gap-[20px]"
+  >
+    <img
+      class="relative w-[50px] lg:w-[60px] h-[50px] lg:h-[60px]"
+      alt=""
+      src={{image}}
+    />
+
+    <div class="self-stretch relative leading-[130%] font-medium">
+      {{title}}
+    </div>
+    <div class="self-stretch m-0 relative  text-xxs lg:text-xs leading-[140%]">
+      <p >
+        {{text}}
+      </p>
+    </div>
+  </div>
+  <img
+    class="absolute bottom-[45px] lg:bottom-[60px] left-[40px] lg:left-[60px] w-5 lg:w-6 h-5 lg:h-6 transform duration-300 group-hover:left-[calc(100%_-_64px)] lg:group-hover:left-[calc(100%_-_84px)]"
+    alt=""
+    src="{{#if gray}}/images/61.svg{{else}}/images/59.svg{{/if}}"
+  />
+</div>

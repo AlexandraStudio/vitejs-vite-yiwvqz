@@ -1,0 +1,55 @@
+<div
+  class="fixed top-0 z-50 hidden h-screen w-screen overscroll-contain bg-black bg-opacity-50"
+  id="book-call-popup"
+>
+  <div class="flex h-full w-full items-center justify-center">
+
+    <div
+      class="text-45xl text-black font-base relative flex w-[790px] flex-col items-start justify-start overflow-hidden rounded text-left"
+    >
+      <div class="absolute w-full h-full bg-cover scale-y-[-1] bg-right bg-book-call top-0 z-0 my-0">
+       </div>
+      <div
+        class="relative w-full flex flex-col items-start justify-end gap-[30px] self-stretch py-[60px] pl-[60px] pr-[310px]"
+      >
+       
+        <div class="z-[1] flex flex-col items-start justify-start gap-[20px]">
+          <div class="relative text-5xl font-medium leading-[110%]">
+            <h1>Заказать звонок</h1>
+          </div>
+          <div
+            class="text-7xl relative inline-block w-[400px] text-lg leading-[140%]"
+          >
+            Мы свяжемся с вами в удобное для вас время
+          </div>
+        </div>
+        <div
+          class="z-[2] flex w-[400px] flex-col items-start justify-start gap-[20px] text-xs"
+        >
+          {{> dropdown text="с 10:00 до 12:00 часов"}}
+          {{> input placeholder='Ваше имя'}}
+          {{> input placeholder='Номер телефона'}}
+         
+          <button
+            class="button--filled-green w-full"
+            id="thanks-popup-button"
+          >
+            <span >
+              Отправить заявку
+            </span>
+          </but>
+        </div>
+      </div>
+      <div
+        class="bg-black z-10 text-white flex flex-row items-center justify-start gap-[10px] self-stretch rounded-b rounded-t-none px-[60px] py-[30px] text-3xs"
+      >
+        <div class="relative h-[20px] w-[20px]">
+          {{> checkbox}}
+        </div>
+        <div class="relative font-medium leading-[120%]">
+          Даю согласие на обработку моих персональных данных
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

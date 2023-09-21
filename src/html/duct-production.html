@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Производство воздуховодов</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      <img
+        class="absolute right-[0px] top-[904px] h-[339px] w-[480px] object-cover md:top-[341px] md:h-[414px] md:w-[586px] lg:top-[458px] lg:h-[582px] lg:w-[825px]"
+        alt=""
+        src="/images/3032a245fd8ca3a9276b26f3aacb8415.png"
+      />
+      <img
+        class="absolute top-[5900px] h-[201.213px] w-[512px] max-w-none object-cover mix-blend-multiply max-md:left-1/2 max-md:translate-x-[-50%] md:right-0 md:top-[4360px] md:h-[318.587px] md:w-[810.397px] lg:top-[4930px] lg:h-[419.194px] lg:w-[1066.311px]"
+        alt=""
+        src="/images/86e8d1541b66b6c33ac6b111316a5a40.png"
+      />
+
+      <div
+        class="absolute left-[-125px] top-[10229px] h-[417px] w-[500px] md:top-[6500px] md:h-[495px] md:w-[580px] lg:top-[7400px] lg:h-[700px] lg:w-[820px]"
+      >
+        <img
+          class="h-full w-full scale-x-[-1] object-cover"
+          alt=""
+          src="/images/082f3f8b2dbdb80435d38e094979fa7e.png"
+        />
+      </div>
+
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Производство воздуховодов
+        </a>
+      </section>
+
+      {{> main-title title-text="Производство воздуховодов"}}
+
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[459px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-sm md:mb-[100px] md:max-w-[1024px] md:gap-[40px] md:pr-[435px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[60px] lg:pr-[600px] lg:text-lg"
+      >
+        <div class="relative self-stretch leading-[140%]">
+          <p>
+            Производство воздуховодов — одно из важных направлений деятельности
+            компании «Элком». Мы производим воздуховоды и фасонные изделия
+            из оцинкованной и нержавеющей стали для систем вентиляции,
+            кондиционирования, дымоудаления и аспирации.
+          </p>
+        </div>
+
+        <div
+          class="relative flex text-base font-medium leading-[130%] lg:text-xl"
+        >
+          <h3 class="hidden md:flex">
+            Производим воздуховоды с 2004 г.<br />В каталоге более
+            300 наименований
+          </h3>
+          <h3 class="md:hidden">
+            Производим воздуховоды с 2004 г. В каталоге более 300 наименований
+          </h3>
+        </div>
+        <div
+          class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible lg:mt-[-20px]"
+        >
+          <div
+            class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:text-xs"
+          >
+            <!-- prettier-ignore -->
+            {{> advantage class="w-[190px] lg:w-[230px]" small="1" image="/images/56.svg" text="Производство за 1 день"}}
+            {{> advantage class="w-[190px] lg:w-[230px]" small="1" image="/images/icon-gears.svg" text="В наличии и под заказ любой объём"}}
+            {{> advantage class="w-[190px] lg:w-[230px]" small="1" image="/images/icon-warranty.svg" text="Гарантия на роботы 3 года"}}
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> special-offer title="Производство воздуховодов" description="для систем вентиляции, дымоудаления и аспирации сроком от 1 дня" price="от 470 ₽ за м2" button-text="Рассчитать стоимость"}}
+
+      <!-- offer -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[115px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Предлагаем" subtitle="Перечень продукции нашего производства, под заказ изготовим воздуховоды по вашим черетежам" buttons="1"}}
+
+        <div
+          class="swiper !ml-0 w-full !overflow-visible"
+          id="duct-production-offer"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper">
+              
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> duct-production-item
+                  imageClass="bg-duct-production1 bg-cover h-full w-full"
+                  title="Воздуховоды квадратного сечения"
+                  description="Более 140 наименований готовой продукции в каталоге"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> duct-production-item
+                  imageClass="bg-duct-production2 bg-cover h-full w-full"
+                  title="Воздуховоды круглого сечения"
+                  description="Более 120 наименований готовой продукции в каталоге"
+                }}
+              </div>
+              <div class="swiper-slide !h-auto !w-fit">
+                {{> duct-production-item
+                  imageClass="bg-duct-production3 bg-cover h-full w-full"
+                  title="Гибкие воздуховоды"
+                  description="Более 120 наименований готовой продукции в каталоге"
+                }}
+              </div> 
+            </div>
+
+          {{> pages}}
+        </div>
+      </section>
+
+      <!-- equipment -->
+      <section
+        class="relative mb-[80px] flex flex-col items-center justify-start gap-[30px] text-xxs md:mb-[100px] lg:mb-[120px] lg:gap-[40px] lg:text-xs"
+      >
+        <!-- prettier-ignore -->
+        <span class="mx-auto  max-w-[360px] md:max-w-[1024px] lg:max-w-[1410px]"> {{> title title="Собственный парк оборудования" subtitle="Позволяет выпускать продукцию высокого качества в минимальные сроки, а квалифицированный персонал поможет заказать изделия любого вида, типа и применения по вашим эскизам."}}</span>
+
+        <div class="w-full bg-light-bg py-[40px] lg:py-[60px]">
+          <div
+            class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:max-w-[1024px] md:flex-row md:justify-between lg:max-w-[1410px] lg:gap-[40px]"
+          >
+            <div
+              class="relative h-[360px] min-w-[360px] md:h-[415px] md:min-w-[415px] lg:h-[570px] lg:min-w-[570px]"
+            >
+              <img
+                class="absolute h-full w-full scale-x-[117%] scale-y-[113%] object-cover"
+                alt=""
+                src="/images/duct-production.png"
+              />
+            </div>
+
+            <div
+              class="flex flex-col items-start justify-start gap-[30px] self-stretch md:w-[502px] md:gap-[40px] md:pt-[60px] lg:w-[690px] lg:pt-[80px]"
+            >
+              <div
+                class="flex flex-col items-start justify-start gap-[20px] self-stretch text-base lg:text-xl"
+              >
+                <div class="relative self-stretch font-medium leading-[130%]">
+                  <h3>
+                    Станок для производства спирально-навивных воздуховодов
+                  </h3>
+                </div>
+                <div
+                  class="relative self-stretch text-xxs leading-[140%] lg:text-xs"
+                >
+                  <p>
+                    При обработки станком край получается не острый,
+                    без заусенцев и обеспечивает дальнейшую безопасную
+                    эксплуатацию.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start gap-[10px] self-stretch lg:w-[570px]"
+              >
+                <div
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-5 py-4 lg:py-5"
+                >
+                  <div
+                    class="relative flex w-[231px] shrink-0 leading-[140%] lg:w-[270px]"
+                  >
+                    <p>Производитель:</p>
+                  </div>
+                  <div class="relative leading-[140%]"><p>SPIRO</p></div>
+                </div>
+                <div
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-5 py-4 lg:py-5"
+                >
+                  <div
+                    class="relative flex w-[231px] shrink-0 leading-[140%] lg:w-[270px]"
+                  >
+                    <p>Страна</p>
+                    :
+                  </div>
+                  <div class="relative leading-[140%]"><p>Швейцария</p></div>
+                </div>
+                <div
+                  class="flex flex-row items-start justify-start gap-[10px] self-stretch rounded bg-white px-5 py-4 lg:py-5"
+                >
+                  <div
+                    class="relative flex w-[231px] shrink-0 leading-[140%] lg:w-[270px]"
+                  >
+                    <p>Рабочая длинна:</p>
+                  </div>
+                  <div class="relative leading-[140%]"><p>до 3000 мм</p></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <button
+                  class="button--outlined-gray h-[58px] w-[58px] !p-0 lg:h-[68px] lg:w-[68px]"
+                >
+                  <img alt="" src="/images/union.svg" />
+                </button>
+                <button class="button--outlined-gray w-max">
+                  <span> Больше оборудования </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative mx-auto flex max-w-[360px] leading-[140%] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+        >
+          <p>
+            Большинство технологических операций при производстве воздуховодов
+            и фасонных изделий выполняется на специализированном оборудовании,
+            что существенно увеличивает скорость изготовления и повышает
+            качество выпускаемой продукции.
+          </p>
+        </div>
+      </section>
+
+      <!-- catalog -->
+      <section
+        class="relative mx-auto mb-[90px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] md:gap-[36px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        {{> title title="Продукция в наличии" }}
+        <div class="swiper !ml-0 w-full !overflow-visible md:!hidden" id="id">
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Прямые участки воздуховода" class="max-md:w-[360px]"}}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/fe6a0bee987be8f67140010b7b8cc12b.png" title="Переходс прямоугольного сечения на круглое сечение" class="max-md:w-[360px]"}}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Отвод 90 градусов (прямоугольный)" class="max-md:w-[360px]" }}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/e02a989ee5d7172aa2020df2d1ebaecd.png" title="Отвод 45 градусов (прямоугольный)" class="max-md:w-[360px]"}} 
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/cfc095d82eadc5582946832b9f4d1087.png" title="Переход с прямоугольного сечения на прямоугольное сечение" class="max-md:w-[360px]"}}
+            </div>
+            <div class="swiper-slide !h-auto !w-fit">
+              {{> catalog-item image-source="/images/38cc95545d29d51da8dd998ed0e0687d.png" title="Адаптер прямоугольного сечения" class="max-md:w-[360px]"}}
+            </div>
+           
+          </div>
+
+          {{> pages}}
+        </div>
+
+        <div
+          class="hidden flex-row gap-[20px] text-xs text-black md:grid md:grid-cols-3 md:gap-y-[40px] lg:grid-cols-4 lg:gap-[30px]"
+        >
+          <!-- prettier-ignore -->
+          {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Прямые участки воздуховода" class="max-md:w-[360px]"}}
+          {{> catalog-item image-source="/images/fe6a0bee987be8f67140010b7b8cc12b.png" title="Переходс прямоугольного сечения на круглое сечение" class="max-md:w-[360px]"}}
+          {{> catalog-item image-source="/images/7a5f438ef36605912f5b9df32c5f01b8.png" title="Отвод 90 градусов (прямоугольный)" class="max-md:w-[360px]" }}
+          {{> catalog-item image-source="/images/e02a989ee5d7172aa2020df2d1ebaecd.png" title="Отвод 45 градусов (прямоугольный)" class="max-md:w-[360px]"}} 
+          {{> catalog-item image-source="/images/cfc095d82eadc5582946832b9f4d1087.png" title="Переход с прямоугольного сечения на прямоугольное сечение" class="max-md:w-[360px]"}}
+          {{> catalog-item image-source="/images/38cc95545d29d51da8dd998ed0e0687d.png" title="Адаптер прямоугольного сечения" class="max-md:w-[360px]"}}
+          {{> catalog-item image-source="/images/3ac52966b5733523523dca5d21c4c682.png" title="Врезка прямоугольного сечения в плоскость" class="max-md:w-[360px] max-lg:hidden"}} 
+          {{> catalog-item image-source="/images/afe8b03e6c7dda500425a3c23ae823fe.png" title="Врезка прямоугольного сечения в круглый воздуховод" class="max-md:w-[360px] max-lg:hidden"}}
+        </div>
+
+        <button
+          class="button--outlined-gray w-full px-[30px] py-5 text-xxs lg:text-xs"
+        >
+          <span> Посмотреть больше </span>
+        </button>
+      </section>
+
+      <!-- place order -->
+      <section
+        class="relative mx-auto mb-[270px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:pr-[348px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pr-[480px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[10px] self-stretch lg:gap-[40px]"
+        >
+          <div
+            class="flex flex-row items-end justify-start gap-[30px] self-stretch lg:gap-[40px]"
+          >
+            <div
+              class="flex flex-1 flex-col items-start justify-start gap-[20px]"
+            >
+              <h2 class="relative self-stretch font-medium leading-[110%]">
+                Воздуховоды
+              </h2>
+              <div
+                class="relative hidden self-stretch text-lg leading-[140%] text-dark-gray"
+              >
+                <p>
+                  Это одна из основных частей любой системы вентиляции.
+                  Через них, приточные системы поставляют воздушные массы
+                  с улицы к специализированным распределителям. Одновременно
+                  с этим, с помощью воздуховодов из помещений отводится
+                  загрязнённый воздух с помощью вытяжек.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative self-stretch text-xxs leading-[140%] lg:text-xs">
+            <p>
+              Это одна из основных частей любой системы вентиляции. Через них,
+              приточные системы поставляют воздушные массы с улицы
+              к специализированным распределителям. Одновременно с этим,
+              с помощью воздуховодов из помещений отводится загрязнённый воздух
+              с помощью вытяжек.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[40px] self-stretch text-xxs lg:text-xs"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch lg:gap-[20px]"
+          >
+            <div
+              class="relative self-stretch text-sm leading-[140%] lg:text-lg"
+            >
+              <p>В продаже можно найти различные виды воздуховодов:</p>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Пластиковые и металлические</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Прямоугольные (плоские), круглые</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Жёсткие и гибкие</p>
+              </div>
+            </div>
+          </div>
+          <button class="button--filled-green">
+            <span> Отправить заявку </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section
+        class="relative mb-[80px] bg-black text-white md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px]"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Преимущества<br />сотрудничества с нами"
+          subtitle="Помимо огромного опыта работы в данной сфере:"}}
+          <div
+            class="flex w-full flex-col items-start justify-start gap-[20px] self-stretch text-xxs text-dark-gray shadow-base md:flex-row lg:text-xs"
+          >
+            <!-- prettier-ignore -->
+            {{> duct-production-advantage text="Собственное высокотехнологичное производство, оснащённое современным оборудованием"}}
+            {{> duct-production-advantage text="Воздуховоды изготавливаются только из высококачественных материалов, согласно действующим ГОСТам"}}
+            {{> duct-production-advantage text="Вся продукция сертифицирована, прежде чем попасть в продажу проходит строгий контроль качества"}}
+            {{> duct-production-advantage text="Предоставление полного комплекса услуг на создание эффективных систем вентилирования помещений"}}
+          </div>
+          <div
+            class="flex flex-col items-center justify-start gap-[20px] self-stretch text-xxs md:flex-row lg:text-xs"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Помимо производства и продажи воздуховодов, у нас есть
+                собственный проектный отдел, через которых можно спроектировать
+                максимально эффективную систему вентилирования,
+                кондиционирования.
+              </p>
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Также можно заказать монтаж вентиляционной системы любой
+                сложности, с дальнейшим обслуживанием. Есть все необходимые
+                разрешения, а также лицензия МЧС на установку систем вентиляции.
+              </p>
+            </div>
+          </div>
+          {{> contact-me--full}}
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> production-examples
+        class="mb-[136px]"
+        image1="fdd30928e44b1067bea7499c97320004.png"
+        image2="a609474e769a0a153d40ee373912aa10.png"
+        image3="32bd4fd09d8991a2c3110856054ba4e4.png"
+        image4="a929347010a352a1529e5751132b423f.png"
+        image5="fdd30928e44b1067bea7499c97320004.png"
+      }}
+
+      <section
+        class="relative mx-auto mb-[527px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-xxs md:mb-[100px] md:max-w-[1024px] md:pl-[522px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pl-[720px] lg:text-xs"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Советы по выбору воздуховода"}}
+        <div class="relative self-stretch leading-[140%]">
+          В процессе выбора воздуховода для обустройства системы вентиляции
+          важно уделить первоочередное внимание следующим критериям:
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <div
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <div class="relative flex-1 leading-[140%]">
+              Размер и форма сечения (зависит от размеров помещения, в которое
+              нужно подавать воздух и выводить его в атмосферу)
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <div class="relative flex-1 leading-[140%]">
+              Материалы изготовления труб (выбор зависит от условий
+              эксплуатации, конструкционных сложностей системы
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+          >
+            <img class="relative h-7 w-7" alt="" src="/images/frame-327.svg" />
+
+            <div class="relative flex-1 leading-[140%]">
+              Особенности монтажа.
+            </div>
+          </div>
+        </div>
+        <div class="relative self-stretch leading-[140%]">
+          Ещё несколько важных параметров при выборе воздуховода —
+          герметичность, компактные размеры (для небольших помещений), способ
+          соединения отдельных труб друг с другом (они могут быть
+          завальцованными, фланцевыми, сварными), безопасность для здоровья
+          людей, теплоизоляция, шумоизоляция. Материал, из которого изготовлены
+          воздуховоды, должен быть устойчивым к воздействию влаги, температурным
+          перепадам. Внутри не должен скапливаться конденсат, однако,
+          это зависит не только от материала, но и правильности установки труб.
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me}} 
+
+      {{> specialist }}
+
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

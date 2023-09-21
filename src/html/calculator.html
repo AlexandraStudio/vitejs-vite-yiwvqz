@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Рассчет стоимости воздуховодов</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxs text-black lg:text-xs"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Рассчет стоимости воздуховодов
+        </a>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> main-title title-text="Рассчет стоимости воздуховодов"}}
+
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[30px] flex max-w-[360px] text-sm leading-[140%] md:max-w-[1024px] lg:mb-[40px] lg:max-w-[1410px] lg:text-lg"
+      >
+        <span>
+          Онлайн-калькулятор позволяет быстро вычислить все необходимые значения
+          для вентиляционных труб любого сечения.
+        </span>
+      </section>
+
+      <!-- calculation -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col gap-[40px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[20px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[30px]"
+      >
+        {{> calculator-item}}
+
+        <div
+          class="relative flex w-[360px] flex-col items-start justify-start text-4xs text-dark-green md:w-[328px] lg:w-[450px] lg:text-3xs"
+        >
+          <div
+            class="relative h-[292px] w-full bg-light-bg px-[46px] py-[30px] md:px-[30px] lg:px-[75px] lg:pt-[40px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              alt=""
+              src="/images/b84bd49e1b9063bf9813fb3fb0c35b64.png"
+            />
+          </div>
+          <div
+            class="flex flex-col items-start justify-center gap-[20px] self-stretch bg-light-bg p-[30px] lg:p-[40px]"
+          >
+            <div class="flex flex-col items-start justify-start self-stretch">
+              <div class="relative self-stretch leading-[140%]">
+                Ориентировочная стоимость
+              </div>
+              <div
+                class="relative self-stretch text-base font-medium leading-[130%] text-black lg:text-xl"
+              >
+                70 831 ₽
+              </div>
+            </div>
+            <div class="relative leading-[140%] text-dark-gray">
+              <p class="w-fit">
+                Заказать изделие нестандартных размеров можно по телефону
+                или в мессенджере
+              </p>
+            </div>
+            <button class="button--filled-green">
+              <span> Отправить заявку </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- middle text -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] leading-[140%] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px]"
+      >
+        <p>
+          Качество работы воздуховода во многом зависит не только
+          от комплектующих, но и от правильно подобранного сечения и диаметра,
+          а также от грамотного монтажа. Если размеры вентиляционного канала
+          не будут соответствовать площади помещения, то система не сможет
+          полноценно очищать воздух, либо, наоборот, размеры и стоимость
+          трубопровода будут слишком велики для заданного объекта. В материале
+          мы рассмотрим все актуальные способы расчёта вентиляции: калькулятор
+          воздуховодов, формулы и таблицы.
+        </p>
+      </section>
+
+      <section class="relative bg-light-bg">
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] pb-[973px] pt-[80px] leading-[140%] md:max-w-[1024px] md:gap-[40px] md:pb-[100px] md:pr-[348px] md:pt-[100px] lg:max-w-[1410px] lg:gap-[60px] lg:pb-[120px] lg:pr-[480px] lg:pt-[120px]"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+          >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+            >
+              Методы расчёта размеров воздуховода
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Онлайн-калькулятор позволяет быстро вычислить все необходимые
+                значения для вентиляционных труб любого сечения. Ещё одним
+                весомым плюсом этого метода является возможность сразу узнать
+                несколько параметров:
+              </p>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Рекомендуемый диаметр сечения;</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Реальную скорость движения воздуха в системе;</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>Потери давления на метр длины трубопровода.</p>
+              </div>
+            </div>
+            <div class="relative flex-1 self-stretch leading-[140%]">
+              <p class="md:mb-[10px]">
+                Но все же не стоит пользоваться подобными сервисами вслепую.
+                Чтобы исключить ошибки в расчётах, важно пользоваться только
+                надёжными и проверенными сайтами, а также хотя бы примерно знать
+                формулы, чтобы иметь возможность заметить ошибку.
+              </p>
+              <p>
+                Ручной подсчёт при помощи формул занимает большое времени,
+                но зато он исключает возможность ошибки системы, а также
+                позволяет наглядно представить все особенности прокладываемого
+                трубопровода. Для того чтобы произвести расчёты, необходимо
+                знать расход воздуха и его максимально допустимую скорость
+                внутри системы. Ещё один удобный способ — воспользоваться
+                специальными таблицами, которые включают в себя все популярные
+                значения для круглых и квадратных магистралей.
+              </p>
+            </div>
+          </div>
+          <div
+            class="z-[1] flex flex-col items-start justify-start gap-[20px] self-stretch"
+          >
+            <div
+              class="relative self-stretch text-base font-medium leading-[130%] lg:text-xl"
+            >
+              Как посчитать сечение воздуховодов вручную
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Алгоритм расчёта сечения вентиляционной магистрали позволяет
+                вычислить его размеры, при которых нужный объём воздуха будет
+                проходить с заданной скоростью (куб.м/ч). Расчёт проводится
+                в несколько этапов.
+              </p>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Вычисление расхода в кубических метрах. Чтобы перевести
+                  показатель из куб.м/ч в куб.м/с необходимо разделить значение
+                  на 3600. Если выразить действие в формуле, то это будет
+                  выглядеть, как: G(куб.м/ч): 3600 = G(куб.м/с).
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Подбор нужной скорости движения воздушных масс. В данном
+                  расчёте этот параметр задаётся, а не рассчитывается — вы сами
+                  выбираете, какая скорость будет оптимальной для воздушной
+                  магистрали вашего объекта. Здесь важно обратить внимание
+                  на то, что большая скорость позволяет использовать трубы
+                  небольшого сечения, но при этом воздушный поток будет
+                  производить много шума, а аэродинамическое сопротивление
+                  в системе ощутимо повысится. Небольшая скорость при большом
+                  диаметре, наоборот, обеспечивает тихую работу вентиляционной
+                  системы, но при этом вся конструкция может быть слишком
+                  громоздкой.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                <p>
+                  Определение общей площади сечения магистрали. Для этого
+                  необходимо разделить расход воздуха на заданную вами скорость
+                  движения потока. Данная формула будет выглядеть так: S(кв.м) =
+                  G(куб.м/с): V(м/с).
+                </p>
+              </div>
+            </div>
+            <div class="relative flex-1 self-stretch leading-[140%]">
+              <p>
+                Последним шагом вам останется только выполнить подсчёт диаметра
+                круглых труб или длины и ширины прямоугольных, опираясь
+                на полученное выше значение и выбранную вами форму изделий.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="absolute bottom-[74px] right-0 h-[899px] w-[480px] object-cover object-[-200px] mix-blend-multiply md:bottom-[80px] lg:bottom-auto lg:top-[152px] lg:h-[1270px] lg:w-[705px]"
+          alt=""
+          src="/images/91b4421489a92b99800954e339a4182f.png"
+        />
+      </section>
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

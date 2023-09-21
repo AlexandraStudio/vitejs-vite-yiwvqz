@@ -1,0 +1,228 @@
+<div
+  class="md:w-[676px] lg:w-[930px] flex flex-col items-start justify-start gap-[30px] rounded bg-light-bg p-[30px] lg:gap-[40px] lg:p-[40px]"
+>
+  <div class="flex flex-col items-start justify-start gap-[30px] md:gap-[10px] lg:gap-[20px] self-stretch">
+    <div
+      class="flex flex-col md:flex-row md:items-center items-start justify-start gap-[10px] self-stretch md:gap-[20px] lg:gap-[30px]"
+    >
+      <div class="relative flex w-[300px] md:min-w-[200px] lg:min-w-[290px] leading-[140%]">
+        <p>Материал</p>
+      </div>
+     {{#> dropdown text="Выберите материал"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Оцинкованная сталь</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Нержавеющая сталь</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+    <div
+      class="flex flex-col md:flex-row md:items-center items-start justify-start gap-[10px] self-stretch md:gap-[20px] lg:gap-[30px]"
+    >
+      <div class="relative flex w-[300px] md:min-w-[200px] lg:min-w-[290px] leading-[140%]">
+        <p>Сечение</p>
+      </div>
+
+      {{#> dropdown text="Выберите сечение"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Прямоугольное</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Круглое</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+    <div
+      class="flex flex-col md:flex-row md:items-center items-start justify-start gap-[10px] self-stretch md:gap-[20px] lg:gap-[30px]"
+    >
+      <div class="relative flex w-[300px] md:min-w-[200px] lg:min-w-[290px] leading-[140%]">
+        <p>Элемент</p>
+      </div>
+
+        {{#> dropdown text="Выберите элемент"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Прямой</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Отвод 45</p>
+            </div>
+          </div>
+        </button>
+         <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Отвод 90</p>
+            </div>
+          </div>
+        </button>
+         <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Переход</p>
+            </div>
+          </div>
+        </button>
+         <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Тройник</p>
+            </div>
+          </div>
+        </button>
+         <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>Заглушка</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+  </div>
+  <div class="relative h-px self-stretch bg-border-color"></div>
+  <div class="flex flex-col items-start justify-start gap-[30px] md:gap-[10px] lg:gap-[20px] self-stretch">
+    <div
+      class="flex flex-col md:flex-row md:items-center items-start justify-start gap-[10px] self-stretch md:gap-[20px] lg:gap-[30px]"
+    >
+      <div class="relative flex w-[300px] md:min-w-[200px] lg:min-w-[290px] leading-[140%]">
+        <p>Толщина, мм</p>
+      </div>
+
+      {{#> dropdown text="Выберите толщину"}}
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>0,5</p>
+            </div>
+          </div>
+        </button>
+        <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>0,7</p>
+            </div>
+          </div>
+        </button>
+         <div
+          class="relative h-px w-full border-[0.5px] border-solid border-gray"
+        ></div>
+        <button
+          class="group py-[20px] flex w-full flex-col items-start justify-start gap-[20px] px-[30px]"
+        >
+          <div class="flex flex-row items-center justify-start self-stretch">
+            <div class="relative flex-1 font-medium leading-[120%]">
+              <p>1,0</p>
+            </div>
+          </div>
+        </button>
+      {{/dropdown}}
+    </div>
+    <div
+      class="flex flex-col md:flex-row md:items-center items-start justify-start gap-[10px] self-stretch md:gap-[20px] lg:gap-[30px]"
+    >
+      <div class="relative flex w-[300px] md:min-w-[200px] lg:min-w-[290px] leading-[140%]">
+        <p>Количество</p>
+      </div>
+      {{> input placeholder='1'}}
+    </div>
+  </div>
+  <div class="relative h-px self-stretch bg-border-color"></div>
+  <div
+    class="text-4xs flex flex-row items-center justify-start md:justify-start gap-[10px] self-stretch lg:text-3xs"
+  >
+    <div class="relative h-5 w-5">
+      {{> checkbox }}
+    </div>
+    <div class="relative  font-medium leading-[120%]">
+      <p>Указать нужные размеры</p>
+    </div>
+  </div>
+  <div
+    class="flex flex-col md:flex-row items-start justify-center lg:justify-between lg:gap-0 gap-[20px] self-stretch text-4xs lg:text-3xs"
+  >
+    <div class="relative flex leading-[140%]">
+      <p class="w-full lg:w-[410px]">
+        Дополнительные поля принимают следующие значения: Высота, ширана, диаметр,
+      длина, врезка - от 100 до 1000 мм
+      </p>
+    </div>
+    <button
+      class="w-fit button--outlined-green px-[30px] py-5 text-xxs lg:text-xs"
+    >
+      <span>
+        Рассчитать стоимость
+      </span>
+    </button>
+  </div>
+</div>

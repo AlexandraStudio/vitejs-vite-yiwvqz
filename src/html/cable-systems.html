@@ -1,0 +1,739 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+      rel="stylesheet"
+    />
+    <title>Кабельные системы</title>
+  </head>
+  <body>
+    <div
+      class="relative overflow-hidden bg-white text-left font-gilroy text-xxl text-black md:text-3xl lg:text-5xl"
+    >
+      {{> header class="mb-[30px] lg:mb-[40px]"}}
+
+      <!-- breadcrumbs -->
+      <section
+        class="relative mx-auto mb-[10px] flex max-w-[360px] flex-row items-center justify-start gap-[14px] text-dark-gray md:max-w-[1024px] lg:max-w-[1410px]"
+      >
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Главная
+        </a>
+        <img class="relative h-3 w-3" alt="" src="/images/arrow-down.svg" />
+
+        <a
+          href="#"
+          class="relative text-4xs font-medium leading-[120%] lg:text-3xs"
+        >
+          Кабельные системы
+        </a>
+      </section>
+
+      {{> main-title title-text="Кабельные системы"}}
+
+      <div
+        class="absolute right-0 top-[991px] z-10 h-[459px] w-[420px] md:top-[297px] md:h-[450px] md:w-[412px] lg:top-[399px] lg:h-[640px] lg:w-[585px]"
+      >
+        <img
+          class="h-full w-full object-cover"
+          alt=""
+          src="/images/aa576488bd8565e3dd2e08ba562d08bb.png"
+        />
+      </div>
+      <div
+        class="absolute left-0 top-[2941px] z-10 h-[338px] w-[420px] mix-blend-multiply md:top-[1856px] md:h-[402px] md:w-[499px] lg:top-[2214px] lg:h-[568px] lg:w-[705px]"
+      >
+        <img
+          class="h-full w-full scale-x-[-1] object-cover"
+          alt=""
+          src="/images/b0ba83e95ac830b10f87702a4ceb4333.png"
+        />
+      </div>
+      <div
+        class="absolute right-0 top-[10607px] z-10 h-[309px] w-[172px] mix-blend-multiply md:top-[6572px] md:h-[898px] md:w-[499px] lg:top-[7345px] lg:h-[1270px] lg:w-[705px]"
+      >
+        <img
+          class="h-full w-full object-cover"
+          alt=""
+          src="/images/beddbb0b37b20b902114fa4b3fda6fd3.png"
+        />
+      </div>
+
+      <!-- top text -->
+      <section
+        class="relative mx-auto mb-[580px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] text-sm md:mb-[100px] md:max-w-[1024px] md:gap-[40px] md:pr-[435px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[60px] lg:pr-[600px] lg:text-lg"
+      >
+        <div class="relative self-stretch leading-[140%]">
+          <p>
+            Кабельные системы являются основой для всех основных компонентов
+            информационно-вычислительных комплексов предприятий и организаций.
+            Правильная организация кабельной системы здания является ключевой
+            задачей создания интеллектуальных систем и гарантирует надежное
+            функционирование всех служб и подразделений компании.
+          </p>
+        </div>
+        <div
+          class="flex w-full flex-col items-start justify-start gap-[30px] text-base md:gap-[40px] lg:text-xl"
+        >
+          <div class="relative font-medium leading-[130%]">
+            <h3>Инженеры с опытом работы более 10 лет</h3>
+          </div>
+          <div
+            class="no-scrollbar flex w-[420px] overflow-x-scroll md:w-full md:overflow-x-visible"
+          >
+            <div
+              class="flex flex-row items-start justify-start gap-[40px] text-xxs lg:gap-[60px] lg:gap-[60px] lg:text-xs"
+            >
+              <!-- prettier-ignore -->
+              {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/icon-gears-2.svg" text="Монтируем системы без остановки рабочего процесса"}}
+              {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/icon-gears-3.svg" text="Работаем с любым оборудованием"}}
+              {{> advantage class="w-[190px] lg:w-[230px]"  small="1" image="/images/icon-warranty.svg" text="Гарантия на роботы 3 года"}}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> special-offer title="привлекательное название плюшки" description="Небольшое описание для заманухи клиента чтобы сразу кликнул" button-text="Призыв к действию"}}
+
+      <!-- offer -->
+      <section
+        class="relative mx-auto mb-[460px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px]"
+      >
+        <!-- prettier-ignore -->
+        {{> title title="Услуги видеонаблюдения" subtitle="Надежная защита и контроль с помощью услуги видеонаблюдения" buttons="1"}}
+
+        <div
+          class="swiper !ml-0 w-[360px] !overflow-visible md:w-[676px] lg:w-[930px]"
+          id="cable-systems-offer"
+        >
+          <!-- prettier-ignore -->
+          <div class="swiper-wrapper w-full">
+            <div class="swiper-slide">
+              {{> duct-production-item
+                imageClass="bg-cable-systems1 bg-cover h-full w-full"
+                title="Монтаж систем видеонаблюдения"
+                description="Сложный процесс, который стоит доверить профессионалам"
+              }}
+            </div>
+            <div class="swiper-slide">
+              {{> duct-production-item
+                imageClass="bg-cable-systems2 bg-cover h-full w-full"
+                title="Ремонт видеонаблюдения"
+                description="Позволяет не тратить средства на установку нового оборудования"
+              }}
+            </div>
+            <div class="swiper-slide">
+              {{> duct-production-item
+                imageClass="bg-cable-systems3 bg-cover h-full w-full"
+                title="Обслуживание видеонаблюдения"
+                description="Поможет избежать достаточно серьезных проблем."
+              }}
+            </div>
+          </div>
+          {{> pages}}
+        </div>
+      </section>
+
+      <!-- information systems -->
+      <sections
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] md:pl-[522px] lg:mb-[120px] lg:max-w-[1410px] lg:pl-[720px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Информационные системы"}}
+          <div class="relative self-stretch text-xxs leading-[140%] lg:text-xs">
+            <p class="mb-[10px]">
+              Основа информационной инфраструктуры любого предприятия,
+              позволяющая свести в единую систему множество информационных
+              сервисов разного назначения: локальные вычислительные и телефонные
+              сети, системы безопасности, видеонаблюдения и т.д.
+            </p>
+            <p class="mb-[10px]">
+              Именно поэтому так велика роль СКС при построении корпоративной
+              информационной системы: от того, насколько грамотно выполнена СКС,
+              зависят надежность и безопасность различных операций, без которых
+              невозможна деятельность современного предприятия.
+            </p>
+            <p>
+              СКС представляет собой иерархическую кабельную систему здания
+              или группы зданий, разделенную на структурные подсистемы.
+            </p>
+          </div>
+        </div>
+        <button class="button--filled-green">
+          <span>Заказать услугу</span>
+        </button>
+      </sections>
+
+      <!-- video systems -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <!-- prettier-ignore -->
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[80px] text-xxs md:max-w-[1024px] md:py-[100px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:text-xs"
+        >
+         
+          {{> title 
+            title="Установка<br/>систем видеонаблюдения" 
+            subtitle="Востребованная услуга на рынке г. Кирова и Кировской области, которая обеспечивает повышение уровня безопасности на защищаемом объекте."
+          }}
+          <div class="relative h-full w-full md:hidden">
+            <div
+              class="swiper !ml-0 !overflow-visible"
+              id="cable-systems-video"
+            >
+              <!-- prettier-ignore -->
+              <div class="swiper-wrapper"
+              >
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                    title="Частный дом"
+                  }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                    title="В автосервис"
+                  }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                    title="В квартиру"
+                  }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                    title="В бассейн"
+                  }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                    title="Гараж"
+                  }}
+                </div>
+                <div class="swiper-slide !h-auto !w-fit">
+                  {{> design-item
+                    image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                    title="Офис"
+                  }}
+                </div>
+              </div>
+
+              {{> pages}}
+            </div>
+          </div>
+          <div
+            class="hidden flex-col items-start justify-start gap-[30px] self-stretch md:flex lg:gap-[40px]"
+          >
+            <div
+              class="flex flex-row items-start justify-start gap-[12px] md:grid md:grid-cols-3 md:gap-[20px] lg:grid-cols-4 lg:gap-[30px]"
+            >
+              <!-- prettier-ignore -->
+              {{> design-item
+                image="/images/be0366ac42d8bcc4b9484de740bf433f.png"
+                title="Частный дом"
+              }}
+              {{> design-item
+                image="/images/6cb5b2a919e260da58c6cb121e83a414.png"
+                title="В автосервис"
+              }}
+              {{> design-item
+                image="/images/f47a6314ec3774ea23fee363511f8541.png"
+                title="В квартиру"
+              }}
+              {{> design-item
+                image="/images/ff671f8a127c01679a4e717f7923be8a.png"
+                title="В бассейн"
+              }}
+              {{> design-item
+                image="/images/89b8fd39503bf0629f339f10137b881d.png"
+                title="Гараж"
+              }}
+              {{> design-item
+                image="/images/2fd8c8937ce0e6d7ff136c239fb0ac62.png"
+                title="Офис"
+              }}
+              <span class="hidden lg:flex">
+                {{> design-item
+                image="/images/6368356c51e87ef22017577636c8f240.png"
+                title="Магазин" }}
+              </span>
+
+              <span class="hidden lg:flex">
+                {{> design-item
+                image="/images/d60385e918ea2ec95bfd8f16d4e011f4.png"
+                title="Склад" }}
+              </span>
+            </div>
+          </div>
+          <div class="relative self-stretch leading-[140%] text-dark-gray">
+            <p>
+              С момента основания компанией Элком оснащены сотни объектов
+              различного профиля, тысячи видеокамер ведут ежедневную запись
+              происходящих событий. Самый большой комплекс видеонаблюдения,
+              состоящий из более чем 800 видеокамер установлен нами в сети
+              магазинов торговой компании "ГЛОБУС". За эти годы мы решали задачи
+              проектирования, монтажа и обслуживания на всех возможных типах
+              объектов Заказчика.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- permission system -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[40px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[156px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          {{> title title="Система контроля и управления доступом"}}
+          <div
+            class="flex flex-col items-start justify-start gap-[30px] self-stretch text-xxs md:gap-[40px] lg:text-xs"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <p class="mb-[1px]">
+                Предназначена для обеспечения санкционированного прохода
+                в помещения, которые находятся под охраной, контроля за доступом
+                в данные помещения и предотвращения несанкционированного
+                проникновения в данные помещения.
+              </p>
+              <p>
+                Система контроля и управления доступом позволяет организовать
+                проход сотрудников на охраняемый объект с помощью кодовых
+                панелей, бесконтактных карт, биометрических считывателей
+                (считыватели отпечатка пальцев), организовать проход сотрудников
+                через турникеты, шлагбаумы.
+              </p>
+            </div>
+            <div
+              class="flex h-[210px] flex-row items-start justify-start gap-[20px] self-stretch"
+            >
+              <img
+                class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                alt=""
+                src="/images/0ae362b2998097e00e70ec2b6f8860c0.png"
+              />
+
+              <img
+                class="relative max-h-full max-w-full flex-1 self-stretch overflow-hidden rounded object-cover"
+                alt=""
+                src="/images/abae6f90e54715336eca5c2ff8ddb98c.png"
+              />
+            </div>
+            <div class="relative self-stretch leading-[140%]">
+              <p>
+                Система позволяет контролировать дату и время прохода
+                сотрудников в помещения, осуществлять учёт рабочего времени,
+                осуществлять идентификацию сотрудника с помощью визуального
+                сравнения лица, воспользовавшегося картой, и оригинальной
+                фотографии владельца данной карты, осуществлять контроль за
+                перемещением сотрудников по охраняемому объекту, обеспечить
+                защиту от передачи карточки другому лицу с помощью системы
+                контроля за повторным входом.
+              </p>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Установить систему контроля </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-end justify-start gap-[20px] text-4xs text-dark-gray lg:text-3xs"
+        >
+          <div
+            class="flex h-[360px] w-[360px] flex-col items-start justify-start shadow-base md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          >
+            <img
+              class="relative h-full w-full rounded object-cover mix-blend-normal"
+              alt=""
+              src="/images/527c4d8f7ddf3a27b55549ce7a94bd2d.png"
+            />
+          </div>
+          <div
+            class="flex flex-row items-center justify-start gap-[20px] self-stretch border-[1px] border-solid border-border-color p-[30px]"
+          >
+            <img class="relative h-6 w-6" alt="" src="/images/9.svg" />
+
+            <div class="relative flex-1 leading-[140%]">
+              <p>
+                Система полностью исключает влияние человеческого фактора
+                на пропускной режим, так как контроль за доступом теперь
+                возлагается на технику.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {{> contact-me}}
+
+      <!-- alert systems -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:flex-row md:gap-[107px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[150px]"
+      >
+        <img
+          class="relative h-[360px] w-[360px] rounded object-cover md:h-[415px] md:w-[415px] lg:h-[570px] lg:w-[570px]"
+          alt=""
+          src="/images/b5cccb168daee379e284fefddef6bb37.png"
+        />
+
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          <!-- prettier-ignore -->
+          {{> title title="Система оповещения и конференц-связи"}}
+
+          <div
+            class="flex flex-col items-start justify-start gap-[40px] self-stretch text-xxs lg:text-xs"
+          >
+            <div class="relative self-stretch leading-[140%]">
+              <p class="mb-[10px]">
+                Одной из важнейших систем безопасности на любом объекте является
+                система оповещения (СО), основное назначение которой —
+                своевременно передавать людям информацию о возникновении пожара
+                и способствовать реализации плана эвакуации людей с объекта
+                с тем, чтобы сохранить их жизнь и здоровье, передавать фоновую
+                музыку или речевые объявления.
+              </p>
+              <p class="mb-[10px]">
+                Большинство СО строится по модульному принципу, поэтому
+                в зависимости от архитектурных особенностей здания
+                и его назначения система оповещения может включать в себя
+                устройства, предназначенные для экстренной трансляции,
+                или же дополняться модулями, служащими для повышения качества
+                звука.
+              </p>
+              <p>
+                В торговых центрах и офисных зданиях СО может создавать уютную
+                обстановку, транслируя приятную фоновую музыку, или передавать
+                объявления служебного или рекламного характера.
+              </p>
+            </div>
+            <button class="button--filled-green max-md:w-full">
+              <span> Установить систему оповещения </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- optical lines -->
+      <section
+        class="relative mb-[80px] bg-light-bg md:mb-[100px] lg:mb-[120px]"
+      >
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] pb-[100px] pt-[80px] md:max-w-[1024px] md:py-[100px] md:pr-[348px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] lg:pr-[480px]"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+          >
+            {{> title title="Оптические линии связи"}}
+            <div
+              class="relative self-stretch text-xxs leading-[140%] lg:text-xs"
+            >
+              <p class="mb-[4px] lg:mb-[10px]">
+                При проектировании, монтаже и эксплуатации систем передачи
+                данных, частным случаем которых являются компьютерные сети,
+                необходимо учитывать множество различных факторов. Основные
+                задачи, требующие решения: необходимый объем и скорость передачи
+                данных (поддержка определенных протоколов), протяженность линий
+                (расстояние между пользователями), возможные внешние
+                воздействия, цена.
+              </p>
+              <p>
+                При решении этих и других вопросов большое распространение
+                получили оптоволоконные технологии.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-[30px] self-stretch text-xxs lg:gap-[40px] lg:text-xs"
+          >
+            <div
+              class="flex flex-col items-start justify-start gap-[10px] self-stretch lg:gap-[20px]"
+            >
+              <div
+                class="relative self-stretch text-sm leading-[140%] lg:text-lg"
+              >
+                Передача информации по ВОЛС имеет целый ряд достоинств перед
+                передачей по медному кабелю:
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Широкая полоса пропускания
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Гальваническая развязка элементов сети
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Взрыво- и пожаробезопасность
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Удаленное электропитание (при использовании комбинированного
+                  кабеля)
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Малый вес и объем
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Малое затухание светового сигнала в волокне
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Экономичность ВОК
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Высокая помехозащищенность
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Высокая защищенность от несанкционированного доступа
+                </div>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+              >
+                <img
+                  class="relative h-7 w-7"
+                  alt=""
+                  src="/images/frame-327.svg"
+                />
+
+                <div class="relative flex-1 leading-[140%]">
+                  Длительный срок эксплуатации
+                </div>
+              </div>
+            </div>
+            <button class="button--filled-green">
+              <span> Отправить заявку </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- electrical systems -->
+      <section
+        class="relative mx-auto mb-[80px] flex max-w-[360px] flex-col items-start justify-start gap-[30px] md:mb-[100px] md:max-w-[1024px] md:pr-[348px] lg:mb-[120px] lg:max-w-[1410px] lg:gap-[40px] lg:pr-[480px]"
+      >
+        <div
+          class="flex flex-col items-start justify-start gap-[20px] self-stretch"
+        >
+          {{> title title="Системы электроснабжения"}}
+          <div class="relative self-stretch text-xxs leading-[140%] lg:text-xs">
+            <p>
+              Одной из важнейших систем на любом объекте является система
+              электроснабжения, основное назначение которой — своевременно
+              и гарантированно обеспечить электропитанием оборудование
+              и освещение помещений объекта. От этой системы напрямую зависит
+              работоспособность всех других систем объекта, а от своевременного
+              отключения тока при коротких замыканиях, перегрузках
+              или недопустимых снижениях напряжения исправность и дальнейшая
+              корректная работа оборудования.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-start gap-[30px] self-stretch text-xxs lg:gap-[40px] lg:text-xs"
+        >
+          <div
+            class="flex flex-col items-start justify-start gap-[10px] self-stretch lg:gap-[20px]"
+          >
+            <div
+              class="relative self-stretch text-sm leading-[140%] lg:text-lg"
+            >
+              Любую систему электроснабжения условно можно разделить
+              на три основные части:
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                источник электрической энергии (электростанции)
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                элементы распределения электрической энергии (электросети и
+                распределительные устройства)
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-start justify-start gap-[10px] self-stretch"
+            >
+              <img
+                class="relative h-7 w-7"
+                alt=""
+                src="/images/frame-327.svg"
+              />
+
+              <div class="relative flex-1 leading-[140%]">
+                потребители электрической энергии (электроприёмники)
+              </div>
+            </div>
+          </div>
+          <button class="button--filled-green">
+            <span> Отправить заявку </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      {{> contact-me}}
+
+      {{> production-examples
+        image1="fbbd497c41e8c71dc23b9611ccc14692.png"
+        image2="d8294f7c4447e869a7da20535839c667.png"
+        image3="eb4137e59d4acbba81918bfd71ecbcab.png"
+        image4="443454d534963b75e79d1d598d33964b.png"
+        image5="37dfb585a2d97a388ef145480008cbfb.png"
+      }}
+
+      <!-- advantages -->
+      <section
+        class="relative mb-[120px] bg-black text-white md:mb-[100px] lg:mb-[120px]"
+      >
+        <!-- prettier-ignore -->
+        <div
+          class="mx-auto flex max-w-[360px] flex-col items-start justify-start gap-[30px] py-[100px] md:max-w-[1024px] lg:max-w-[1410px] lg:gap-[40px] lg:py-[120px] text-xxs text-white lg:text-xs"
+        >
+
+          {{> title title="Преимущества<br />сотрудничества с нами" subtitle="Помимо огромного опыта работы в данной сфере:"}}
+          <div
+            class="flex flex-col items-start justify-start gap-[20px] self-stretch text-dark-gray shadow-base md:flex-row"
+          >
+            {{> duct-production-advantage text="Работаем с ведущими производителями и предлагаем современные решения"}}
+           {{> duct-production-advantage text="Компания не только установит и настроит систему видеонаблюдения"}}
+           {{> duct-production-advantage text="Проводим обучение персонала и техническую поддержку"}}
+           {{> duct-production-advantage text="Инженеры с опытом работы более 10 лет"}}
+          </div>
+          {{> contact-me--full}}
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+
+      {{> specialist }}
+
+      {{> faq}}
+
+      {{> footer}}
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
